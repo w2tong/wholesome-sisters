@@ -1,6 +1,7 @@
 body {
   font-family: "Comic Sans MS", "Comic Sans";
   background-color:rgb(31, 29, 29);
+  text-align: center;
 }
 
 .title {
@@ -8,16 +9,22 @@ body {
   font-size: 72pt;
   background-image:url(img/mexicanandybug.png);
   background-size: 100% auto;
+  margin:0;
+  padding:0;
 }
 
 h2 {
   font-size: 48pt;
+  text-align: center;
 }
 
 h3 {
   font-size: 32pt;
 }
-
+.imgnote{
+  color: white;
+  font:bold;
+}
 img:hover {
   /* Start the shake animation and make the animation last for 0.5 seconds */
   animation: shake 0.25s;
@@ -48,6 +55,7 @@ img:hover {
   display: inline-block;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
   
 }
 
