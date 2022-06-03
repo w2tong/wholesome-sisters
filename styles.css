@@ -1,6 +1,7 @@
 body {
   font-family: "Comic Sans MS", "Comic Sans";
   background-color:rgb(31, 29, 29);
+  text-align: center;
 }
 
 .title {
@@ -14,6 +15,7 @@ body {
 
 h2 {
   font-size: 48pt;
+  text-align: center;
 }
 
 h3 {
@@ -28,6 +30,7 @@ h3 {
   display: inline-block;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
   
 }
 
