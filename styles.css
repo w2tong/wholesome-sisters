@@ -20,24 +20,24 @@ h3 {
 
 img:hover {
   /* Start the shake animation and make the animation last for 0.5 seconds */
-  animation: shake 0.1s;
+  animation: shake 0.25s;
 
   /* When the animation is finished, start again */
   animation-iteration-count: infinite;
 }
 
 @keyframes shake {
-  0% { transform: translate(1px, 1px) rotate(0deg); }
-  10% { transform: translate(-1px, -2px) rotate(-1deg); }
-  20% { transform: translate(-3px, 0px) rotate(1deg); }
-  30% { transform: translate(3px, 2px) rotate(0deg); }
-  40% { transform: translate(1px, -1px) rotate(1deg); }
-  50% { transform: translate(-1px, 2px) rotate(-1deg); }
-  60% { transform: translate(-3px, 1px) rotate(0deg); }
-  70% { transform: translate(3px, 1px) rotate(-1deg); }
-  80% { transform: translate(-1px, -1px) rotate(1deg); }
-  90% { transform: translate(1px, 2px) rotate(0deg); }
-  100% { transform: translate(1px, -2px) rotate(-1deg); }
+  0% { transform: translate(2px, 2px) rotate(0deg); }
+  10% { transform: translate(-2px, -4px) rotate(-2deg); }
+  20% { transform: translate(-6px, 0px) rotate(2deg); }
+  30% { transform: translate(6px, 4px) rotate(0deg); }
+  40% { transform: translate(2px, -2px) rotate(2deg); }
+  50% { transform: translate(-2px, 4px) rotate(-2deg); }
+  60% { transform: translate(-6px, 2px) rotate(0deg); }
+  70% { transform: translate(6px, 1px) rotate(-2deg); }
+  80% { transform: translate(-2px, -2px) rotate(2deg); }
+  90% { transform: translate(2px, 2px) rotate(0deg); }
+  100% { transform: translate(2px, -4px) rotate(-2deg); }
 }
 
 .wordart {
@@ -103,11 +103,11 @@ img:hover {
 
 .wordart.tilt {
     display: inline-block;
-    transform: scaleY(2) perspective(1em) rotateX(15deg) translate3d(-19%, -14%, -0.4em);
-    -webkit-transform: scaleY(2) perspective(1em) rotateX(15deg) translate3d(-19%, -14%, -0.4em);
-    -moz-transform: scaleY(2) perspective(1em) rotateX(15deg) translate3d(-19%, -14%, -0.4em);
-    -o-transform: scaleY(2) perspective(1em) rotateX(15deg) translate3d(-19%, -14%, -0.4em);
-    -ms-transform: scaleY(2) perspective(1em) rotateX(15deg) translate3d(-19%, -14%, -0.4em);
+    transform: scaleY(2) perspective(1.5em) rotateX(15deg) translate3d(-19%, -14%, -0.4em);
+    -webkit-transform: scaleY(2) perspective(1.5em) rotateX(15deg) translate3d(-19%, -14%, -0.4em);
+    -moz-transform: scaleY(2) perspective(1.5em) rotateX(15deg) translate3d(-19%, -14%, -0.4em);
+    -o-transform: scaleY(2) perspective(1.5em) rotateX(15deg) translate3d(-19%, -14%, -0.4em);
+    -ms-transform: scaleY(2) perspective(1.5em) rotateX(15deg) translate3d(-19%, -14%, -0.4em);
 }
 
 .wordart.tilt .text {
