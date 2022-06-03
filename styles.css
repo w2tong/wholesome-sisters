@@ -6,7 +6,31 @@ body {
 .title {
   text-align: center;
   font-size: 166px;
+  color: gold;
   background-image:url(img/mexicanandybug.png);
   background-size: 100% auto;
+  margin:0;
+  padding:0;
 
+}
+
+h3 {
+  background-color: red;
+  text-align: center;
+  background-size: 800% 800%;
+}
+.imgnote{
+  background: -webkit-linear-gradient(left, orange , yellow, green, cyan, blue, violet);
+    background: -o-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
+    background: -moz-linear-gradient(right, orange, yellow, green, cyan, blue, violet);
+    background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  float: right;
+  text-align: left;
+}
+
+img{
+  margin:0;
+  padding:0;
 }
