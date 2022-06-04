@@ -1,7 +1,6 @@
-import mexicanAndyBug from './images.js'
 function Header() {
     return (
-    <div>
+    <div className='title'>
         <h1>Header here</h1>
     </div>
     );
