@@ -1,14 +1,18 @@
 div {
-  border: 1px dotted red;
-}
 
+}
+html {
+  height: 100%
+}
 body {
+  height: 100%;
   font-family: "Comic Sans MS", "Comic Sans";
   background-color:rgb(31, 29, 29);
   text-align: center;
 }
 
 .title {
+  height: 20vh;
   text-align: center;
   font-size: 72pt;
   background-image:url(img/mexicanandybug.png);
@@ -16,7 +20,15 @@ body {
   margin:0;
   padding:0;
 }
-
+.memberWindow{
+  height:35vh;
+}
+.newsWindow{
+  height: 70vh;
+}
+.footerWindow{
+  height: 10vh;
+}
 h2 {
   font-size: 48pt;
   text-align: center;
@@ -28,6 +40,22 @@ h3 {
 .imgnote{
   color: white;
   font:bold;
+}
+.height{
+  height: 100%;
+}
+.left{
+  display : flex;
+  justify-content : center;
+  align-items : center;
+  height : 100%;
+
+}
+.right{
+  display : flex;
+  justify-content : center;
+  align-items : center;
+  height : 100%;
 }
 img:hover {
   /* Start the shake animation and make the animation last for 0.5 seconds */

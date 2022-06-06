@@ -1,6 +1,6 @@
 function MemberList() {
     return (
-    <div>
+    <div className="memberWindow">
         <h1>Member list here</h1>
     </div>
     );

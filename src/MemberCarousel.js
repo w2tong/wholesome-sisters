@@ -1,6 +1,6 @@
 function MemberCarousel() {
     return (
-    <div>
+    <div className="memberWindow">
         <h1>Member Carousel here</h1>
     </div>
     );
