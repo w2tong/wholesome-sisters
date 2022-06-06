@@ -1,11 +1,12 @@
 import NewsArticle from "./NewsArticle";
+import articlesJSON from "./articles.json"
 
 function NewsFeed() {
+    const articles = articlesJSON.map(art => <NewsArticle title={art.title} date={art.date} text={art.text} img={art.img} imgAlt={art.imgAlt}/>);
+
     return (
     <div className="newsWindow">
-        <NewsArticle title='article 1' date='monday' text='haha1'/>
-        <NewsArticle title='article 1' date='tuesday' text='haha2'/>
-        <NewsArticle title='article 1' date='wednesday' text='haha3'/>
+        {articles}
     </div>
     );
 }
