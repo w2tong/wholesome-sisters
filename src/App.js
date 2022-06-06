@@ -5,6 +5,7 @@ import NewsFeed from './NewsFeed.js';
 import MemeberCarousel from './MemberCarousel.js';
 import MemeberList from './MemberList.js';
 import Footer from './Footer.js';
+import React from 'react';
 
 function App() {
   return (
