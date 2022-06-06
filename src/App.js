@@ -8,12 +8,19 @@ import Footer from './Footer.js';
 
 function App() {
   return (
-    <div>
+    <div className="height">
       <Header />
-      test
-      <NewsFeed />
-      <MemeberCarousel />
-      <MemeberList />
+      <section className="height">
+        <row className="row g-0">
+          <div className="col-lg-7">
+            <NewsFeed />
+          </div>
+          <div className="col-lg-5">
+            <MemeberCarousel />
+            <MemeberList />
+          </div>
+        </row>
+      </section>
       <Footer />
     </div>
   );
