@@ -3,21 +3,28 @@
     "title": "art 1",
     "date": "01/01/2022",
     "text": "yoyoyo",
-    "img": "166.png",
+    "imgFile": "166.png",
     "imgAlt": "alt text here"
   },
   {
     "title": "art 2",
     "date": "02/02/2022",
     "text": "yoyoyo",
-    "img": "ulduar.jpg",
+    "imgFile": "ulduar.jpg",
     "imgAlt": "alt text here"
   },
   {
     "title": "art 3",
     "date": "03/03/2022",
     "text": "yoyoyo",
-    "img": "166.png",
+    "imgFile": "166.png",
     "imgAlt": "alt text here"
+  },
+  {
+    "title": "no image here",
+    "date": "03/03/2022",
+    "text": "yoyoyo",
+    "imgFile": null,
+    "imgAlt": null
   }
 ]
