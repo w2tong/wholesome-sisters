@@ -1,16 +1,16 @@
 import './App.css';
-import Header from './Header.js';
-import NewsFeed from './NewsFeed/NewsFeed.js';
-import MemeberCarousel from './MemberCarousel.js';
-import MemeberList from './MemberList.js';
-import Footer from './Footer.js';
+import Header from './Header';
+import NewsFeed from './NewsFeed/NewsFeed';
+import MemeberCarousel from './MemberCarousel';
+import MemeberList from './MemberList';
+import Footer from './Footer';
 
 function App() {
   return (
     <div className="height">
       <Header />
       <section className="height">
-        <row className="row g-0">
+        <div className="row g-0">
           <div className="col-lg-7">
             <NewsFeed />
           </div>
@@ -18,7 +18,7 @@ function App() {
             <MemeberCarousel />
             <MemeberList />
           </div>
-        </row>
+        </div>
       </section>
       <Footer />
     </div>

@@ -1,6 +1,12 @@
-import React from "react";
+interface Article {
+    title: string;
+    img: string;
+    imgAlt: string;
+    date: string;
+    text: string;
+}
 
-function NewsArticle(props) {
+function NewsArticle(props: Article) {
     return (
         <div>
             <div>{props.title}</div>
