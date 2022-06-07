@@ -3,21 +3,21 @@
         "title": "art 1",
         "date": "01/01/2022",
         "text": "yoyoyo",
-        "img": "image path here",
+        "img": "166.png",
         "imgAlt": "alt text here"
     },
     {
         "title": "art 2",
         "date": "02/02/2022",
         "text": "yoyoyo",
-        "img": "image path here",
+        "img": "ulduar.jpg",
         "imgAlt": "alt text here"
     },
     {
         "title": "art 3",
         "date": "03/03/2022",
         "text": "yoyoyo",
-        "img": "image path here",
+        "img": "166.png",
         "imgAlt": "alt text here"
     }
 ]

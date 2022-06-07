@@ -1,5 +1,4 @@
 import './App.css';
-import imgs from './images.js';
 import Header from './Header.js';
 import NewsFeed from './NewsFeed/NewsFeed.js';
 import MemeberCarousel from './MemberCarousel.js';
