@@ -1,9 +1,9 @@
-function Footer() {
-    return (
+function Footer () {
+  return (
     <div className="footerWindow">
-        <h1>Footer here</h1>
+      <h1>Footer here</h1>
     </div>
-    );
+  )
 }
-  
-export default Footer;
+
+export default Footer
