@@ -1,11 +1,11 @@
-import './App.css';
-import Header from './Header';
-import NewsFeed from './NewsFeed/NewsFeed';
-import MemeberCarousel from './MemberCarousel';
-import MemeberList from './MemberList';
-import Footer from './Footer';
+import './App.css'
+import Header from './Header'
+import NewsFeed from './NewsFeed/NewsFeed'
+import MemeberCarousel from './MemberCarousel'
+import MemeberList from './MemberList'
+import Footer from './Footer'
 
-function App() {
+function App () {
   return (
     <div className="height">
       <Header />
@@ -22,7 +22,7 @@ function App() {
       </section>
       <Footer />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

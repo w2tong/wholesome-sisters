@@ -1,10 +1,9 @@
-function Header() {
-    return (
+function Header () {
+  return (
     <div className='title'>
-        <h1>Header here</h1>
+      <h1>Header here</h1>
     </div>
-    );
+  )
 }
-  
-  export default Header;
-  
+
+export default Header
