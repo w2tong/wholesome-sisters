@@ -12,7 +12,7 @@ function NewsFeed () {
   }
   ).map(article => {
     return (
-      <NewsArticle title={article.title} date={article.date} text={article.text} imgFile={article.imgFile} imgAlt={article.imgAlt} key={article.title}/>
+      <NewsArticle {...article} key={article.title}/>
     )
   })
 
