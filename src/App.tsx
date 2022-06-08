@@ -2,7 +2,7 @@ import './App.css'
 import Header from './Header'
 import NewsFeed from './NewsFeed/NewsFeed'
 import MemeberCarousel from './MemberCarousel'
-import MemeberList from './MemberList'
+import MemeberList from './RosterList'
 import Footer from './Footer'
 
 function App () {
