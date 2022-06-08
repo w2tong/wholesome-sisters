@@ -1,7 +1,9 @@
+import Image from '../Image'
+
 interface Article {
     title: string;
-    img: string;
-    imgAlt: string;
+    imgFile: string | null;
+    imgAlt: string | null;
     date: string;
     text: string;
 }
@@ -10,7 +12,7 @@ function NewsArticle (props: Article) {
   return (
     <div>
       <div>{props.title}</div>
-      <img src={require(`../img/${props.img}`)} alt={props.imgAlt} width="200px" height="200px"/>
+      {props.imgFile && props.imgAlt && <Image file={props.imgFile} alt={props.imgAlt}/>}
       <div>{props.date}</div>
       <div>{props.text}</div>
     </div>

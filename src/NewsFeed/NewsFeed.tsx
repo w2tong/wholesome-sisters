@@ -4,7 +4,7 @@ import articlesJSON from './articles.json'
 function NewsFeed () {
   const articles = articlesJSON.map(art => {
     return (
-      <NewsArticle title={art.title} date={art.date} text={art.text} img={art.img} imgAlt={art.imgAlt} key={art.title}/>
+      <NewsArticle title={art.title} date={art.date} text={art.text} imgFile={art.imgFile} imgAlt={art.imgAlt} key={art.title}/>
     )
   })
 
