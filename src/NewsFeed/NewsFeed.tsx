@@ -9,7 +9,7 @@ function NewsFeed () {
   })
 
   return (
-    <div className="newsWindow">
+    <div className="newsWindow overflow-auto">
       {articles}
     </div>
   )
