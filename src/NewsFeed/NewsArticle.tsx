@@ -10,7 +10,7 @@ interface Article {
 }
 
 const Title = styled.div`
-
+  font-size: 50px;
 `
 
 const Date = styled.div`
@@ -18,11 +18,11 @@ const Date = styled.div`
 `
 
 const StyledImage = styled(Image)`
-
+  text-align: left;
 `
 
 const Text = styled.div`
-
+  text-align: left;
 `
 
 function NewsArticle (props: Article) {
