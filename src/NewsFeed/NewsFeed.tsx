@@ -5,7 +5,7 @@ import articlesJSON from './articles.json'
 
 function NewsFeed () {
   const [input, setInput] = useState('')
-  const articles = articlesJSON.filter(article => article.title.includes(input)).map(article => {
+  const articles = articlesJSON.filter(article => article.title.toLowerCase().includes(input.trim().toLowerCase())).map(article => {
     return (
       <NewsArticle title={article.title} date={article.date} text={article.text} imgFile={article.imgFile} imgAlt={article.imgAlt} key={article.title}/>
     )
