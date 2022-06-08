@@ -1,4 +1,5 @@
 import Image from '../Image'
+import styled from 'styled-components'
 
 interface Article {
     title: string;
@@ -8,13 +9,29 @@ interface Article {
     text: string;
 }
 
+const Title = styled.div`
+
+`
+
+const Date = styled.div`
+
+`
+
+const StyledImage = styled(Image)`
+
+`
+
+const Text = styled.div`
+
+`
+
 function NewsArticle (props: Article) {
   return (
     <div>
-      <div>{props.title}</div>
-      {props.imgFile && props.imgAlt && <Image file={props.imgFile} alt={props.imgAlt}/>}
-      <div>{props.date}</div>
-      <div>{props.text}</div>
+      <Title>{props.title}</Title>
+      <Date>{props.date}</Date>
+      {props.imgFile && props.imgAlt && <StyledImage file={props.imgFile} alt={props.imgAlt}/>}
+      <Text>{props.text}</Text>
     </div>
   )
 }
