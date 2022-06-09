@@ -15,8 +15,8 @@ function Footer () {
       </ContactUs>
       <Links>
         Links here
-        Raiderio
-        Warcraft logs
+        <a href="https://raider.io/guilds/us/bleeding-hollow/Wholesome%20Sisters" target="_blank" rel="noreferrer">Raider.IO</a>
+        <a href="https://www.warcraftlogs.com/guild/us/bleeding-hollow/wholesome%20sisters" target="_blank" rel="noreferrer">Warcraft Logs</a>
       </Links>
     </div>
   )
