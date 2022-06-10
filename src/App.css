@@ -1,21 +1,26 @@
 html {
   height: 100%
 }
+
 body {
   height: 100%;
-  font-family: "Comic Sans MS", "Comic Sans";
-  background-color:rgb(31, 29, 29);
-  text-align: center;
+  font-family: brother-1816, "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  background-color: rgb(16, 16, 16);
+  color: white;
 }
+
 /* Scrollbar */
 ::-webkit-scrollbar {
   width: .45rem;
 }
+
 ::-webkit-scrollbar-thumb {
   background-color: rgba(182, 167, 167, 0.4);
+  background: #181818;
   border-radius: 3px;
 }
-::-webkit-scrollbar-track{
+
+::-webkit-scrollbar-track {
   background: transparent;
 }
 
@@ -23,20 +28,24 @@ body {
   height: 20vh;
   text-align: center;
   font-size: 72pt;
-  background-image:url(img/mexicanandybug.png);
+  background-image: url(img/mexicanandybug.png);
   background-size: 100% auto;
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
 }
-.memberWindow{
-  height:35vh;
+
+.memberWindow {
+  height: 35vh;
 }
-.newsWindow{
+
+.newsWindow {
   height: 70vh;
 }
-.footerWindow{
+
+.footerWindow {
   height: 10vh;
 }
+
 h2 {
   font-size: 48pt;
   text-align: center;
@@ -45,44 +54,27 @@ h2 {
 h3 {
   font-size: 32pt;
 }
-.imgnote{
+
+.imgnote {
   color: white;
-  font:bold;
+  font: bold;
 }
-.height{
+
+.height {
   height: 100%;
 }
-.left{
-  display : flex;
-  justify-content : center;
-  align-items : center;
-  height : 100%;
+
+.left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 
 }
-.right{
-  display : flex;
-  justify-content : center;
-  align-items : center;
-  height : 100%;
-}
-img:hover {
-  /* Start the shake animation and make the animation last for 0.5 seconds */
-  animation: shake 0.25s;
 
-  /* When the animation is finished, start again */
-  animation-iteration-count: infinite;
-}
-
-@keyframes shake {
-  0% { transform: translate(2px, 2px) rotate(0deg); }
-  10% { transform: translate(-2px, -4px) rotate(-2deg); }
-  20% { transform: translate(-6px, 0px) rotate(2deg); }
-  30% { transform: translate(6px, 4px) rotate(0deg); }
-  40% { transform: translate(2px, -2px) rotate(2deg); }
-  50% { transform: translate(-2px, 4px) rotate(-2deg); }
-  60% { transform: translate(-6px, 2px) rotate(0deg); }
-  70% { transform: translate(6px, 1px) rotate(-2deg); }
-  80% { transform: translate(-2px, -2px) rotate(2deg); }
-  90% { transform: translate(2px, 2px) rotate(0deg); }
-  100% { transform: translate(2px, -4px) rotate(-2deg); }
+.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }

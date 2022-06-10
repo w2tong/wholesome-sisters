@@ -1,13 +1,19 @@
-import Image from '../Image'
 import styled from 'styled-components'
 
-interface Article {
+interface ArticleProps {
     title: string;
     imgFile: string | null;
     imgAlt: string | null;
     date: string;
     text: string;
 }
+
+const Article = styled.div`
+  border-radius: 25px;
+  margin: 25px 0px;
+  padding: 25px;
+  background-color: rgba(255, 255, 255, 0.1);
+`
 
 const Title = styled.div`
   font-size: 50px;
@@ -17,22 +23,24 @@ const Date = styled.div`
 
 `
 
-const StyledImage = styled(Image)`
-  text-align: left;
+const Image = styled.img`
+  max-width: 100%;
+  border-radius: 5px;
 `
 
 const Text = styled.div`
-  text-align: left;
+  margin-top: 30px;
 `
 
-function NewsArticle (props: Article) {
+function NewsArticle (props: ArticleProps) {
   return (
-    <div>
+    <Article>
       <Title>{props.title}</Title>
       <Date>{props.date}</Date>
-      {props.imgFile && props.imgAlt && <StyledImage file={props.imgFile} alt={props.imgAlt}/>}
+      {props.imgFile && props.imgAlt && <Image src={require(`../img/${props.imgFile}`)} alt={props.imgAlt} />}
+
       <Text>{props.text}</Text>
-    </div>
+    </Article>
   )
 }
 
