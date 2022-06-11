@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 const StyledCarousel = styled.div`
-  height:40vh;
+  height:45vh;
 `
 function MemberCarousel () {
   return (
