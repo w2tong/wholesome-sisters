@@ -29,10 +29,12 @@ function NewsFeed () {
 
   return (
     <StyledNewsFeed className="newsWindow overflow-auto row g-0">
-      <FlexSpaceBetween>
-        <TitleLeftPadding>News</TitleLeftPadding>
-        <SearchBar handleChange={setInput} value={input} placeholder="Filter articles.."/>
-      </FlexSpaceBetween>
+      <div>
+        <FlexSpaceBetween>
+          <TitleLeftPadding>News</TitleLeftPadding>
+          <SearchBar handleChange={setInput} value={input} placeholder="Filter articles.."/>
+        </FlexSpaceBetween>
+      </div>
         {articles}
     </StyledNewsFeed>
   )
