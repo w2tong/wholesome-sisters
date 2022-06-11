@@ -7,9 +7,9 @@ import Footer from './Footer'
 
 function App () {
   return (
-    <div className="height">
+    <div>
       <Header />
-      <section className="height">
+      <section>
         <div className="row g-0">
             <div className="col-lg-8">
             <NewsFeed />
