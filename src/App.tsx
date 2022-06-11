@@ -11,10 +11,10 @@ function App () {
       <Header />
       <section className="height">
         <div className="row g-0">
-            <div className="col-lg-7">
+            <div className="col-lg-8">
             <NewsFeed />
           </div>
-          <div className="col-lg-5">
+          <div className="col-lg-4">
             <MemeberCarousel />
             <MemeberList />
           </div>

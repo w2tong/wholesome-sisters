@@ -10,13 +10,13 @@ interface ArticleProps {
 
 const Article = styled.div`
   border-radius: 25px;
-  margin: 25px 0px;
+  margin-bottom: 40px;
   padding: 25px;
   background-color: rgba(255, 255, 255, 0.1);
 `
 
 const Title = styled.div`
-  font-size: 50px;
+  font-size: 35px;
 `
 
 const Date = styled.div`

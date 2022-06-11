@@ -34,21 +34,10 @@ body {
   padding: 0;
 }
 
-.memberWindow {
-  height: 35vh;
-}
-
-.newsWindow {
-  height: 70vh;
-}
-
-.footerWindow {
-  height: 10vh;
-}
-
 h2 {
-  font-size: 48pt;
-  text-align: center;
+  font-size: 40pt;
+  text-align: left;
+  padding-left: 25px !important;
 }
 
 h3 {
