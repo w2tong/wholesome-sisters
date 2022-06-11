@@ -4,10 +4,14 @@ import NewsArticle from './NewsArticle'
 import SearchBar from '../SearchBar'
 import articlesJSON from './articles.json'
 
-const NewsFeedStyled = styled.div`
-  padding: 25px;
+const StyledNewsFeed = styled.div`
+padding: 10px 25px;
+height: 75vh;
 `
-
+const StyledSearchBar = styled.div`
+  margin-top:20px;
+  
+`
 function NewsFeed () {
   const [input, setInput] = useState('')
   const articles = articlesJSON.filter((article) => {
@@ -22,11 +26,13 @@ function NewsFeed () {
   })
 
   return (
-    <NewsFeedStyled className="newsWindow overflow-auto">
-      <h2>News</h2>
-      <SearchBar handleChange={setInput} value={input}/>
-      {articles}
-    </NewsFeedStyled>
+    <StyledNewsFeed className="newsWindow overflow-auto row g-0">
+        <h2 className="col-lg-7">News</h2>
+      <StyledSearchBar className="col-lg-5" >
+        <SearchBar handleChange={setInput} value={input} placeholder="Filter articles.."/>
+      </StyledSearchBar>
+        {articles}
+    </StyledNewsFeed>
   )
 }
 
