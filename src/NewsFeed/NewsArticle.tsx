@@ -38,7 +38,6 @@ function NewsArticle (props: ArticleProps) {
       <Title>{props.title}</Title>
       <Date>{props.date}</Date>
       {props.imgFile && props.imgAlt && <Image src={require(`../img/${props.imgFile}`)} alt={props.imgAlt} />}
-
       <Text>{props.text}</Text>
     </Article>
   )
