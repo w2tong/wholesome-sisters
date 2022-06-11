@@ -1,11 +1,15 @@
 import useCollapse from 'react-collapsed'
 import styled from 'styled-components'
 
+const CharBar = styled.div`
+background-color: rgba(255, 255, 255, 0.1);
+`
 const Content = styled.section`
 
 `
 const Container = styled.div`
 border: 1px solid black;
+font-size:20px;
 `
 
 interface MemberProps {
@@ -20,9 +24,9 @@ function Member (props: MemberProps) {
   // TODO: dynamically change width and height of RaiderIO widget
   return (
     <Container>
-      <div {...getToggleProps()}>
+      <CharBar {...getToggleProps()}>
         {props.name} {isExpanded ? '-' : '+'}
-      </div>
+      </CharBar>
       <Content {...getCollapseProps()}>
         <a href={raiderIOLink + props.name} target="_blank" rel="noreferrer">
           <img title="View Raider.IO Page" src="https://assets.rpglogs.com/img/warcraft/raiderio_square_xl.png" alt="View Raider.IO Page"/>
