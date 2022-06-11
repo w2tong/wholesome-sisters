@@ -2,13 +2,13 @@ import styled from 'styled-components'
 import image from './img/mexicanandybug.png'
 
 const StyledHeader = styled.div`
-  height: 15vh;
-  text-align: center;
-  font-size: 72pt;
+  height: 6vh;
+  font-size: 72px;
   background-image: url(${image});
   background-size: 100% auto;
-  margin: 0;
-  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `
 
 function Header () {
