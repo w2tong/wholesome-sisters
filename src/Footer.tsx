@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 
 const StyledFooter = styled.div`
-  height: 5vh;
   margin-top: 10px;
   display: flex;
   justify-content: space-evenly;

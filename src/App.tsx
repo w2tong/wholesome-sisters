@@ -1,25 +1,36 @@
 import './App.css'
+import styled from 'styled-components'
 import Header from './Header'
 import NewsFeed from './NewsFeed/NewsFeed'
 import MemeberCarousel from './MemberCarousel'
 import MemeberList from './RosterList/RosterList'
 import Footer from './Footer'
 
+const NewsFeedContainer = styled.div`
+  width 70%
+`
+
+const GalleryGuildInfoContainer = styled.div`
+  width: 30%
+`
+
+const FlexboxContainer = styled.div`
+  display: flex
+`
+
 function App () {
   return (
     <div>
       <Header />
-      <section>
-        <div className="row g-0">
-            <div className="col-lg-8">
+        <FlexboxContainer>
+          <NewsFeedContainer>
             <NewsFeed />
-          </div>
-          <div className="col-lg-4">
+          </NewsFeedContainer>
+          <GalleryGuildInfoContainer>
             <MemeberCarousel />
             <MemeberList />
-          </div>
-        </div>
-      </section>
+          </GalleryGuildInfoContainer>
+        </FlexboxContainer>
       <Footer />
     </div>
   )
