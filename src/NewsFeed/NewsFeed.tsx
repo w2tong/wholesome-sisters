@@ -7,7 +7,6 @@ import { FlexSpaceBetween, Title } from '../styles'
 
 const StyledNewsFeed = styled.div`
   padding: 10px 25px;
-  height: 85vh;
 `
 
 const TitleLeftPadding = styled(Title)`
@@ -28,7 +27,7 @@ function NewsFeed () {
   })
 
   return (
-    <StyledNewsFeed className="newsWindow overflow-auto row g-0">
+    <StyledNewsFeed>
       <div>
         <FlexSpaceBetween>
           <TitleLeftPadding>News</TitleLeftPadding>

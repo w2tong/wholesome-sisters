@@ -1,11 +1,11 @@
 import styled from 'styled-components'
 
 const StyledCarousel = styled.div`
-  height:45vh;
 `
+
 function MemberCarousel () {
   return (
-    <StyledCarousel className="memberWindow">
+    <StyledCarousel>
       <h1>Member Carousel here</h1>
     </StyledCarousel>
   )

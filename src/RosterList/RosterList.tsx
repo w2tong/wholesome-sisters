@@ -6,7 +6,6 @@ import styled from 'styled-components'
 import { FlexSpaceBetween, Title } from '../styles'
 
 const StyledRoster = styled.div`
-  height:40vh;
   padding: 25px;
 `
 
@@ -16,7 +15,7 @@ function RosterList () {
   ).map(member => <Member {...member} key={member.name}/>)
 
   return (
-    <StyledRoster className="overflow-auto">
+    <StyledRoster>
       <FlexSpaceBetween>
         <Title>Roster</Title>
         <SearchBar handleChange={setInput} value={input} placeholder="Filter character name.."/>
