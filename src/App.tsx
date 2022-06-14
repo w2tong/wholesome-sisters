@@ -6,10 +6,21 @@ import Home from './Home'
 import NewsFeed from './NewsFeed/NewsFeed'
 import RosterList from './RosterList/RosterList'
 import Footer from './Footer'
-
+import { BackgroundColor, HighlightColor } from './styles'
 const Links = styled.div`
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  background-color: ${BackgroundColor};
+`
+
+const NavLink = styled(Link)`
+  padding: 20px 40px;
+  color: white;
+  text-decoration: none;
+  &:hover {
+    color: red;
+    background-color: ${HighlightColor};
+  }
 `
 
 const headerHeight = 10
@@ -20,11 +31,11 @@ function App () {
   return (
     <div>
       <Header height={headerHeight}/>
-      <Router>
+      <Router basename="/wholesome-sisters">
       <Links>
-        <Link to="/">Home</Link>
-        <Link to="/news">News</Link>
-        <Link to="/roster">Roster</Link>
+        <NavLink to="/">Home</NavLink>
+        <NavLink to="/news">News</NavLink>
+        <NavLink to="/roster">Roster</NavLink>
       </Links>
         <Routes>
           <Route path='/' element={< Home height={bodyHeight}/>}></Route>

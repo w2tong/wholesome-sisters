@@ -3,15 +3,16 @@ import { useState } from 'react'
 import NewsArticle from './NewsArticle'
 import SearchBar from '../SearchBar'
 import articlesJSON from '../json/articles.json'
-import { FlexSpaceBetween, Title } from '../styles'
+import { Title, Body } from '../styles'
 
-const StyledNewsFeed = styled.div`
-  padding: 10px 25px;
-`
+const FlexboxContainer = styled.div`
+    display: flex;
+    justify-content: flex-start;
+  `
 
-const TitleLeftPadding = styled(Title)`
-  padding-left: 25px;
-`
+const RightSearchBar = styled(SearchBar)`
+    margin-left: auto
+  `
 
 function NewsFeed () {
   const [input, setInput] = useState('')
@@ -27,15 +28,13 @@ function NewsFeed () {
   })
 
   return (
-    <StyledNewsFeed>
-      <div>
-        <FlexSpaceBetween>
-          <TitleLeftPadding>News</TitleLeftPadding>
-          <SearchBar handleChange={setInput} value={input} placeholder="Filter articles.."/>
-        </FlexSpaceBetween>
-      </div>
-        {articles}
-    </StyledNewsFeed>
+    <Body>
+      <FlexboxContainer>
+        <Title>News</Title>
+        <RightSearchBar handleChange={setInput} value={input} placeholder="Filter articles.."/>
+      </FlexboxContainer>
+      {articles}
+    </Body>
   )
 }
 

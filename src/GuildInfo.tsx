@@ -19,7 +19,7 @@ function GuildInfo () {
     <div>
       <h1>Guild Info here</h1>
       <FlexboxContainer>
-        <IFrame src={BossProgressURL} width="400px" height="180px"/>
+        <IFrame src={BossProgressURL} width="400px" height="180px" frameBorder="0"/>
         {/* <IFrame src={GearCompositionURL}/> */}
       </FlexboxContainer>
 

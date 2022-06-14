@@ -1,18 +1,21 @@
 import styled from 'styled-components'
 
-const FlexSpaceBetween = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 18px;
-`
-
 const Title = styled.div`
+  display: flex;
+  justify-content: center;
   font-size: 48px;
+  padding: 10px;
 `
 
-const BackgroundColor = styled.div`
-  background-color: rgba(255, 255, 255, 0.1);
+const Body = styled.div`
+  padding: 25px;
 `
 
-export { FlexSpaceBetween, Title, BackgroundColor }
+const BackgroundColor = 'rgba(255, 255, 255, 0.1)'
+const HighlightColor = 'rgba(255, 255, 255, 0.3)'
+
+const Link = styled.a`
+
+`
+
+export { Title, Body, BackgroundColor, HighlightColor, Link }
