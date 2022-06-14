@@ -30,7 +30,7 @@ const Date = styled.div`
 `
 
 const Image = styled.img`
-  max-width: 20%;
+  max-width: 12%;
   border-radius: 5px;
   object-fit: cover;
 `

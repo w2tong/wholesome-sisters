@@ -24,7 +24,7 @@ const NavLink = styled(Link)`
 `
 
 const headerHeight = 10
-const footerHeight = 10
+const footerHeight = 5
 const bodyHeight = 80
 
 function App () {
