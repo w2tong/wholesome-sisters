@@ -1,8 +1,11 @@
 import styled from 'styled-components'
 
-interface FooterProps {
-  height: number
-}
+const StyledFooter = styled.div`
+  margin: 10px 0px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+`
 
 const ContactUs = styled.div`
   display: flex;
@@ -19,15 +22,7 @@ const Title = styled.div`
   font-size: 20px;
 `
 
-function Footer (props: FooterProps) {
-  const StyledFooter = styled.div`
-  height: ${props.height}vh;
-  margin-top: 10px;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-`
-
+function Footer () {
   return (
     <StyledFooter>
       <ContactUs>
