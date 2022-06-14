@@ -7,6 +7,22 @@ import NewsFeed from './NewsFeed/NewsFeed'
 import RosterList from './RosterList/RosterList'
 import Footer from './Footer'
 import { BackgroundColor, HighlightColor } from './styles'
+
+const Container = styled.div`
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+`
+
+const HeaderContainer = styled.div`
+  height: auto;
+`
+
+const FooterContainer = styled.div`
+  margin-top: auto;
+`
+
 const Links = styled.div`
   display: flex;
   justify-content: center;
@@ -23,14 +39,12 @@ const NavLink = styled(Link)`
   }
 `
 
-const headerHeight = 10
-const footerHeight = 5
-const bodyHeight = 80
-
 function App () {
   return (
-    <div>
-      <Header height={headerHeight}/>
+    <Container>
+      <HeaderContainer>
+        <Header/>
+      </HeaderContainer>
       <Router basename="/wholesome-sisters">
       <Links>
         <NavLink to="/">Home</NavLink>
@@ -38,13 +52,15 @@ function App () {
         <NavLink to="/roster">Roster</NavLink>
       </Links>
         <Routes>
-          <Route path='/' element={< Home height={bodyHeight}/>}></Route>
-          <Route path='/news' element={< NewsFeed />}></Route>
-          <Route path='/roster' element={< RosterList />}></Route>
+          <Route path='/' element={<Home/>}></Route>
+          <Route path='/news' element={<NewsFeed/>}></Route>
+          <Route path='/roster' element={<RosterList/>}></Route>
         </Routes>
       </Router>
-      <Footer height={footerHeight}/>
-    </div>
+      <FooterContainer>
+        <Footer/>
+      </FooterContainer>
+    </Container>
   )
 }
 
