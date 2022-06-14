@@ -3,10 +3,6 @@ import NewsCards from './NewsCards/NewsCards'
 import GalleryCarousel from './GalleryCarousel'
 import GuildInfo from './GuildInfo'
 
-interface HomeProps {
-  height: number
-}
-
 const NewsFeedContainer = styled.div`
   width 70%
 `
@@ -15,12 +11,13 @@ const GalleryGuildInfoContainer = styled.div`
   width: 30%
 `
 
-function Home (props: HomeProps) {
-  const FlexboxContainer = styled.div`
-    display: flex
-    height: ${props.height}
-  `
+const FlexboxContainer = styled.div`
+  display: flex
+`
+
+function Home () {
   return (
+    <div>
       <FlexboxContainer>
         <NewsFeedContainer>
           <NewsCards />
@@ -30,6 +27,7 @@ function Home (props: HomeProps) {
           <GuildInfo />
         </GalleryGuildInfoContainer>
       </FlexboxContainer>
+    </div>
   )
 }
 

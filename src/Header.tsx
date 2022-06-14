@@ -1,13 +1,8 @@
 import styled from 'styled-components'
 import image from './img/mexicanandybug.png'
 
-interface HeaderProps {
-  height: number
-}
-
-function Header (props: HeaderProps) {
-  const StyledHeader = styled.div`
-  height: ${props.height}vh;
+const StyledHeader = styled.div`
+  height: 150px;
   font-size: 72px;
   background-image: url(${image});
   background-size: 100% auto;
@@ -16,6 +11,7 @@ function Header (props: HeaderProps) {
   align-items: center;
 `
 
+function Header () {
   return (
     <StyledHeader>
       Wholesome Sisters
