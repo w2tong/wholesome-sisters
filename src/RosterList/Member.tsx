@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import IFrame from '../IFrame'
 import { BackgroundColor } from '../styles'
 
 const raiderIOCharWidgetWidth = 805
@@ -35,7 +36,7 @@ function Member (props: MemberProps) {
         </a>
         <a href={warcraftLogsLink + props.name} title="Warcraft Logs Profile" target="_blank" rel="noopener noreferrer"><img title="View Warcraft Logs Page" src="https://assets.rpglogs.com/img/warcraft/favicon.png" alt="View Warcraft Logs Page"/></a>
         <IFrameContainer>
-        <iframe src={raiderIOLink + props.name + raiderIOCharacterWidgetSettings} width={`${raiderIOCharWidgetWidth}px`} height={`${raiderIOCharWidgetHeight}px`} frameBorder="0"/>
+          <IFrame url={raiderIOLink + props.name + raiderIOCharacterWidgetSettings} width={raiderIOCharWidgetWidth} height={raiderIOCharWidgetHeight}/>
         </IFrameContainer>
       </Container>
   )
