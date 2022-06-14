@@ -19,7 +19,6 @@ function Header (props: HeaderProps) {
   return (
     <StyledHeader>
       Wholesome Sisters
-      {props.height}
     </StyledHeader>
   )
 }
