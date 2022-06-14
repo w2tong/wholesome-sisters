@@ -9,11 +9,12 @@ interface ArticleProps {
     text: string;
 }
 
-const Article = styled(BackgroundColor)`
+const Article = styled.div`
   display: flex;
   border-radius: 25px;
   margin-bottom: 40px;
   padding: 25px;
+  background-color: ${BackgroundColor};
 `
 
 const Content = styled.div`
