@@ -9,16 +9,17 @@ interface ArticleProps {
     text: string;
 }
 
+const borderRadius = 10
+
 const Article = styled.div`
   display: flex;
-  border-radius: 25px;
+  border-radius: ${borderRadius}px;
   margin-bottom: 40px;
-  padding: 25px;
   background-color: ${BackgroundColor};
 `
 
 const Content = styled.div`
-  margin-left: 25px;
+  padding: 25px;
 `
 
 const Title = styled.div`
@@ -26,13 +27,13 @@ const Title = styled.div`
 `
 
 const Date = styled.div`
-
 `
 
 const Image = styled.img`
-  max-width: 12%;
-  border-radius: 5px;
+  max-width: 300px;
+  min-height: 200px;
   object-fit: cover;
+  border-radius: ${borderRadius}px 0px 0px ${borderRadius}px;
 `
 
 const Text = styled.div`
