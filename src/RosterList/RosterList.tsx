@@ -1,28 +1,30 @@
-import { useState } from 'react'
-import SearchBar from '../SearchBar'
 import Member from './Member'
-import rosterJSON from './roster.json'
+import rosterJSON from '../json/roster.json'
 import styled from 'styled-components'
-import { FlexSpaceBetween, Title } from '../styles'
+import { Title } from '../styles'
 
 const StyledRoster = styled.div`
-  height:40vh;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
   padding: 25px;
 `
 
+const StyledMember = styled(Member)`
+  display: flex;
+`
+
 function RosterList () {
-  const [input, setInput] = useState('')
-  const roster = rosterJSON.filter(member => member.name.toLowerCase().includes(input.trim().toLowerCase())
-  ).map(member => <Member {...member} key={member.name}/>)
+  const roster = rosterJSON.map(member => <StyledMember {...member} key={member.name}/>)
 
   return (
-    <StyledRoster className="overflow-auto">
-      <FlexSpaceBetween>
-        <Title>Roster</Title>
-        <SearchBar handleChange={setInput} value={input} placeholder="Filter character name.."/>
-      </FlexSpaceBetween>
+    <div>
+    <Title>Roster</Title>
+    <StyledRoster>
       {roster}
     </StyledRoster>
+    </div>
+
   )
 }
 
