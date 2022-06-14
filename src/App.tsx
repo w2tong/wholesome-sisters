@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
+import { HashRouter as Router, Routes, Route, Link } from 'react-router-dom'
 import './App.css'
 import styled from 'styled-components'
 import Header from './Header'
@@ -45,7 +45,7 @@ function App () {
       <HeaderContainer>
         <Header/>
       </HeaderContainer>
-      <Router basename="/wholesome-sisters">
+      <Router basename="/">
       <Links>
         <NavLink to="/">Home</NavLink>
         <NavLink to="/news">News</NavLink>
