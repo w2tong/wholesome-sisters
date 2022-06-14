@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { BackgroundColor } from '../styles'
 
 interface ArticleProps {
     title: string;
@@ -8,12 +9,11 @@ interface ArticleProps {
     text: string;
 }
 
-const Article = styled.div`
+const Article = styled(BackgroundColor)`
   display: flex;
   border-radius: 25px;
   margin-bottom: 40px;
   padding: 25px;
-  background-color: rgba(255, 255, 255, 0.1);
 `
 
 const Content = styled.div`
