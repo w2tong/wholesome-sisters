@@ -6,13 +6,19 @@ import articlesJSON from '../json/articles.json'
 import { Title, Body } from '../styles'
 
 const FlexboxContainer = styled.div`
-    display: flex;
-    justify-content: flex-start;
-  `
+  display: flex;
+  justify-content: space-between;
+`
 
-const RightSearchBar = styled(SearchBar)`
-    margin-left: auto
-  `
+const SearchBarContainer = styled.div`
+  display: flex;
+  align-items: center;
+`
+
+const Hidden = styled.div`
+  width: 200px;
+  display: hidden;
+`
 
 function NewsFeed () {
   const [input, setInput] = useState('')
@@ -30,8 +36,11 @@ function NewsFeed () {
   return (
     <Body>
       <FlexboxContainer>
+        <Hidden/>
         <Title>News</Title>
-        <RightSearchBar handleChange={setInput} value={input} placeholder="Filter articles.."/>
+        <SearchBarContainer>
+          <SearchBar handleChange={setInput} value={input} placeholder="Filter articles.."/>
+        </SearchBarContainer>
       </FlexboxContainer>
       {articles}
     </Body>

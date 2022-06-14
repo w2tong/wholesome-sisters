@@ -10,6 +10,8 @@ const Input = styled.input`
   background-image: url(https://cdn2.hubspot.net/hubfs/4004166/bioticresearch_website_assets/images/search_icon.png);
   background-repeat: no-repeat;
   background-position: right;
+  width: 200px;
+  font-size: 20px;
 `
 
 function SearchBar (props: SearchBarProps) {
