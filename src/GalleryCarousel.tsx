@@ -3,12 +3,12 @@ import styled from 'styled-components'
 const StyledCarousel = styled.div`
 `
 
-function MemberCarousel () {
+function GalleryCarousel () {
   return (
     <StyledCarousel>
-      <h1>Member Carousel here</h1>
+      <h1>Gallery Carousel here</h1>
     </StyledCarousel>
   )
 }
 
-export default MemberCarousel
+export default GalleryCarousel

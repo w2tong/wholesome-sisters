@@ -11,4 +11,8 @@ const Title = styled.div`
   font-size: 48px;
 `
 
-export { FlexSpaceBetween, Title }
+const BackgroundColor = styled.div`
+  background-color: rgba(255, 255, 255, 0.1);
+`
+
+export { FlexSpaceBetween, Title, BackgroundColor }
