@@ -1,6 +1,7 @@
+import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import { useState } from 'react'
-import NewsArticle from './NewsArticle'
+import NewsCard from './NewsCard'
 import SearchBar from '../SearchBar'
 import articlesJSON from '../json/articles.json'
 import { FlexSpaceBetween, Title } from '../styles'
@@ -15,14 +16,14 @@ const TitleLeftPadding = styled(Title)`
 
 function NewsFeed () {
   const [input, setInput] = useState('')
-  const articles = articlesJSON.filter((article) => {
+  const articles = articlesJSON.slice(0, 3).filter((article) => {
     const searchInput = input.trim().toLowerCase()
     const title = article.title.toLowerCase()
     return title.includes(searchInput) || article.tags.some(tag => tag.includes(searchInput))
   }
   ).map(article => {
     return (
-      <NewsArticle {...article} key={article.title}/>
+      <NewsCard {...article} key={article.title}/>
     )
   })
 
@@ -30,11 +31,11 @@ function NewsFeed () {
     <StyledNewsFeed>
       <div>
         <FlexSpaceBetween>
-          <TitleLeftPadding>News</TitleLeftPadding>
+          <Link to="/news"><TitleLeftPadding>News</TitleLeftPadding></Link>
           <SearchBar handleChange={setInput} value={input} placeholder="Filter articles.."/>
         </FlexSpaceBetween>
       </div>
-        {articles}
+      {articles}
     </StyledNewsFeed>
   )
 }
