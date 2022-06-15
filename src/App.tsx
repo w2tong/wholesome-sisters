@@ -32,9 +32,9 @@ const Links = styled.div`
 `
 
 const StyledNavLink = styled(NavLink)`
-  width: 5%;
+  width: 80px;
   text-align: center;
-  padding: 1% 2%;
+  padding: 10px 20px;
   color: white;
   text-decoration: none;
   &:hover {
