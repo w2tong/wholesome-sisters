@@ -3,8 +3,9 @@ import IFrame from './IFrame'
 
 const FlexboxContainer = styled.div`
   display: flex;
+  justify-content: center;
   align-items: flex-start;
-  flex-direction: column;
+
 `
 
 const BossProgressURL = 'https://raider.io/widgets/boss-progress?raid=sepulcher-of-the-first-ones&difficulty=heroic&region=us&realm=bleeding-hollow&guild=Wholesome+Sisters&boss=latest&period=until_kill&hide=&chromargb=transparent'
@@ -12,13 +13,12 @@ const BossProgressURL = 'https://raider.io/widgets/boss-progress?raid=sepulcher-
 
 function GuildInfo () {
   return (
-    <div>
+    <div style={{ border: 'white solid 1px' }}>
       <h1>Guild Info here</h1>
       <FlexboxContainer>
         <IFrame url={BossProgressURL} width={400} height={180}/>
         {/* <IFrame src={GearCompositionURL}/> */}
       </FlexboxContainer>
-
     </div>
   )
 }

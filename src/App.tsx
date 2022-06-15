@@ -6,10 +6,11 @@ import Home from './Home'
 import NewsFeed from './NewsFeed/NewsFeed'
 import RosterList from './RosterList/RosterList'
 import Footer from './Footer'
+import media from './media'
 import { BackgroundColor, HighlightColor } from './styles'
 
 const Container = styled.div`
-  height: 100vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -24,15 +25,16 @@ const FooterContainer = styled.div`
 `
 
 const Links = styled.div`
+  width: 100%;
   display: flex;
   justify-content: center;
   background-color: ${BackgroundColor};
 `
 
 const StyledNavLink = styled(NavLink)`
-  min-width: 80px;
+  width: 80px;
   text-align: center;
-  padding: 20px 40px;
+  padding: 10px 20px;
   color: white;
   text-decoration: none;
   &:hover {
@@ -46,7 +48,7 @@ const StyledNavLink = styled(NavLink)`
 `
 
 const BodyContainer = styled.div`
-  max-width: 1280px;
+  max-width: ${media.Large + 200}px;
   margin-left: auto;
   margin-right: auto;
 `

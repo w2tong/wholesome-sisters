@@ -4,19 +4,29 @@ import NewsArticle from './NewsArticle'
 import SearchBar from '../SearchBar'
 import articlesJSON from '../json/articles.json'
 import { Title, Body } from '../styles'
+import media from '../media'
 
 const FlexboxContainer = styled.div`
   display: flex;
   justify-content: space-between;
+  @media (max-width: ${media.Small}px) {
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
 `
 
 const SearchBarContainer = styled.div`
   display: flex;
   align-items: center;
+  @media (max-width: 600px) {
+    display: block;
+    width: 100%;
+  }
 `
 
 const Hidden = styled.div`
-  width: 200px;
+  width: 250px;
   display: hidden;
 `
 

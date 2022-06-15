@@ -1,11 +1,11 @@
-import Member from './Member'
+import Member from './MemberCard'
 import rosterJSON from '../json/roster.json'
 import styled from 'styled-components'
 import { Title, Body } from '../styles'
 
 const StyledRoster = styled.div`
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   flex-wrap: wrap;
   padding: 25px;
 `
