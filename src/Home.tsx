@@ -3,6 +3,7 @@ import NewsCards from './LatestNews/LatestNews'
 import GalleryCarousel from './GalleryCarousel'
 import GuildInfo from './GuildInfo'
 import media from './media'
+import { Body } from './styles'
 
 const NewsFeedContainer = styled.div`
   flex: 75%;
@@ -33,7 +34,7 @@ const FlexboxContainer = styled.div`
 
 function Home () {
   return (
-    <div>
+    <Body>
       <FlexboxContainer>
         <GalleryCarousel/>
         <NewsInfoContainer>
@@ -45,7 +46,7 @@ function Home () {
           </GuildInfoContainer>
         </NewsInfoContainer>
       </FlexboxContainer>
-    </div>
+    </Body>
   )
 }
 

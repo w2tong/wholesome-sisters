@@ -1,4 +1,4 @@
-import Member from './MemberCard'
+import MemberCard from './MemberCard'
 import rosterJSON from '../json/roster.json'
 import styled from 'styled-components'
 import { Title, Body } from '../styles'
@@ -7,15 +7,11 @@ const StyledRoster = styled.div`
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 25px;
-`
-
-const StyledMember = styled(Member)`
-  display: flex;
+  padding: 25px 0;
 `
 
 function RosterList () {
-  const roster = rosterJSON.map(member => <StyledMember {...member} key={member.name}/>)
+  const roster = rosterJSON.map(member => <MemberCard {...member} key={member.name}/>)
 
   return (
     <Body>

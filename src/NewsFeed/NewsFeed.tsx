@@ -9,7 +9,7 @@ import media from '../media'
 const FlexboxContainer = styled.div`
   display: flex;
   justify-content: space-between;
-  @media (max-width: ${media.Small}px) {
+  @media (max-width: ${media.Tablet}px) {
     justify-content: flex-start;
     flex-direction: column;
     flex-wrap: wrap;
@@ -19,7 +19,7 @@ const FlexboxContainer = styled.div`
 const SearchBarContainer = styled.div`
   display: flex;
   align-items: center;
-  @media (max-width: 600px) {
+  @media (max-width: ${media.Tablet}px) {
     display: block;
     width: 100%;
   }
