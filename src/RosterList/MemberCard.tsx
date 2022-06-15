@@ -2,10 +2,8 @@ import styled from 'styled-components'
 import IFrame from '../IFrame'
 import HorizontalRule from '../HorizontalRule'
 import { BackgroundColor } from '../styles'
+import media from '../media'
 
-const raiderIOCharWidgetWidth = 805
-const raiderIOCharWidgetHeight = 181
-const raiderIOCharWidgetScale = 0.5
 const warcraftLogsLink = 'https://www.warcraftlogs.com/character/us/bleeding-hollow/'
 const raiderIOLink = 'https://raider.io/characters/us/bleeding-hollow/'
 const raiderIOCharacterWidgetSettings = '?embed=1&embedmode=summary&embedname=1&classcolors=1&characterBackground=1&showtime=10&chromargb=transparent'
@@ -21,11 +19,26 @@ const GameContainer = styled.div`
   margin: 5px 0px;
 `
 
+const raiderIOCharWidgetWidth = 805
+const raiderIOCharWidgetHeight = 181
+const raiderIOCharWidgetScale = 0.6
+const tabletScale = 0.4
+const mobileScale = 0.18
 const IFrameContainer = styled.div`
   width: ${raiderIOCharWidgetWidth * raiderIOCharWidgetScale}px;
   height: ${raiderIOCharWidgetHeight * raiderIOCharWidgetScale}px;
   transform: scale(${raiderIOCharWidgetScale});
   transform-origin: 0 0;
+  @media (max-width: ${media.Tablet}px) {
+    transform: scale(${tabletScale});
+    width: ${raiderIOCharWidgetWidth * tabletScale}px;
+    height: ${raiderIOCharWidgetHeight * tabletScale}px;
+  }
+  @media (max-width: ${media.Mobile}px) {
+    transform: scale(${mobileScale});
+    width: ${raiderIOCharWidgetWidth * mobileScale}px;
+    height: ${raiderIOCharWidgetHeight * mobileScale}px;
+  }
 `
 
 const Name = styled.div`
