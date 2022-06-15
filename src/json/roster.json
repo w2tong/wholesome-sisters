@@ -1,20 +1,58 @@
 [
   {
-    "name": "Cowo"
+    "name": "Theoddwang",
+    "role": "Lost Ark Guild Leader",
+    "wowName": "Cowo",
+    "lostArk": {
+      "name": "Jorbi",
+      "class": "Soulfist",
+      "itemLevel": 1462.5
+    }
   },
   {
-    "name": "Cazzaji"
+    "name": "Cazzaji",
+    "role": "Shadow Leader",
+    "wowName": "Cazzaji",
+    "lostArk": {
+      "name": "Cazaji",
+      "class": "Berserker",
+      "itemLevel": 1462.5
+    }
   },
   {
-    "name": "Zarashii"
+    "name": "Zarashi",
+    "role": "Member",
+    "wowName": "Zarashii",
+    "lostArk": {
+      "name": "Zarashi",
+      "class": "Destroyer",
+      "itemLevel": 1460
+    }
   },
   {
-    "name": "Hotglucke"
+    "name": "Glucke",
+    "role": "Member",
+    "wowName": "Hotglucke",
+    "lostArk": {
+      "name": "Glucke",
+      "class": "Bard",
+      "itemLevel": 1450
+    }
   },
   {
-    "name": "Kankarot"
+    "name": "Kankarot",
+    "role": "Deputy",
+    "wowName": "Oongabunga",
+    "lostArk": {
+      "name": "Wongwongwong",
+      "class": "Sorceress",
+      "itemLevel": 1462.5
+    }
   },
   {
-    "name": "Fourlegs"
+    "name": "Fourlegs",
+    "role": "Inactive",
+    "wowName": "Fourlegs",
+    "lostArk": null
   }
 ]

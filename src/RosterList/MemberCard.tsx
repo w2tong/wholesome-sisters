@@ -28,27 +28,43 @@ const IFrameContainer = styled.div`
   transform-origin: 0 0;
 `
 
+const Name = styled.div`
+  font-size: 16px;
+`
+
+const Role = styled.span`
+  color: red;
+  font-weight: bold;
+`
+
 interface MemberProps {
-  name: string
+  name: string;
+  role: string;
+  wowName: string;
+  lostArk: {
+    name: string;
+    class: string;
+    itemLevel: number;
+  } | null;
 }
 
 function Member (props: MemberProps) {
   return (
       <Container>
-        {props.name} - Role
+        <Name>{props.name} <Role>{props.role}</Role></Name>
         <HorizontalRule text="World of Warcraft" fontSize={14} lineHeight={2}/>
         <GameContainer>
-          <a href={raiderIOLink + props.name} target="_blank" rel="noreferrer">
+          <a href={raiderIOLink + props.wowName} target="_blank" rel="noreferrer">
             <img title="View Raider.IO Page" src="https://assets.rpglogs.com/img/warcraft/raiderio_square_xl.png" alt="View Raider.IO Page"/>
           </a>
-          <a href={warcraftLogsLink + props.name} title="Warcraft Logs Profile" target="_blank" rel="noopener noreferrer"><img title="View Warcraft Logs Page" src="https://assets.rpglogs.com/img/warcraft/favicon.png" alt="View Warcraft Logs Page"/></a>
+          <a href={warcraftLogsLink + props.wowName} title="Warcraft Logs Profile" target="_blank" rel="noopener noreferrer"><img title="View Warcraft Logs Page" src="https://assets.rpglogs.com/img/warcraft/favicon.png" alt="View Warcraft Logs Page"/></a>
           <IFrameContainer>
-            <IFrame url={raiderIOLink + props.name + raiderIOCharacterWidgetSettings} width={raiderIOCharWidgetWidth} height={raiderIOCharWidgetHeight}/>
+            <IFrame url={raiderIOLink + props.wowName + raiderIOCharacterWidgetSettings} width={raiderIOCharWidgetWidth} height={raiderIOCharWidgetHeight}/>
           </IFrameContainer>
         </GameContainer>
         <HorizontalRule text="Lost Ark" fontSize={14} lineHeight={2}/>
         <GameContainer>
-          Lost Ark stuff here
+          {props.lostArk ? `${props.lostArk.name} ${props.lostArk.class} ${props.lostArk.itemLevel}` : <div>Donezo</div>}
         </GameContainer>
       </Container>
   )
