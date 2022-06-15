@@ -8,17 +8,14 @@ const raiderIOLink = 'https://raider.io/characters/us/bleeding-hollow/'
 
 const Container = styled.div`
   border-radius: 10px;
-  padding: 25px 10px;
+  padding: 10px 10px;
   margin: 10px;
   background-color: ${BackgroundColor};
   width: 315px;
   height: auto;
   font-size: 18px;
-  @media (max-width: ${media.Tablet}px) {
-    width: 92.5%;
-  }
   @media (max-width: ${media.Mobile}px) {
-    font-size: 14px;
+    width: 92.5%;
   }
 `
 
@@ -93,6 +90,10 @@ const NameClassContainer = styled.div`
   display: flex;
   flex-direction: column;
   margin-left: 5px;
+  @media (max-width: ${media.Mobile}px) {
+    font-size: 16px;
+  }
+  
 `
 
 const Icon = styled.img`
