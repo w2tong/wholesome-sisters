@@ -10,7 +10,7 @@ interface NewsCardProps {
     summary: string;
 }
 
-const borderRadius = 10
+const borderRadius = 5
 
 const Article = styled.div`
   display: flex;

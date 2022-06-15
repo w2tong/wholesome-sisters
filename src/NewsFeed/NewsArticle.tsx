@@ -8,28 +8,32 @@ interface ArticleProps {
     text: string;
 }
 
+const padding = '25px'
+
 const Article = styled.div`
-  border-radius: 10px;
+  border-radius: 5px;
   margin-bottom: 40px;
-  padding: 25px;
   background-color: rgba(255, 255, 255, 0.1);
 `
 
 const Title = styled.div`
   font-size: 35px;
+  padding: ${padding} ${padding} 0;
 `
 
 const Date = styled.div`
-
+  padding-left: ${padding}
 `
 
 const Image = styled.img`
-  max-width: 100%;
-  border-radius: 5px;
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  padding: 10px 0px;
 `
 
 const Text = styled.div`
-  margin-top: 30px;
+  padding: ${padding};
 `
 
 function NewsArticle (props: ArticleProps) {
