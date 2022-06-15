@@ -1,7 +1,7 @@
 [
   {
     "name": "Theoddwang",
-    "role": "LA Guildmaster",
+    "role": "LA Guild Leader",
     "wow": {
       "name": "Cowo",
       "class": "Druid",
@@ -15,7 +15,7 @@
   },
   {
     "name": "Zarashi",
-    "role": "WoW Guild Master",
+    "role": "WoW Guild Leader",
     "wow": {
       "name": "Zarashii",
       "class": "Shaman",
@@ -78,8 +78,22 @@
       "portraitURL": "https://render.worldofwarcraft.com/us/character/bleeding-hollow/192/237426368-avatar.jpg"
     },
     "lostArk": {
+      "name": "Fourhands",
+      "class": "Gunslinger",
+      "portraitURL": null
+    }
+  }
+  {
+    "name": "BrownieQQ",
+    "role": "Member",
+    "wow": {
       "name": "N/A",
       "class": "N/A",
+      "portraitURL": null
+    },
+    "lostArk": {
+      "name": "Alixiza",
+      "class": "Deathblade",
       "portraitURL": null
     }
   }
