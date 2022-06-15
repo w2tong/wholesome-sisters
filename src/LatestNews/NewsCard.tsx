@@ -17,12 +17,16 @@ const Article = styled.div`
   margin-bottom: 15px;
   background-color: ${BackgroundColor};
   min-height: 200px;
-  overflow: hidden;
-  overflow-wrap: break-word;
+  @media (max-width: 768px) {
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
 `
 
 const Content = styled.div`
   padding: 20px;
+  min-height: 150px;
 `
 
 const Title = styled.div`
@@ -33,10 +37,16 @@ const Date = styled.div`
 `
 
 const Image = styled.img`
-  max-width: 300px;
+  width: 300px;
   min-height: 200px;
   object-fit: cover;
   border-radius: ${borderRadius}px 0px 0px ${borderRadius}px;
+  @media (max-width: 768px) {
+    border-radius: ${borderRadius}px ${borderRadius}px 0px 0px;
+    width: 100%;
+    min-height: 150px;
+    max-height: 150px;
+  }
 `
 
 const Text = styled.div`
