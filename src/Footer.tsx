@@ -3,8 +3,11 @@ import styled from 'styled-components'
 const StyledFooter = styled.div`
   margin: 10px 0px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
+  & > * {
+    padding: 0 25px;
+  }
 `
 
 const ContactUs = styled.div`
@@ -29,7 +32,7 @@ function Footer () {
         <Title>Contact Us</Title>
         <div>123 Street St.</div>
         <div>1800 180 000</div>
-        <div>wholesomesisters@gmail.com</div>
+        <div>email@gmail.com</div>
       </ContactUs>
       <Links>
         <Title>Links</Title>
