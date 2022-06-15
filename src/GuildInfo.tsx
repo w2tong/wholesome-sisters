@@ -1,9 +1,5 @@
 import styled from 'styled-components'
-
-const IFrame = styled.iframe`
-  width: 400px;
-  height: 180px;
-`
+import IFrame from './IFrame'
 
 const FlexboxContainer = styled.div`
   display: flex;
@@ -19,7 +15,7 @@ function GuildInfo () {
     <div>
       <h1>Guild Info here</h1>
       <FlexboxContainer>
-        <IFrame src={BossProgressURL} width="400px" height="180px" frameBorder="0"/>
+        <IFrame url={BossProgressURL} width={400} height={180}/>
         {/* <IFrame src={GearCompositionURL}/> */}
       </FlexboxContainer>
 

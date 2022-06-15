@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import NewsCards from './NewsCards/NewsCards'
+import NewsCards from './LatestNews/LatestNews'
 import GalleryCarousel from './GalleryCarousel'
 import GuildInfo from './GuildInfo'
 
@@ -20,11 +20,11 @@ function Home () {
     <div>
       <FlexboxContainer>
         <NewsFeedContainer>
-          <NewsCards />
+          <NewsCards/>
         </NewsFeedContainer>
         <GalleryGuildInfoContainer>
-          <GalleryCarousel />
-          <GuildInfo />
+          <GalleryCarousel/>
+          <GuildInfo/>
         </GalleryGuildInfoContainer>
       </FlexboxContainer>
     </div>

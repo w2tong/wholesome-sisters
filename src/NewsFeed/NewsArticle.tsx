@@ -9,7 +9,7 @@ interface ArticleProps {
 }
 
 const Article = styled.div`
-  border-radius: 25px;
+  border-radius: 10px;
   margin-bottom: 40px;
   padding: 25px;
   background-color: rgba(255, 255, 255, 0.1);
