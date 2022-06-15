@@ -39,7 +39,7 @@ const Date = styled.div`
 
 const Image = styled.img`
   width: 300px;
-  min-height: 200px;
+  min-height: 225px;
   object-fit: cover;
   border-radius: ${borderRadius}px 0px 0px ${borderRadius}px;
   @media (max-width: ${media.Tablet}px) {
