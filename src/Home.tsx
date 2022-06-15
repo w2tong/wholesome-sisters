@@ -2,17 +2,18 @@ import styled from 'styled-components'
 import NewsCards from './LatestNews/LatestNews'
 import GalleryCarousel from './GalleryCarousel'
 import GuildInfo from './GuildInfo'
+import media from './media'
 
 const NewsFeedContainer = styled.div`
-  flex: 70%;
-  @media (max-width: 1024px) {
+  flex: 75%;
+  @media (max-width: ${media.Large}px) {
     flex: 100%
   }
 `
 
 const GuildInfoContainer = styled.div`
-  flex: 30%;
-  @media (max-width: 1280px) {
+  flex: 25%;
+  @media (max-width: ${media.Large}px) {
     flex: 100%
   }
 `
@@ -20,7 +21,7 @@ const GuildInfoContainer = styled.div`
 const NewsInfoContainer = styled.div`
   display: flex;
   flex-direction: row;
-  @media (max-width: 1280px) {
+  @media (max-width: ${media.Large}px) {
     flex-wrap: wrap;
   }
 `
