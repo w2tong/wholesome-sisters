@@ -2,8 +2,8 @@ import styled from 'styled-components'
 import image from './img/mexicanandybug.png'
 
 const StyledHeader = styled.div`
-  height: 150px;
-  font-size: 72px;
+  height: 80px;
+  font-size: 48px;
   background-image: url(${image});
   background-size: 100% auto;
   display: flex;

@@ -7,7 +7,7 @@ function NewsFeed () {
 
   return (
     <Body>
-      <Title>News</Title>
+      <Title>Latest News</Title>
       {articles}
     </Body>
   )
