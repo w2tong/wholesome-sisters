@@ -1,6 +1,9 @@
 import styled from 'styled-components'
 
 const StyledCarousel = styled.div`
+  display: flex;
+  justify-content: center;
+  border: white solid 1px;
 `
 
 function GalleryCarousel () {

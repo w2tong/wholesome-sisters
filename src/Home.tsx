@@ -4,28 +4,45 @@ import GalleryCarousel from './GalleryCarousel'
 import GuildInfo from './GuildInfo'
 
 const NewsFeedContainer = styled.div`
-  width 70%
+  flex: 70%;
+  @media (max-width: 1024px) {
+    flex: 100%
+  }
 `
 
-const GalleryGuildInfoContainer = styled.div`
-  width: 30%
+const GuildInfoContainer = styled.div`
+  flex: 30%;
+  @media (max-width: 1280px) {
+    flex: 100%
+  }
+`
+
+const NewsInfoContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  @media (max-width: 1280px) {
+    flex-wrap: wrap;
+  }
 `
 
 const FlexboxContainer = styled.div`
-  display: flex
+  display: flex;
+  flex-direction: column;
 `
 
 function Home () {
   return (
     <div>
       <FlexboxContainer>
-        <NewsFeedContainer>
-          <NewsCards/>
-        </NewsFeedContainer>
-        <GalleryGuildInfoContainer>
-          <GalleryCarousel/>
-          <GuildInfo/>
-        </GalleryGuildInfoContainer>
+        <GalleryCarousel/>
+        <NewsInfoContainer>
+          <NewsFeedContainer>
+            <NewsCards/>
+          </NewsFeedContainer>
+          <GuildInfoContainer>
+            <GuildInfo/>
+          </GuildInfoContainer>
+        </NewsInfoContainer>
       </FlexboxContainer>
     </div>
   )
