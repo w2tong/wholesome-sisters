@@ -1,4 +1,4 @@
-import { HashRouter as Router, Routes, Route, Link } from 'react-router-dom'
+import { HashRouter as Router, Routes, Route, NavLink } from 'react-router-dom'
 import './App.css'
 import styled from 'styled-components'
 import Header from './Header'
@@ -29,13 +29,19 @@ const Links = styled.div`
   background-color: ${BackgroundColor};
 `
 
-const NavLink = styled(Link)`
+const StyledNavLink = styled(NavLink)`
+  min-width: 80px;
+  text-align: center;
   padding: 20px 40px;
   color: white;
   text-decoration: none;
   &:hover {
     color: red;
     background-color: ${HighlightColor};
+  }
+  &.active {
+    color: red;
+    font-weight: bold;
   }
 `
 
@@ -53,9 +59,9 @@ function App () {
       </HeaderContainer>
       <Router basename="/">
       <Links>
-        <NavLink to="/">Home</NavLink>
-        <NavLink to="/news">News</NavLink>
-        <NavLink to="/roster">Roster</NavLink>
+        <StyledNavLink to="/" className={(navData) => (navData.isActive ? 'active' : '')}>Home</StyledNavLink>
+        <StyledNavLink to="/news" className={(navData) => (navData.isActive ? 'active' : '')}>News</StyledNavLink>
+        <StyledNavLink to="/roster" className={(navData) => (navData.isActive ? 'active' : '')}>Roster</StyledNavLink>
       </Links>
       <BodyContainer>
         <Routes>
