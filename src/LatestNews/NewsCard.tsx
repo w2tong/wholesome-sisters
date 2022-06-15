@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import { BackgroundColor } from '../styles'
+import media from '../media'
 
 interface NewsCardProps {
     title: string;
@@ -17,7 +18,7 @@ const Article = styled.div`
   margin-bottom: 15px;
   background-color: ${BackgroundColor};
   min-height: 200px;
-  @media (max-width: 768px) {
+  @media (max-width: ${media.Tablet}px) {
     justify-content: flex-start;
     flex-direction: column;
     flex-wrap: wrap;
@@ -41,7 +42,7 @@ const Image = styled.img`
   min-height: 200px;
   object-fit: cover;
   border-radius: ${borderRadius}px 0px 0px ${borderRadius}px;
-  @media (max-width: 768px) {
+  @media (max-width: ${media.Tablet}px) {
     border-radius: ${borderRadius}px ${borderRadius}px 0px 0px;
     width: 100%;
     min-height: 150px;
