@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { BackgroundColor } from '../styles'
+import { ContentBackgroundColor } from '../styles'
 import media from '../media'
 
 interface NewsCardProps {
@@ -16,7 +16,7 @@ const Article = styled.div`
   display: flex;
   border-radius: ${borderRadius}px;
   margin-bottom: 15px;
-  background-color: ${BackgroundColor};
+  background-color: ${ContentBackgroundColor};
   min-height: 200px;
   @media (max-width: ${media.Tablet}px) {
     justify-content: flex-start;

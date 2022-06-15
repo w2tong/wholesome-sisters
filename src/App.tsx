@@ -7,7 +7,7 @@ import NewsFeed from './NewsFeed/NewsFeed'
 import RosterList from './RosterList/RosterList'
 import Footer from './Footer'
 import media from './media'
-import { BackgroundColor, HighlightColor } from './styles'
+import { ContentBackgroundColor, HighlightColor } from './styles'
 
 const Container = styled.div`
   height: 100%;
@@ -28,7 +28,7 @@ const Links = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
-  background-color: ${BackgroundColor};
+  background-color: ${ContentBackgroundColor};
 `
 
 const StyledNavLink = styled(NavLink)`

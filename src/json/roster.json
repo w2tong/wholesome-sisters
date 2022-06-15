@@ -9,7 +9,8 @@
     },
     "lostArk": {
       "name": "Jorbi",
-      "class": "Soulfist"
+      "class": "Soulfist",
+      "portraitURL": null
     }
   },
   {
@@ -22,7 +23,8 @@
     },
     "lostArk": {
       "name": "Zarashi",
-      "class": "Destroyer"
+      "class": "Destroyer",
+      "portraitURL": null
     }
   },
   {
@@ -35,7 +37,8 @@
     },
     "lostArk": {
       "name": "Cazaji",
-      "class": "Berserker"
+      "class": "Berserker",
+      "portraitURL": null
     }
   },
   {
@@ -48,7 +51,8 @@
     },
     "lostArk": {
       "name": "Wongwongwong",
-      "class": "Sorceress"
+      "class": "Sorceress",
+      "portraitURL": null
     }
   },
   {
@@ -61,7 +65,8 @@
     },
     "lostArk": {
       "name": "Glucke",
-      "class": "Bard"
+      "class": "Bard",
+      "portraitURL": null
     }
   },
   {
@@ -72,6 +77,10 @@
       "class": "Warlock",
       "portraitURL": "https://render.worldofwarcraft.com/us/character/bleeding-hollow/192/237426368-avatar.jpg"
     },
-    "lostArk": null
+    "lostArk": {
+      "name": "N/A",
+      "class": "N/A",
+      "portraitURL": null
+    }
   }
 ]
