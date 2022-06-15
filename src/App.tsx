@@ -39,6 +39,12 @@ const NavLink = styled(Link)`
   }
 `
 
+const BodyContainer = styled.div`
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+`
+
 function App () {
   return (
     <Container>
@@ -51,11 +57,13 @@ function App () {
         <NavLink to="/news">News</NavLink>
         <NavLink to="/roster">Roster</NavLink>
       </Links>
+      <BodyContainer>
         <Routes>
           <Route path='/' element={<Home/>}></Route>
           <Route path='/news' element={<NewsFeed/>}></Route>
           <Route path='/roster' element={<RosterList/>}></Route>
         </Routes>
+      </BodyContainer>
       </Router>
       <FooterContainer>
         <Footer/>
