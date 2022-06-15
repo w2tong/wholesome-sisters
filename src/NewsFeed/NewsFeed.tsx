@@ -4,11 +4,12 @@ import NewsArticle from './NewsArticle'
 import SearchBar from '../SearchBar'
 import articlesJSON from '../json/articles.json'
 import { Title, Body } from '../styles'
+import media from '../media'
 
 const FlexboxContainer = styled.div`
   display: flex;
   justify-content: space-between;
-  @media (max-width: 600px) {
+  @media (max-width: ${media.Small}px) {
     justify-content: flex-start;
     flex-direction: column;
     flex-wrap: wrap;
