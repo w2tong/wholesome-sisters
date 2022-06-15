@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/wholesome-sisters/static/css/main.ea8c915b.css",
-    "main.js": "/wholesome-sisters/static/js/main.7bbd2932.js",
+    "main.css": "/wholesome-sisters/static/css/main.5e8c91e8.css",
+    "main.js": "/wholesome-sisters/static/js/main.f6a5bfd7.js",
     "static/media/166.png": "/wholesome-sisters/static/media/166.e59b58e0812eb26dd144.png",
     "static/media/sire_denathrius.png": "/wholesome-sisters/static/media/sire_denathrius.6bb605409246d5a70dfc.png",
     "static/media/ksm.jpg": "/wholesome-sisters/static/media/ksm.aaf9104ed8120170408c.jpg",
     "static/media/ulduar.jpg": "/wholesome-sisters/static/media/ulduar.f3e9f5362ec23f8a5bf0.jpg",
     "static/media/mexicanandybug.png": "/wholesome-sisters/static/media/mexicanandybug.9cd7cb7a595c6d9b696e.png",
     "index.html": "/wholesome-sisters/index.html",
-    "main.ea8c915b.css.map": "/wholesome-sisters/static/css/main.ea8c915b.css.map",
-    "main.7bbd2932.js.map": "/wholesome-sisters/static/js/main.7bbd2932.js.map"
+    "main.5e8c91e8.css.map": "/wholesome-sisters/static/css/main.5e8c91e8.css.map",
+    "main.f6a5bfd7.js.map": "/wholesome-sisters/static/js/main.f6a5bfd7.js.map"
   },
   "entrypoints": [
-    "static/css/main.ea8c915b.css",
-    "static/js/main.7bbd2932.js"
+    "static/css/main.5e8c91e8.css",
+    "static/js/main.f6a5bfd7.js"
   ]
 }
