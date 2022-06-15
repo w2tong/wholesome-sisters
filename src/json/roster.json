@@ -1,58 +1,77 @@
 [
   {
     "name": "Theoddwang",
-    "role": "Lost Ark Guild Leader",
-    "wowName": "Cowo",
+    "role": "LA Guildmaster",
+    "wow": {
+      "name": "Cowo",
+      "class": "Druid",
+      "portraitURL": "https://render.worldofwarcraft.com/us/character/bleeding-hollow/109/238048365-avatar.jpg"
+    },
     "lostArk": {
       "name": "Jorbi",
-      "class": "Soulfist",
-      "itemLevel": 1462.5
+      "class": "Soulfist"
+    }
+  },
+  {
+    "name": "Zarashi",
+    "role": "WoW Guild Master",
+    "wow": {
+      "name": "Zarashii",
+      "class": "Shaman",
+      "portraitURL": "https://render.worldofwarcraft.com/us/character/bleeding-hollow/98/237985378-avatar.jpg"
+    },
+    "lostArk": {
+      "name": "Zarashi",
+      "class": "Destroyer"
     }
   },
   {
     "name": "Cazzaji",
     "role": "Shadow Leader",
-    "wowName": "Cazzaji",
+    "wow": {
+      "name": "Cazzaji",
+      "class": "Warrior",
+      "portraitURL": "https://render.worldofwarcraft.com/us/character/bleeding-hollow/198/237610438-avatar.jpg"
+    },
     "lostArk": {
       "name": "Cazaji",
-      "class": "Berserker",
-      "itemLevel": 1462.5
-    }
-  },
-  {
-    "name": "Zarashi",
-    "role": "Member",
-    "wowName": "Zarashii",
-    "lostArk": {
-      "name": "Zarashi",
-      "class": "Destroyer",
-      "itemLevel": 1460
-    }
-  },
-  {
-    "name": "Glucke",
-    "role": "Member",
-    "wowName": "Hotglucke",
-    "lostArk": {
-      "name": "Glucke",
-      "class": "Bard",
-      "itemLevel": 1450
+      "class": "Berserker"
     }
   },
   {
     "name": "Kankarot",
     "role": "Deputy",
-    "wowName": "Oongabunga",
+    "wow": {
+      "name": "Oongabunga",
+      "class": "Hunter",
+      "portraitURL": "https://render.worldofwarcraft.com/us/character/bleeding-hollow/219/241191387-avatar.jpg"
+    },
     "lostArk": {
       "name": "Wongwongwong",
-      "class": "Sorceress",
-      "itemLevel": 1462.5
+      "class": "Sorceress"
+    }
+  },
+  {
+    "name": "Glucke",
+    "role": "Member",
+    "wow": {
+      "name": "Hotglucke",
+      "class": "Monk",
+      "portraitURL": "https://render.worldofwarcraft.com/us/character/bleeding-hollow/39/241059623-avatar.jpg"
+    },
+    "lostArk": {
+      "name": "Glucke",
+      "class": "Bard"
     }
   },
   {
     "name": "Fourlegs",
     "role": "Inactive",
-    "wowName": "Fourlegs",
+    "wow": {
+      "name": "Fourlegs",
+      "class": "Warlock",
+      "portraitURL": "https://render.worldofwarcraft.com/us/character/bleeding-hollow/192/237426368-avatar.jpg"
+    },
     "lostArk": null
   }
 ]
