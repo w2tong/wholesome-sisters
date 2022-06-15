@@ -8,15 +8,24 @@ import { Title, Body } from '../styles'
 const FlexboxContainer = styled.div`
   display: flex;
   justify-content: space-between;
+  @media (max-width: 600px) {
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
 `
 
 const SearchBarContainer = styled.div`
   display: flex;
   align-items: center;
+  @media (max-width: 600px) {
+    display: block;
+    width: 100%;
+  }
 `
 
 const Hidden = styled.div`
-  width: 200px;
+  width: 250px;
   display: hidden;
 `
 
