@@ -9,7 +9,7 @@ import Footer from './Footer'
 import { BackgroundColor, HighlightColor } from './styles'
 
 const Container = styled.div`
-  height: 100vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -30,7 +30,7 @@ const Links = styled.div`
 `
 
 const StyledNavLink = styled(NavLink)`
-  min-width: 80px;
+  width: 5%;
   text-align: center;
   padding: 20px 40px;
   color: white;

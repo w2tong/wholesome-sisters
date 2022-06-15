@@ -16,7 +16,7 @@ const Article = styled.div`
   border-radius: ${borderRadius}px;
   margin-bottom: 15px;
   background-color: ${BackgroundColor};
-  max-height: 200px;
+  min-height: 200px;
   overflow: hidden;
   overflow-wrap: break-word;
 `
