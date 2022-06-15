@@ -1,12 +1,12 @@
 import styled from 'styled-components'
 import { BackgroundColor } from '../styles'
 
-interface ArticleProps {
+interface NewsCardProps {
     title: string;
     imgFile: string | null;
     imgAlt: string | null;
     date: string;
-    text: string;
+    summary: string;
 }
 
 const borderRadius = 10
@@ -14,12 +14,15 @@ const borderRadius = 10
 const Article = styled.div`
   display: flex;
   border-radius: ${borderRadius}px;
-  margin-bottom: 40px;
+  margin-bottom: 15px;
   background-color: ${BackgroundColor};
+  max-height: 200px;
+  overflow: hidden;
+  overflow-wrap: break-word;
 `
 
 const Content = styled.div`
-  padding: 25px;
+  padding: 20px;
 `
 
 const Title = styled.div`
@@ -41,14 +44,14 @@ const Text = styled.div`
   font-size: 16px;
 `
 
-function NewsCard (props: ArticleProps) {
+function NewsCard (props: NewsCardProps) {
   return (
     <Article>
       {props.imgFile && props.imgAlt && <Image src={require(`../img/${props.imgFile}`)} alt={props.imgAlt} />}
       <Content>
         <Title>{props.title}</Title>
         <Date>{props.date}</Date>
-        <Text>{props.text}</Text>
+        <Text>{props.summary}</Text>
       </Content>
     </Article>
   )
