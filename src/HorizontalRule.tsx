@@ -6,8 +6,7 @@ interface HorizontalRuleProps {
   lineHeight: number;
 }
 
-function HorizontalRule (props: HorizontalRuleProps) {
-  const Div = styled.div`
+const Div = styled.div`
     display: flex;
     flex-direction: row;
     flex-flow: row;
@@ -22,28 +21,29 @@ function HorizontalRule (props: HorizontalRuleProps) {
     }
   `
 
-  const HR = styled.hr`
-    margin-top: ${(props.fontSize + props.lineHeight) / 2}px;
+const HR = styled.hr<{fontSize: number, lineHeight: number}>`
+    margin-top: ${props => (props.fontSize + props.lineHeight) / 2}px;
     width: 100%;
     border: 0;
-    height: ${props.lineHeight}px;
+    height: ${props => props.lineHeight}px;
     background: #666;
   `
 
-  const Label = styled.div`
-    font-size: ${props.fontSize}px;
+const Label = styled.div<{fontSize: number}>`
+    font-size: ${props => props.fontSize}px;
     align-self: center;
     flex-grow: 2;
     white-space: nowrap;
   `
 
+function HorizontalRule (props: HorizontalRuleProps) {
   return (
     <Div>
-      <HR/>
-      <Label>
+      <HR {...props}/>
+      <Label {...props}>
         {props.text}
       </Label>
-      <HR/>
+      <HR {...props}/>
     </Div>
   )
 }
