@@ -1,7 +1,7 @@
 import MemberCard from './MemberCard'
 import rosterJSON from '../json/roster.json'
 import styled from 'styled-components'
-import { Title, Body } from '../styles'
+import { Title } from '../styles'
 
 const StyledRoster = styled.div`
   display: flex;
@@ -13,12 +13,12 @@ function RosterList () {
   const roster = rosterJSON.map(member => <MemberCard {...member} key={member.name}/>)
 
   return (
-    <Body>
+    <div>
       <Title>Roster</Title>
       <StyledRoster>
         {roster}
       </StyledRoster>
-    </Body>
+    </div>
 
   )
 }
