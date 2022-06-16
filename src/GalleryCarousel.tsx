@@ -39,7 +39,7 @@ const Caption = styled.p`
 
 function GalleryCarousel () {
   return (
-    <StyledCarousel autoPlay={true} interval={5000} transitionTime={750} showThumbs={false} infiniteLoop={true} labels={{ leftArrow: 'left', rightArrow: 'right', item: 'slide item' }}>
+    <StyledCarousel autoPlay={true} interval={5000} transitionTime={500} showThumbs={false} infiniteLoop={true} emulateTouch={true} showStatus={false}>
       <Container>
         <Image src="https://www.industrialempathy.com/img/remote/ZiClJf-1920w.jpg"/>
         <Caption>Caption 1</Caption>
