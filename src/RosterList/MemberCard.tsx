@@ -1,7 +1,8 @@
 import styled from 'styled-components'
 import HorizontalRule from '../HorizontalRule'
 import media from '../media'
-import { BackgroundColor } from '../styles'
+import { ContentBackgroundColor } from '../styles'
+import portraitPlaceHolder from '../img/portrait-placeholder.png'
 
 const warcraftLogsLink = 'https://www.warcraftlogs.com/character/us/bleeding-hollow/'
 const raiderIOLink = 'https://raider.io/characters/us/bleeding-hollow/'
@@ -10,7 +11,7 @@ const Container = styled.div`
   border-radius: 10px;
   padding: 10px 10px;
   margin: 10px;
-  background-color: ${BackgroundColor};
+  background-color: ${ContentBackgroundColor};
   width: 315px;
   height: auto;
   font-size: 18px;
@@ -25,8 +26,8 @@ const GameContainer = styled.div`
 `
 
 const Portrait = styled.img`
-  width: auto;
-  height: auto;
+  width: 64px;
+  height: 64px;
 `
 
 const Name = styled.div`
@@ -89,11 +90,8 @@ const Class = styled.div`
 const NameClassContainer = styled.div`
   display: flex;
   flex-direction: column;
-  margin-left: 5px;
-  @media (max-width: ${media.Mobile}px) {
-    font-size: 16px;
-  }
-  
+  margin-left: 10px;
+  font-size: 16px;
 `
 
 const Icon = styled.img`
@@ -117,12 +115,13 @@ interface MemberProps {
   wow: {
     name: string;
     class: string;
-    portraitURL: string;
+    portraitURL: string | null;
   }
   lostArk: {
     name: string;
     class: string;
-  } | null;
+    portraitURL: string | null;
+  }
 }
 
 function Member (props: MemberProps) {
@@ -131,7 +130,7 @@ function Member (props: MemberProps) {
         <Name>{props.name}<Role>{props.role}</Role></Name>
         <HorizontalRule text="World of Warcraft" fontSize={14} lineHeight={2}/>
         <GameContainer>
-          <Portrait src={props.wow.portraitURL}/>
+          <Portrait src={props.wow.portraitURL ? props.wow.portraitURL : portraitPlaceHolder}/>
           <NameClassContainer>
             <div>{`${props.wow.name}`}</div>
             <Class className={(props.wow.class).toLowerCase().replace(' ', '-')}>{props.wow.class}</Class>
@@ -147,7 +146,11 @@ function Member (props: MemberProps) {
         </GameContainer>
         <HorizontalRule text="Lost Ark" fontSize={14} lineHeight={2}/>
         <GameContainer>
-          {props.lostArk ? `${props.lostArk.name} ${props.lostArk.class}` : <div>Donezo</div>}
+        <Portrait src={props.lostArk.portraitURL ? props.lostArk.portraitURL : portraitPlaceHolder}/>
+          <NameClassContainer>
+            <div>{`${props.lostArk.name}`}</div>
+            <Class className={(props.lostArk.class).toLowerCase().replace(' ', '-')}>{props.lostArk.class}</Class>
+          </NameClassContainer>
         </GameContainer>
       </Container>
   )
