@@ -33,6 +33,10 @@ const Container = styled.div`
   padding: 0 2.5vw;
 `
 
+const NewsArticleContainer = styled.div`
+  margin: 25px 0;
+`
+
 function NewsFeed () {
   const [input, setInput] = useState('')
   const articles = articlesJSON.filter((article) => {
@@ -42,7 +46,10 @@ function NewsFeed () {
   }
   ).map(article => {
     return (
-      <NewsArticle {...article} key={article.title}/>
+      <NewsArticleContainer key={article.title}>
+        <NewsArticle {...article} />
+      </NewsArticleContainer>
+
     )
   })
 
