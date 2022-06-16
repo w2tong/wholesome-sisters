@@ -41,10 +41,6 @@ function GalleryCarousel () {
   return (
     <StyledCarousel autoPlay={true} interval={5000} transitionTime={500} showThumbs={false} infiniteLoop={true} emulateTouch={true} showStatus={false}>
       <Container>
-        <Image src="https://www.industrialempathy.com/img/remote/ZiClJf-1920w.jpg"/>
-        <Caption>Caption 1</Caption>
-      </Container>
-      <Container>
         <Image src={shadowlandsQueue}/>
         <Caption>Day 1 of World of Warcraft: Shadowlands</Caption>
       </Container>
