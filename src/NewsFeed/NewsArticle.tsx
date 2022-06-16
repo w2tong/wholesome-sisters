@@ -17,7 +17,7 @@ const Article = styled.div`
 `
 
 const Title = styled.div`
-  font-size: 35px;
+  font-size: 28px;
   padding: ${padding} ${padding} 0;
 `
 
@@ -34,6 +34,7 @@ const Image = styled.img`
 
 const Text = styled.div`
   padding: ${padding};
+  font-size: 16px;
 `
 
 function NewsArticle (props: ArticleProps) {
