@@ -8,7 +8,6 @@ const Title = styled.div`
 `
 
 const Body = styled.div`
-  padding: 25px;
 `
 
 const BackgroundColor = 'rgb(16, 16, 16)'
