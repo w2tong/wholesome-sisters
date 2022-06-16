@@ -24,7 +24,7 @@ const Container = styled.div`
 `
 
 const Image = styled.img`
-  max-width: ${media.Large + 200}px;
+  max-width: ${media.XXLarge}px;
   height auto;
   object-fit: cover;
 `
