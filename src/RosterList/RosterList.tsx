@@ -7,7 +7,6 @@ const StyledRoster = styled.div`
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 25px 0;
 `
 
 function RosterList () {
