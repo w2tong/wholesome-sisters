@@ -7,9 +7,6 @@ const Title = styled.div`
   padding: 10px;
 `
 
-const Body = styled.div`
-`
-
 const BackgroundColor = 'rgb(16, 16, 16)'
 const ContentBackgroundColor = 'rgba(255, 255, 255, 0.1)'
 const HighlightColor = 'rgba(255, 255, 255, 0.3)'
@@ -18,4 +15,4 @@ const Link = styled.a`
 
 `
 
-export { Title, Body, BackgroundColor, ContentBackgroundColor, HighlightColor, Link }
+export { Title, BackgroundColor, ContentBackgroundColor, HighlightColor, Link }
