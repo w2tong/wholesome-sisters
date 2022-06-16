@@ -86,11 +86,7 @@
   {
     "name": "BrownieQQ",
     "role": "Member",
-    "wow": {
-      "name": "N/A",
-      "class": "N/A",
-      "portraitURL": null
-    },
+    "wow": null,
     "lostArk": {
       "name": "Alixiza",
       "class": "Deathblade",
