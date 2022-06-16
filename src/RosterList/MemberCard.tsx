@@ -16,7 +16,7 @@ const Container = styled.div`
   max-width: 320px;
   height: auto;
   font-size: 18px;
-  @media (max-width: ${media.ExtraSmall}px) {
+  @media (max-width: ${media.XSmall}px) {
     width: 92.5%;
   }
 `
@@ -35,7 +35,7 @@ const Name = styled.div`
   display: flex;
   justify-content: space-between;
   padding: 0 10px;
-  @media (max-width: ${media.ExtraSmall}px) {
+  @media (max-width: ${media.XSmall}px) {
     flex-direction: column;
     align-items: center;
   }
@@ -104,7 +104,7 @@ const Icon = styled.img`
 const LinksContainer = styled.div`
   display: flex;
   margin-left: auto;
-  @media (max-width: ${media.ExtraSmall}px) {
+  @media (max-width: ${media.XSmall}px) {
     flex-direction: column;
     justify-content: center;
   }

@@ -6,7 +6,7 @@ const Container = styled.div`
   padding: 10px;
   display: flex;
   flex-direction: column;
-  @media (max-width: ${media.ExtraLarge}px) {
+  @media (max-width: ${media.XLarge}px) {
     flex-direction: row;
     justify-content: space-evenly;
     
@@ -22,7 +22,7 @@ const GameContainer = styled.div`
   padding: 10px;
   display: flex;
   flex-direction: column;
-  @media (max-width: ${media.ExtraLarge}px) {
+  @media (max-width: ${media.XLarge}px) {
     max-width: 400px;
     width: 45%;
     justify-content: center;

@@ -7,14 +7,14 @@ import { Body } from './styles'
 
 const NewsFeedContainer = styled.div`
   flex: 70%;
-  @media (max-width: ${media.ExtraLarge}px) {
+  @media (max-width: ${media.XLarge}px) {
     flex: 100%
   }
 `
 
 const GuildInfoContainer = styled.div`
   flex: 30%;
-  @media (max-width: ${media.ExtraLarge}px) {
+  @media (max-width: ${media.XLarge}px) {
     flex: 100%
   }
 `
@@ -22,7 +22,7 @@ const GuildInfoContainer = styled.div`
 const NewsInfoContainer = styled.div`
   display: flex;
   flex-direction: row;
-  @media (max-width: ${media.ExtraLarge}px) {
+  @media (max-width: ${media.XLarge}px) {
     flex-wrap: wrap;
   }
 `
