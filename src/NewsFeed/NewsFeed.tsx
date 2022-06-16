@@ -3,7 +3,7 @@ import { useState } from 'react'
 import NewsArticle from './NewsArticle'
 import SearchBar from '../SearchBar'
 import articlesJSON from '../json/articles.json'
-import { Title, Body } from '../styles'
+import { Title } from '../styles'
 import media from '../media'
 
 const FlexboxContainer = styled.div`
@@ -29,6 +29,9 @@ const Hidden = styled.div`
   width: 250px;
   display: hidden;
 `
+const Container = styled.div`
+  padding: 0 2.5vw;
+`
 
 function NewsFeed () {
   const [input, setInput] = useState('')
@@ -44,7 +47,7 @@ function NewsFeed () {
   })
 
   return (
-    <Body>
+    <Container>
       <FlexboxContainer>
         <Hidden/>
         <Title>News</Title>
@@ -53,7 +56,7 @@ function NewsFeed () {
         </SearchBarContainer>
       </FlexboxContainer>
       {articles}
-    </Body>
+    </Container>
   )
 }
 
