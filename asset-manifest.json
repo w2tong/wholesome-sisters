@@ -1,18 +1,21 @@
 {
   "files": {
-    "main.css": "/wholesome-sisters/static/css/main.5e8c91e8.css",
-    "main.js": "/wholesome-sisters/static/js/main.fcfef0c0.js",
+    "main.css": "/wholesome-sisters/static/css/main.7c564312.css",
+    "main.js": "/wholesome-sisters/static/js/main.0e427b72.js",
+    "static/media/shadowlands-queue.jpg": "/wholesome-sisters/static/media/shadowlands-queue.6b55599b55092a2e2d5d.jpg",
+    "static/media/council-of-blood-kill.jpg": "/wholesome-sisters/static/media/council-of-blood-kill.d8e4a698b46fb86000af.jpg",
     "static/media/166.png": "/wholesome-sisters/static/media/166.e59b58e0812eb26dd144.png",
     "static/media/sire_denathrius.png": "/wholesome-sisters/static/media/sire_denathrius.6bb605409246d5a70dfc.png",
+    "static/media/166_1600x900.png": "/wholesome-sisters/static/media/166_1600x900.44f75745336fe78d807b.png",
     "static/media/ksm.jpg": "/wholesome-sisters/static/media/ksm.aaf9104ed8120170408c.jpg",
     "static/media/ulduar.jpg": "/wholesome-sisters/static/media/ulduar.f3e9f5362ec23f8a5bf0.jpg",
     "static/media/mexicanandybug.png": "/wholesome-sisters/static/media/mexicanandybug.9cd7cb7a595c6d9b696e.png",
     "index.html": "/wholesome-sisters/index.html",
-    "main.5e8c91e8.css.map": "/wholesome-sisters/static/css/main.5e8c91e8.css.map",
-    "main.fcfef0c0.js.map": "/wholesome-sisters/static/js/main.fcfef0c0.js.map"
+    "main.7c564312.css.map": "/wholesome-sisters/static/css/main.7c564312.css.map",
+    "main.0e427b72.js.map": "/wholesome-sisters/static/js/main.0e427b72.js.map"
   },
   "entrypoints": [
-    "static/css/main.5e8c91e8.css",
-    "static/js/main.fcfef0c0.js"
+    "static/css/main.7c564312.css",
+    "static/js/main.0e427b72.js"
   ]
 }
