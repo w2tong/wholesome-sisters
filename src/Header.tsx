@@ -11,7 +11,7 @@ const StyledHeader = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  @media (max-width: ${media.Mobile}px) {
+  @media (max-width: ${media.ExtraSmall}px) {
     font-size: 36px;
   }
 `

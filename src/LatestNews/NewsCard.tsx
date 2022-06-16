@@ -18,7 +18,7 @@ const Article = styled.div`
   margin-bottom: 15px;
   background-color: ${ContentBackgroundColor};
   min-height: 200px;
-  @media (max-width: ${media.Tablet}px) {
+  @media (max-width: ${media.Medium}px) {
     justify-content: flex-start;
     flex-direction: column;
     flex-wrap: wrap;
@@ -42,7 +42,7 @@ const Image = styled.img`
   min-height: 225px;
   object-fit: cover;
   border-radius: ${borderRadius}px 0px 0px ${borderRadius}px;
-  @media (max-width: ${media.Tablet}px) {
+  @media (max-width: ${media.Medium}px) {
     border-radius: ${borderRadius}px ${borderRadius}px 0px 0px;
     width: 100%;
     min-height: 150px;

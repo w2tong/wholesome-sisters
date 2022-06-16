@@ -6,15 +6,15 @@ import media from './media'
 import { Body } from './styles'
 
 const NewsFeedContainer = styled.div`
-  flex: 75%;
-  @media (max-width: ${media.Large}px) {
+  flex: 70%;
+  @media (max-width: ${media.ExtraLarge}px) {
     flex: 100%
   }
 `
 
 const GuildInfoContainer = styled.div`
-  flex: 25%;
-  @media (max-width: ${media.Large}px) {
+  flex: 30%;
+  @media (max-width: ${media.ExtraLarge}px) {
     flex: 100%
   }
 `
@@ -22,7 +22,7 @@ const GuildInfoContainer = styled.div`
 const NewsInfoContainer = styled.div`
   display: flex;
   flex-direction: row;
-  @media (max-width: ${media.Large}px) {
+  @media (max-width: ${media.ExtraLarge}px) {
     flex-wrap: wrap;
   }
 `
