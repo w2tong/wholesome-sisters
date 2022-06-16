@@ -1,47 +1,59 @@
 import styled from 'styled-components'
-import IFrame from './IFrame'
 import media from './media'
-
-const FlexboxContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-
-`
 
 const Container = styled.div`
   border: white solid 1px;
-  padding-bottom: 25px;
-`
-
-const raiderIOCharWidgetWidth = 400
-const raiderIOCharWidgetHeight = 180
-const raiderIOCharWidgetScale = 1
-const mobileScale = (media.Min - 50) / raiderIOCharWidgetWidth
-const IFrameContainer = styled.div`
-  width: ${raiderIOCharWidgetWidth * raiderIOCharWidgetScale}px;
-  height: ${raiderIOCharWidgetHeight * raiderIOCharWidgetScale}px;
-  transform-origin: 0 0;
-  @media (max-width: ${media.Mobile}px) {
-    transform: scale(${mobileScale});
-    width: ${raiderIOCharWidgetWidth * mobileScale}px;
-    height: ${raiderIOCharWidgetHeight * mobileScale}px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  @media (max-width: ${media.ExtraLarge}px) {
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+  }
+  @media (max-width: ${media.Small}px) {
+    flex-direction: column;
+    align-items: center;
   }
 `
 
-const BossProgressURL = 'https://raider.io/widgets/boss-progress?raid=sepulcher-of-the-first-ones&difficulty=heroic&region=us&realm=bleeding-hollow&guild=Wholesome+Sisters&boss=latest&period=until_kill&hide=&chromargb=transparent'
-// const GearCompositionURL = 'https://raider.io/widgets/guild-gear-composition?raid=sepulcher-of-the-first-ones&min_tier_tokens=1&region=us&realm=bleeding-hollow&guild=Wholesome+Sisters&scope=role&tier_placement=column&chromargb=transparent'
+const GameContainer = styled.div`
+  border: white solid 1px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  @media (max-width: ${media.ExtraLarge}px) {
+    max-width: 400px;
+    width: 45%;
+    justify-content: center;
+  }
+  @media (max-width: ${media.Small}px) {
+    width: 90%;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+`
+
+const Header = styled.div`
+  font-size: 24px;
+  text-align: center;
+`
 
 function GuildInfo () {
   return (
     <Container>
-      <h1>Guild Info here</h1>
-      <FlexboxContainer>
-        <IFrameContainer>
-          <IFrame url={BossProgressURL} width={400} height={180}/>
-        </IFrameContainer>
-        {/* <IFrame src={GearCompositionURL}/> */}
-      </FlexboxContainer>
+      <GameContainer>
+        <Header>World of Warcraft</Header>
+        <div>Content here</div>
+        <div>Content here</div>
+        <div>Content here</div>
+      </GameContainer>
+      <GameContainer>
+        <Header>Lost Ark</Header>
+        <div>Content here</div>
+        <div>Content here</div>
+        <div>Content here</div>
+      </GameContainer>
     </Container>
   )
 }

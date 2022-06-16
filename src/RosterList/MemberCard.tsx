@@ -12,10 +12,11 @@ const Container = styled.div`
   padding: 10px 10px;
   margin: 10px;
   background-color: ${ContentBackgroundColor};
-  width: 315px;
+  width: 320px;
+  max-width: 320px;
   height: auto;
   font-size: 18px;
-  @media (max-width: ${media.Mobile}px) {
+  @media (max-width: ${media.ExtraSmall}px) {
     width: 92.5%;
   }
 `
@@ -34,7 +35,7 @@ const Name = styled.div`
   display: flex;
   justify-content: space-between;
   padding: 0 10px;
-  @media (max-width: ${media.Mobile}px) {
+  @media (max-width: ${media.ExtraSmall}px) {
     flex-direction: column;
     align-items: center;
   }
@@ -103,7 +104,7 @@ const Icon = styled.img`
 const LinksContainer = styled.div`
   display: flex;
   margin-left: auto;
-  @media (max-width: ${media.Mobile}px) {
+  @media (max-width: ${media.ExtraSmall}px) {
     flex-direction: column;
     justify-content: center;
   }
