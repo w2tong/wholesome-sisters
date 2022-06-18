@@ -15,12 +15,10 @@ const categoryText: {[key: string]: string} = {
 }
 
 const Category = styled.span<{category: string}>`
-  vertical-align: middle;
   font-size: 14px;
   background-color: ${props => categoryColors[props.category]};
   font-weight: bold;
   border-radius: 5px;
-  margin-left: 10px;
   padding: 5px;
 `
 
