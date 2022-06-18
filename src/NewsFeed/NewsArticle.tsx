@@ -19,6 +19,8 @@ const Article = styled.div`
 `
 
 const HeaderCategoryContainer = styled.div`
+  display: flex;
+  align-items: center;
   padding: ${padding} ${padding} 0;
 `
 

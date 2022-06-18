@@ -18,16 +18,23 @@ const Date = styled.div`
 `
 
 const Text = styled.div`
-font-size: 16px;
-color: #CCCCCC;
+  font-size: 16px;
+  color: #CCCCCC;
 `
 const BackgroundColor = 'rgb(16, 16, 16)'
 const ContentBackgroundColor = 'rgba(255, 255, 255, 0.05)'
 const BackgroundHighlightColor = 'rgba(255, 255, 255, 0.15)'
 const TextHighlightColor = 'red'
 
-const Link = styled.a`
+const TextLink = styled.a`
+  text-decoration: none;
+  &:visited {
+    color: inherit;
+  }
+  &:hover {
+    color: ${TextHighlightColor};
+  }
   
 `
 
-export { Title, Header, Date, Text, BackgroundColor, ContentBackgroundColor, BackgroundHighlightColor, TextHighlightColor, Link }
+export { Title, Header, Date, Text, BackgroundColor, ContentBackgroundColor, BackgroundHighlightColor, TextHighlightColor, TextLink }
