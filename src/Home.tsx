@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import NewsCards from './LatestNews/LatestNews'
+import NewsCards from './News/LatestNews'
 import GalleryCarousel from './GalleryCarousel'
 import GuildInfo from './GuildInfo'
 import media from './media'
