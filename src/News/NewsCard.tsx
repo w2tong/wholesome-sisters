@@ -32,6 +32,11 @@ const StyledHeader = styled(Header)`
 vertical-align: middle;
 `
 
+const StyledCategoryTag = styled(CategoryTag)`
+  vertical-align: middle;
+  margin-left: 10px;
+`
+
 const Content = styled.div`
   padding: 20px;
   min-height: 150px;
@@ -60,7 +65,7 @@ function NewsCard (props: NewsCardProps) {
       {props.imgFile && props.imgAlt && <Image src={require(`../img/${props.imgFile}`)} alt={props.imgAlt} />}
       <Content>
         <StyledHeader><TextLink to={`/news/${props.id}`}>{props.title}</TextLink></StyledHeader>
-        <CategoryTag category={props.category}/>
+        <StyledCategoryTag category={props.category}/>
         <Date>{props.date}</Date>
         <StyledText>{props.summary}</StyledText>
       </Content>
