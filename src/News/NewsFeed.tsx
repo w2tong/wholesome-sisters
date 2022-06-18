@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { useState } from 'react'
-import NewsArticle from './NewsArticle'
+import NewsArticle from './NewsCard'
 import SearchBar from '../SearchBar'
 import articlesJSON from '../json/articles.json'
 import { Title } from '../styles'
@@ -49,7 +49,6 @@ function NewsFeed () {
       <NewsArticleContainer key={article.title}>
         <NewsArticle {...article} />
       </NewsArticleContainer>
-
     )
   })
 

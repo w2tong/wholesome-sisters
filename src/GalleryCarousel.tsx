@@ -6,14 +6,6 @@ import CouncilOfBloodKill from './img/council-of-blood-kill.jpg'
 import oneSixSix from './img/166_1600x900.png'
 import shadowlandsQueue from './img/shadowlands-queue.jpg'
 import media from './media'
-// const BlurredImage = styled.div`
-//     background-image: url('https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg');
-//     background-size: cover;
-//     background-repeat: no-repeat;
-//     width: 100%;
-//     height: 250px;
-//     box-shadow: 0 0 8px 8px ${BackgroundColor} inset;
-// `
 
 const StyledCarousel = styled(Carousel)`
   background-color: ${ContentBackgroundColor};
@@ -40,10 +32,6 @@ const Caption = styled.p`
 function GalleryCarousel () {
   return (
     <StyledCarousel autoPlay={true} interval={5000} transitionTime={500} showThumbs={false} infiniteLoop={true} emulateTouch={true} showStatus={false}>
-      <Container>
-        <Image src="https://www.industrialempathy.com/img/remote/ZiClJf-1920w.jpg"/>
-        <Caption>Caption 1</Caption>
-      </Container>
       <Container>
         <Image src={shadowlandsQueue}/>
         <Caption>Day 1 of World of Warcraft: Shadowlands</Caption>

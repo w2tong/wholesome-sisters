@@ -1,9 +1,8 @@
 import styled from 'styled-components'
-import NewsCards from './LatestNews/LatestNews'
+import NewsCards from './News/LatestNews'
 import GalleryCarousel from './GalleryCarousel'
 import GuildInfo from './GuildInfo'
 import media from './media'
-import { Body } from './styles'
 
 const NewsFeedContainer = styled.div`
   flex: 70%;
@@ -34,19 +33,17 @@ const FlexboxContainer = styled.div`
 
 function Home () {
   return (
-    <Body>
-      <FlexboxContainer>
-        <GalleryCarousel/>
-        <NewsInfoContainer>
-          <NewsFeedContainer>
-            <NewsCards/>
-          </NewsFeedContainer>
-          <GuildInfoContainer>
-            <GuildInfo/>
-          </GuildInfoContainer>
-        </NewsInfoContainer>
-      </FlexboxContainer>
-    </Body>
+    <FlexboxContainer>
+      <GalleryCarousel/>
+      <NewsInfoContainer>
+        <NewsFeedContainer>
+          <NewsCards/>
+        </NewsFeedContainer>
+        <GuildInfoContainer>
+          <GuildInfo/>
+        </GuildInfoContainer>
+      </NewsInfoContainer>
+    </FlexboxContainer>
   )
 }
 

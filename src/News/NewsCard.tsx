@@ -1,13 +1,16 @@
 import styled from 'styled-components'
-import { ContentBackgroundColor } from '../styles'
+import CategoryTag from '../CategoryTag'
+import { Header, Date, Text, ContentBackgroundColor, TextLink } from '../styles'
 import media from '../media'
 
 interface NewsCardProps {
+    id: string;
     title: string;
-    imgFile: string | null;
-    imgAlt: string | null;
+    category: string;
     date: string;
     summary: string;
+    imgFile: string | null;
+    imgAlt: string | null;
 }
 
 const borderRadius = 5
@@ -25,21 +28,19 @@ const Article = styled.div`
   }
 `
 
+const HeaderCategoryContainer = styled.div`
+  display: flex;
+  align-items: center;
+`
+
 const Content = styled.div`
   padding: 20px;
   min-height: 150px;
 `
 
-const Title = styled.div`
-  font-size: 24px;
-`
-
-const Date = styled.div`
-`
-
 const Image = styled.img`
-  width: 300px;
-  min-height: 225px;
+  width: 250px;
+  min-height: 100px;
   object-fit: cover;
   border-radius: ${borderRadius}px 0px 0px ${borderRadius}px;
   @media (max-width: ${media.Medium}px) {
@@ -50,9 +51,8 @@ const Image = styled.img`
   }
 `
 
-const Text = styled.div`
+const StyledText = styled(Text)`
   margin-top: 16px;
-  font-size: 16px;
 `
 
 function NewsCard (props: NewsCardProps) {
@@ -60,9 +60,12 @@ function NewsCard (props: NewsCardProps) {
     <Article>
       {props.imgFile && props.imgAlt && <Image src={require(`../img/${props.imgFile}`)} alt={props.imgAlt} />}
       <Content>
-        <Title>{props.title}</Title>
+        <HeaderCategoryContainer>
+          <Header><TextLink to={`/news/${props.id}`}>{props.title}</TextLink></Header>
+          <CategoryTag category={props.category}/>
+        </HeaderCategoryContainer>
         <Date>{props.date}</Date>
-        <Text>{props.summary}</Text>
+        <StyledText>{props.summary}</StyledText>
       </Content>
     </Article>
   )

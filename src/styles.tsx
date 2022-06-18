@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 const Title = styled.div`
   display: flex;
@@ -7,15 +8,35 @@ const Title = styled.div`
   padding: 10px;
 `
 
-const Body = styled.div`
+const Header = styled.span`
+  font-size: 24px;
+  color: #FFFFFF;
 `
 
+const Date = styled.div`
+  font-size: 12px;
+  color: #FFFFFF;
+`
+
+const Text = styled.div`
+  font-size: 16px;
+  color: #CCCCCC;
+`
 const BackgroundColor = 'rgb(16, 16, 16)'
-const ContentBackgroundColor = 'rgba(255, 255, 255, 0.1)'
-const HighlightColor = 'rgba(255, 255, 255, 0.3)'
+const ContentBackgroundColor = 'rgba(255, 255, 255, 0.05)'
+const BackgroundHighlightColor = 'rgba(255, 255, 255, 0.15)'
+const TextHighlightColor = 'red'
 
-const Link = styled.a`
-
+const TextLink = styled(Link)`
+  color: #FFFFFF;
+  text-decoration: none;
+  &:visited {
+    color: inherit;
+  }
+  &:hover {
+    color: ${TextHighlightColor};
+  }
+  
 `
 
-export { Title, Body, BackgroundColor, ContentBackgroundColor, HighlightColor, Link }
+export { Title, Header, Date, Text, BackgroundColor, ContentBackgroundColor, BackgroundHighlightColor, TextHighlightColor, TextLink }
