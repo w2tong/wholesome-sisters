@@ -1,6 +1,7 @@
 import { HashRouter as Router, Routes, Route, NavLink } from 'react-router-dom'
 import './App.css'
 import styled from 'styled-components'
+import ScrollToTop from './ScrollToTop'
 import Header from './Header'
 import Home from './Home'
 import NewsFeed from './NewsFeed/NewsFeed'
@@ -60,18 +61,19 @@ function App () {
         <Header/>
       </HeaderContainer>
       <Router basename="/">
-      <Links>
-        <StyledNavLink to="/">Home</StyledNavLink>
-        <StyledNavLink to="/news">News</StyledNavLink>
-        <StyledNavLink to="/roster">Roster</StyledNavLink>
-      </Links>
-      <BodyContainer>
-        <Routes>
-          <Route path='/' element={<Home/>}></Route>
-          <Route path='/news' element={<NewsFeed/>}></Route>
-          <Route path='/roster' element={<RosterList/>}></Route>
-        </Routes>
-      </BodyContainer>
+      <ScrollToTop/>
+        <Links>
+          <StyledNavLink to="/">Home</StyledNavLink>
+          <StyledNavLink to="/news">News</StyledNavLink>
+          <StyledNavLink to="/roster">Roster</StyledNavLink>
+        </Links>
+        <BodyContainer>
+          <Routes>
+            <Route path='/' element={<Home/>}></Route>
+            <Route path='/news' element={<NewsFeed/>}></Route>
+            <Route path='/roster' element={<RosterList/>}></Route>
+          </Routes>
+        </BodyContainer>
       </Router>
       <FooterContainer>
         <Footer/>
