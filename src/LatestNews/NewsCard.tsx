@@ -60,7 +60,7 @@ function NewsCard (props: NewsCardProps) {
       {props.imgFile && props.imgAlt && <Image src={require(`../img/${props.imgFile}`)} alt={props.imgAlt} />}
       <Content>
         <HeaderCategoryContainer>
-          <Header><TextLink href="news">{props.title}</TextLink></Header>
+          <Header><TextLink to="news">{props.title}</TextLink></Header>
           <CategoryTag category={props.category}/>
         </HeaderCategoryContainer>
         <Date>{props.date}</Date>
