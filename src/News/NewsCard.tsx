@@ -28,9 +28,8 @@ const Article = styled.div`
   }
 `
 
-const HeaderCategoryContainer = styled.div`
-  display: flex;
-  align-items: center;
+const StyledHeader = styled(Header)`
+vertical-align: middle;
 `
 
 const Content = styled.div`
@@ -60,10 +59,8 @@ function NewsCard (props: NewsCardProps) {
     <Article>
       {props.imgFile && props.imgAlt && <Image src={require(`../img/${props.imgFile}`)} alt={props.imgAlt} />}
       <Content>
-        <HeaderCategoryContainer>
-          <Header><TextLink to={`/news/${props.id}`}>{props.title}</TextLink></Header>
-          <CategoryTag category={props.category}/>
-        </HeaderCategoryContainer>
+        <StyledHeader><TextLink to={`/news/${props.id}`}>{props.title}</TextLink></StyledHeader>
+        <CategoryTag category={props.category}/>
         <Date>{props.date}</Date>
         <StyledText>{props.summary}</StyledText>
       </Content>
