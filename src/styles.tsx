@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 const Title = styled.div`
   display: flex;
@@ -26,7 +27,7 @@ const ContentBackgroundColor = 'rgba(255, 255, 255, 0.05)'
 const BackgroundHighlightColor = 'rgba(255, 255, 255, 0.15)'
 const TextHighlightColor = 'red'
 
-const TextLink = styled.a`
+const TextLink = styled(Link)`
   text-decoration: none;
   &:visited {
     color: inherit;
