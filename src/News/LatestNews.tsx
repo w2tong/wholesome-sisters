@@ -4,7 +4,7 @@ import articlesJSON from '../json/articles.json'
 import { Title } from '../styles'
 
 const Container = styled.div`
-  padding: 0 2.5vw;
+  padding: 0 10px;
 `
 
 function NewsFeed () {

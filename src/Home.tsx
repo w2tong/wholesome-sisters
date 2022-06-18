@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import NewsCards from './News/LatestNews'
 import GalleryCarousel from './GalleryCarousel'
-import GuildInfo from './GuildInfo'
+import GuildInfo from './GuildProgress'
 import media from './media'
 
 const NewsFeedContainer = styled.div`
