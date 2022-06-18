@@ -10,7 +10,7 @@
     "lostArk": {
       "name": "Jorbi",
       "class": "Soulfist",
-      "portraitURL": null
+      "portrait": null
     }
   },
   {
@@ -24,7 +24,7 @@
     "lostArk": {
       "name": "Zarashi",
       "class": "Destroyer",
-      "portraitURL": null
+      "portrait": "zarashi.png"
     }
   },
   {
@@ -38,7 +38,7 @@
     "lostArk": {
       "name": "Cazaji",
       "class": "Berserker",
-      "portraitURL": null
+      "portrait": null
     }
   },
   {
@@ -52,7 +52,7 @@
     "lostArk": {
       "name": "Wongwongwong",
       "class": "Sorceress",
-      "portraitURL": null
+      "portrait": null
     }
   },
   {
@@ -66,12 +66,12 @@
     "lostArk": {
       "name": "Glucke",
       "class": "Bard",
-      "portraitURL": null
+      "portrait": null
     }
   },
   {
     "name": "Yarn",
-    "role": "Raid Leader",
+    "role": "WoW Raid Leader",
     "wow": {
       "name": "Yarnbrew",
       "class": "Monk",
@@ -90,7 +90,7 @@
     "lostArk": {
       "name": "Maikov",
       "class": "Sharpshooter",
-      "portraitURL": null
+      "portrait": null
     }
   },
   {
@@ -104,7 +104,7 @@
     "lostArk": {
       "name": "Fourhands",
       "class": "Gunslinger",
-      "portraitURL": null
+      "portrait": null
     }
   },
   {
@@ -118,7 +118,7 @@
     "lostArk": {
       "name": "i dont remember",
       "class": "Glavier",
-      "portraitURL": null
+      "portrait": null
     }
   },
   {
@@ -128,7 +128,7 @@
     "lostArk": {
       "name": "Alixiza",
       "class": "Deathblade",
-      "portraitURL": null
+      "portrait": null
     }
   }
 ]
