@@ -70,6 +70,30 @@
     }
   },
   {
+    "name": "Yarn",
+    "role": "Raid Leader",
+    "wow": {
+      "name": "Yarnbrew",
+      "class": "Monk",
+      "portraitURL": "https://render-us.worldofwarcraft.com/character/bleeding-hollow/125/237147005-avatar.jpg"
+    },
+    "lostArk": null
+  },
+  {
+    "name": "Maiko",
+    "role": "Fired Intern",
+    "wow": {
+      "name": "Mykai",
+      "class": "Mage",
+      "portraitURL": "https://render-us.worldofwarcraft.com/character/bleeding-hollow/217/243378137-avatar.jpg"
+    },
+    "lostArk": {
+      "name": "Maikov",
+      "class": "Sharpshooter",
+      "portraitURL": null
+    }
+  },
+  {
     "name": "Fourlegs",
     "role": "Inactive",
     "wow": {
@@ -84,13 +108,23 @@
     }
   },
   {
-    "name": "BrownieQQ",
+    "name": "Jeremy",
     "role": "Member",
     "wow": {
-      "name": "N/A",
-      "class": "N/A",
-      "portraitURL": null
+      "name": "Lilithice",
+      "class": "Priest",
+      "portraitURL": "https://render-us.worldofwarcraft.com/character/bleeding-hollow/193/237459649-avatar.jpg"
     },
+    "lostArk": {
+      "name": "i dont remember",
+      "class": "Glavier",
+      "portraitURL": null
+    }
+  },
+  {
+    "name": "BrownieQQ",
+    "role": "Member",
+    "wow": null,
     "lostArk": {
       "name": "Alixiza",
       "class": "Deathblade",

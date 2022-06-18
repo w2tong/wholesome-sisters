@@ -1,26 +1,30 @@
 import styled from 'styled-components'
+import CategoryTag from '../CategoryTag'
+import { Header, Date, Text, ContentBackgroundColor } from '../styles'
 
 interface ArticleProps {
     title: string;
-    imgFile: string | null;
-    imgAlt: string | null;
+    category: string;
     date: string;
     text: string;
+    imgFile: string | null;
+    imgAlt: string | null;
 }
 
 const padding = '25px'
 
 const Article = styled.div`
   border-radius: 5px;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: ${ContentBackgroundColor};
 `
 
-const Title = styled.div`
-  font-size: 28px;
+const HeaderCategoryContainer = styled.div`
+  display: flex;
+  align-items: center;
   padding: ${padding} ${padding} 0;
 `
 
-const Date = styled.div`
+const StyledDate = styled(Date)`
   padding-left: ${padding}
 `
 
@@ -31,18 +35,20 @@ const Image = styled.img`
   padding: 10px 0px;
 `
 
-const Text = styled.div`
+const StyledText = styled(Text)`
   padding: ${padding};
-  font-size: 16px;
 `
 
 function NewsArticle (props: ArticleProps) {
   return (
     <Article>
-      <Title>{props.title}</Title>
-      <Date>{props.date}</Date>
+      <HeaderCategoryContainer>
+        <Header>{props.title}</Header>
+        <CategoryTag category={props.category}/>
+      </HeaderCategoryContainer>
+      <StyledDate>{props.date}</StyledDate>
       {props.imgFile && props.imgAlt && <Image src={require(`../img/${props.imgFile}`)} alt={props.imgAlt} />}
-      <Text>{props.text}</Text>
+      <StyledText>{props.text}</StyledText>
     </Article>
   )
 }
