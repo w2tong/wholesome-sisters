@@ -4,6 +4,7 @@ import { Header, Date, Text, ContentBackgroundColor, TextLink } from '../styles'
 import media from '../media'
 
 interface NewsCardProps {
+    id: string;
     title: string;
     category: string;
     date: string;
@@ -60,7 +61,7 @@ function NewsCard (props: NewsCardProps) {
       {props.imgFile && props.imgAlt && <Image src={require(`../img/${props.imgFile}`)} alt={props.imgAlt} />}
       <Content>
         <HeaderCategoryContainer>
-          <Header><TextLink to="news">{props.title}</TextLink></Header>
+          <Header><TextLink to={`/news/${props.id}`}>{props.title}</TextLink></Header>
           <CategoryTag category={props.category}/>
         </HeaderCategoryContainer>
         <Date>{props.date}</Date>

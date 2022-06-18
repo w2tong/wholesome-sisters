@@ -1,5 +1,6 @@
 [
   {
+    "id": "lost-ark-first-valtan-normal-clear",
     "title": "Lost Ark First Valtan Normal Clear!",
     "category": "la",
     "date": "June 1, 2022",
@@ -13,6 +14,7 @@
     ]
   },
   {
+    "id": "timewalking-ulduar",
     "title": "Timewalking Ulduar",
     "category": "wow",
     "date": "March 10, 2022",
@@ -27,6 +29,7 @@
     ]
   },
   {
+    "id": "season-1-keystone-master",
     "title": "Season 1 Keystone Master",
     "category": "wow",
     "date": "January 30, 2022",
@@ -39,6 +42,7 @@
     ]
   },
   {
+    "id": "no-image-here",
     "title": "no image here",
     "category": "la",
     "date": "03/03/2022",

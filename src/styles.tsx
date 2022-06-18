@@ -28,6 +28,7 @@ const BackgroundHighlightColor = 'rgba(255, 255, 255, 0.15)'
 const TextHighlightColor = 'red'
 
 const TextLink = styled(Link)`
+  color: #FFFFFF;
   text-decoration: none;
   &:visited {
     color: inherit;

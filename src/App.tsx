@@ -4,7 +4,8 @@ import styled from 'styled-components'
 import ScrollToTop from './ScrollToTop'
 import Header from './Header'
 import Home from './Home'
-import NewsFeed from './NewsFeed/NewsFeed'
+import NewsFeed from './News/NewsFeed'
+import News from './News/NewsArticleRoute'
 import RosterList from './RosterList/RosterList'
 import Footer from './Footer'
 import media from './media'
@@ -61,7 +62,7 @@ function App () {
         <Header/>
       </HeaderContainer>
       <Router basename="/">
-      <ScrollToTop/>
+        <ScrollToTop/>
         <Links>
           <StyledNavLink to="/">Home</StyledNavLink>
           <StyledNavLink to="/news">News</StyledNavLink>
@@ -69,9 +70,10 @@ function App () {
         </Links>
         <BodyContainer>
           <Routes>
-            <Route path='/' element={<Home/>}></Route>
-            <Route path='/news' element={<NewsFeed/>}></Route>
-            <Route path='/roster' element={<RosterList/>}></Route>
+            <Route path='/' element={<Home/>}/>
+            <Route path='/news' element={<NewsFeed/>}/>
+            <Route path='/roster' element={<RosterList/>}/>
+            <Route path='/news/:id' element={<News/>}/>
           </Routes>
         </BodyContainer>
       </Router>
