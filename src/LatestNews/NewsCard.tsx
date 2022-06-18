@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import CategoryTag from '../CategoryTag'
-import { Header, Date, Text, ContentBackgroundColor } from '../styles'
+import { Header, Date, Text, ContentBackgroundColor, TextLink } from '../styles'
 import media from '../media'
 
 interface NewsCardProps {
@@ -25,6 +25,11 @@ const Article = styled.div`
     flex-direction: column;
     flex-wrap: wrap;
   }
+`
+
+const HeaderCategoryContainer = styled.div`
+  display: flex;
+  align-items: center;
 `
 
 const Content = styled.div`
@@ -54,8 +59,10 @@ function NewsCard (props: NewsCardProps) {
     <Article>
       {props.imgFile && props.imgAlt && <Image src={require(`../img/${props.imgFile}`)} alt={props.imgAlt} />}
       <Content>
-        <Header>{props.title}</Header>
-        <CategoryTag category={props.category}/>
+        <HeaderCategoryContainer>
+          <Header><TextLink href="news">{props.title}</TextLink></Header>
+          <CategoryTag category={props.category}/>
+        </HeaderCategoryContainer>
         <Date>{props.date}</Date>
         <StyledText>{props.summary}</StyledText>
       </Content>
