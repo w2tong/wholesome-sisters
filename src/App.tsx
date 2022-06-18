@@ -61,9 +61,9 @@ function App () {
       </HeaderContainer>
       <Router basename="/">
       <Links>
-        <StyledNavLink to="/" className={(navData) => (navData.isActive ? 'active' : '')}>Home</StyledNavLink>
-        <StyledNavLink to="/news" className={(navData) => (navData.isActive ? 'active' : '')}>News</StyledNavLink>
-        <StyledNavLink to="/roster" className={(navData) => (navData.isActive ? 'active' : '')}>Roster</StyledNavLink>
+        <StyledNavLink to="/">Home</StyledNavLink>
+        <StyledNavLink to="/news">News</StyledNavLink>
+        <StyledNavLink to="/roster">Roster</StyledNavLink>
       </Links>
       <BodyContainer>
         <Routes>
