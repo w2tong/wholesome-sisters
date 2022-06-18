@@ -1,9 +1,10 @@
 import styled from 'styled-components'
 import media from './media'
+import { Header, Text, ContentBackgroundColor } from './styles'
 
 const Container = styled.div`
   border: white solid 1px;
-  padding: 10px;
+  padding: 10px 0;
   display: flex;
   flex-direction: column;
   @media (max-width: ${media.XLarge}px) {
@@ -19,7 +20,10 @@ const Container = styled.div`
 
 const GameContainer = styled.div`
   border: white solid 1px;
+  border-radius: 10px;
+  background-color: ${ContentBackgroundColor};
   padding: 10px;
+  margin: 10px;
   display: flex;
   flex-direction: column;
   @media (max-width: ${media.XLarge}px) {
@@ -34,8 +38,7 @@ const GameContainer = styled.div`
   }
 `
 
-const Header = styled.div`
-  font-size: 24px;
+const StyledHeader = styled(Header)`
   text-align: center;
 `
 
@@ -43,14 +46,14 @@ function GuildInfo () {
   return (
     <Container>
       <GameContainer>
-        <Header>World of Warcraft</Header>
-        <div>Content here</div>
+        <StyledHeader>World of Warcraft</StyledHeader>
+        <Text>US Bleeding Hollow</Text>
         <div>Content here</div>
         <div>Content here</div>
       </GameContainer>
       <GameContainer>
-        <Header>Lost Ark</Header>
-        <div>Content here</div>
+        <StyledHeader>Lost Ark</StyledHeader>
+        <div>NA East Una</div>
         <div>Content here</div>
         <div>Content here</div>
       </GameContainer>
