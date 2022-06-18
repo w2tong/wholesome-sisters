@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import HorizontalRule from '../HorizontalRule'
 import media from '../media'
-import { ContentBackgroundColor } from '../styles'
+import { ContentBackgroundColor, TextHighlightColor } from '../styles'
 import portraitPlaceHolder from '../img/portrait-placeholder.png'
 
 const warcraftLogsLink = 'https://www.warcraftlogs.com/character/us/bleeding-hollow/'
@@ -57,7 +57,7 @@ const Name = styled.div`
 `
 
 const Role = styled.span`
-  color: red;
+  color: ${TextHighlightColor};
   font-weight: bold;
 `
 

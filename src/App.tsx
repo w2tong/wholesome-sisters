@@ -7,7 +7,7 @@ import NewsFeed from './NewsFeed/NewsFeed'
 import RosterList from './RosterList/RosterList'
 import Footer from './Footer'
 import media from './media'
-import { ContentBackgroundColor, HighlightColor } from './styles'
+import { ContentBackgroundColor, BackgroundHighlightColor, TextHighlightColor } from './styles'
 
 const Container = styled.div`
   height: 100%;
@@ -38,11 +38,11 @@ const StyledNavLink = styled(NavLink)`
   color: white;
   text-decoration: none;
   &:hover {
-    color: red;
-    background-color: ${HighlightColor};
+    color: ${TextHighlightColor};
+    background-color: ${BackgroundHighlightColor};
   }
   &.active {
-    color: red;
+    color: ${TextHighlightColor};
     font-weight: bold;
   }
 `
