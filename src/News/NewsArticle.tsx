@@ -9,12 +9,12 @@ interface ArticleProps {
     text: string;
     imgFile: string | null;
     imgAlt: string | null;
+    className?: string;
 }
 
 const padding = '25px'
 
-const Article = styled.div`
-  border-radius: 5px;
+const Container = styled.div`
   background-color: ${ContentBackgroundColor};
 `
 
@@ -41,7 +41,7 @@ const StyledText = styled(Text)`
 
 function NewsArticle (props: ArticleProps) {
   return (
-    <Article>
+    <Container className={props.className}>
       <HeaderCategoryContainer>
         <Header>{props.title}</Header>
         <CategoryTag category={props.category}/>
@@ -49,7 +49,7 @@ function NewsArticle (props: ArticleProps) {
       <StyledDate>{props.date}</StyledDate>
       {props.imgFile && props.imgAlt && <Image src={require(`../img/${props.imgFile}`)} alt={props.imgAlt} />}
       <StyledText>{props.text}</StyledText>
-    </Article>
+    </Container>
   )
 }
 

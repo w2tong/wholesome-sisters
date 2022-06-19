@@ -18,14 +18,6 @@ const Container = styled.div`
   justify-content: flex-start;
 `
 
-const HeaderContainer = styled.div`
-  height: auto;
-`
-
-const FooterContainer = styled.div`
-  margin-top: auto;
-`
-
 const Links = styled.div`
   width: 100%;
   display: flex;
@@ -58,9 +50,7 @@ const BodyContainer = styled.div`
 function App () {
   return (
     <Container>
-      <HeaderContainer>
-        <Header/>
-      </HeaderContainer>
+      <Header/>
       <Router basename="/">
         <ScrollToTop/>
         <Links>
@@ -77,9 +67,7 @@ function App () {
           </Routes>
         </BodyContainer>
       </Router>
-      <FooterContainer>
-        <Footer/>
-      </FooterContainer>
+      <Footer/>
     </Container>
   )
 }
