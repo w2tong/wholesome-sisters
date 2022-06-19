@@ -3,7 +3,6 @@ import media from './media'
 import image from './img/mexicanandybug.png'
 
 const Container = styled.div`
-  height: 80px;
   font-size: 48px;
   background-image: url(${image});
   background-size: cover;
