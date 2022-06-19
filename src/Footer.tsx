@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
 const StyledFooter = styled.div`
+  margin-top: auto;
   padding: 25px 0;
   display: flex;
   justify-content: center;
@@ -25,9 +26,9 @@ const Title = styled.div`
   font-size: 20px;
 `
 
-function Footer () {
+function Footer ({ className } : {className?: string}) {
   return (
-    <StyledFooter>
+    <StyledFooter className={className}>
       <ContactUs>
         <Title>Contact Us</Title>
         <div>123 Street St.</div>

@@ -26,7 +26,7 @@ const FlexboxContainer = styled.div`
   }
 `
 
-const SearchBarContainer = styled.div`
+const StyledSearchBar = styled(SearchBar)`
   display: flex;
   align-items: center;
   @media (max-width: ${media.Medium}px) {
@@ -118,9 +118,7 @@ function NewsFeed () {
   }, [itemOffset, itemsPerPage])
 
   useEffect(() => {
-    console.log(query)
     const pageQuery = query.get('page')
-    console.log(pageQuery)
     let pageNum = 0
     if (pageQuery && typeof parseInt(pageQuery) === 'number') {
       pageNum = parseInt(pageQuery) - 1
@@ -141,9 +139,7 @@ function NewsFeed () {
       <FlexboxContainer>
         <Hidden/>
         <Title>News</Title>
-        <SearchBarContainer>
-          <SearchBar handleChange={setInput} value={input} placeholder="Filter articles.."/>
-        </SearchBarContainer>
+        <StyledSearchBar handleChange={setInput} value={input} placeholder="Filter articles.."/>
       </FlexboxContainer>
       <Cards cards={currentItems}/>
       <StyledReactPaginate

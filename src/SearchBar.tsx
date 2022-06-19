@@ -4,6 +4,7 @@ interface SearchBarProps {
   handleChange: (e: string) => void;
   value: string;
   placeholder: string;
+  className?: string;
 }
 
 const Input = styled.input`
@@ -17,7 +18,7 @@ const Input = styled.input`
 
 function SearchBar (props: SearchBarProps) {
   return (
-    <div>
+    <div className={props.className}>
       <Input onChange={(e) => props.handleChange(e.currentTarget.value)} value={props.value} placeholder={props.placeholder}/>
     </div>
   )
