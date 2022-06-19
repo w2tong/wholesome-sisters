@@ -100,15 +100,11 @@ function useQuery () {
   return React.useMemo(() => new URLSearchParams(search), [search])
 }
 
-const itemsPerPage = 2
+const itemsPerPage = 5
 function NewsFeed () {
   const query = useQuery()
-  const pageQuery = query.get('page')
-  let pageNumber = 0
-  if (pageQuery && typeof parseInt(pageQuery) === 'number') {
-    pageNumber = parseInt(pageQuery) - 1
-  }
 
+  const [pageNumber, setPageNumber] = useState(0)
   const [input, setInput] = useState('')
   // eslint-disable-next-line no-undef
   const [currentItems, setCurrentItems] = useState(Array<CardProps>)
@@ -120,6 +116,18 @@ function NewsFeed () {
     setCurrentItems(articlesJSON.slice(itemOffset, endOffset))
     setPageCount(Math.ceil(articlesJSON.length / itemsPerPage))
   }, [itemOffset, itemsPerPage])
+
+  useEffect(() => {
+    console.log(query)
+    const pageQuery = query.get('page')
+    console.log(pageQuery)
+    let pageNum = 0
+    if (pageQuery && typeof parseInt(pageQuery) === 'number') {
+      pageNum = parseInt(pageQuery) - 1
+    }
+    setPageNumber(pageNum)
+    setItemOffset(itemsPerPage * pageNumber)
+  })
 
   const navigate = useNavigate()
   const handlePageClick = (event: any) => {
@@ -147,9 +155,6 @@ function NewsFeed () {
         previousLabel="<"
         activeClassName="active"
         forcePage={pageNumber}
-        hrefBuilder={(page, pageCount, selected) =>
-          page >= 1 && page <= pageCount ? `#/news?page=${page}` : '#'
-        }
       />
     </Container>
   )
