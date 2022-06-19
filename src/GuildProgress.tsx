@@ -47,9 +47,9 @@ const Server = styled(Text)`
   text-align: center;
 `
 
-function GuildInfo () {
+function GuildInfo ({ className } : {className?: string}) {
   return (
-    <div>
+    <div className={className}>
       <Title>Guild Progress</Title>
       <Container>
         <GameContainer>
