@@ -1,10 +1,20 @@
+
+import React, { useState, useEffect } from 'react'
+import { useLocation, useNavigate } from 'react-router-dom'
 import styled from 'styled-components'
-import { useState } from 'react'
-import NewsArticle from './NewsCard'
+import ReactPaginate from 'react-paginate'
+import NewsCard from './NewsCard'
 import SearchBar from '../SearchBar'
 import articlesJSON from '../json/articles.json'
 import { Title } from '../styles'
 import media from '../media'
+
+const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px;
+  min-height: 1225px;
+`
 
 const FlexboxContainer = styled.div`
   display: flex;
@@ -16,7 +26,7 @@ const FlexboxContainer = styled.div`
   }
 `
 
-const SearchBarContainer = styled.div`
+const StyledSearchBar = styled(SearchBar)`
   display: flex;
   align-items: center;
   @media (max-width: ${media.Medium}px) {
@@ -29,39 +39,119 @@ const Hidden = styled.div`
   width: 250px;
   display: hidden;
 `
-const Container = styled.div`
-  padding: 0 2.5vw;
-`
 
-const NewsArticleContainer = styled.div`
+const StyledNewsCard = styled(NewsCard)`
   margin: 25px 0;
 `
 
-function NewsFeed () {
-  const [input, setInput] = useState('')
-  const articles = articlesJSON.filter((article) => {
-    const searchInput = input.trim().toLowerCase()
-    const title = article.title.toLowerCase()
-    return title.includes(searchInput) || article.tags.some(tag => tag.includes(searchInput))
+const StyledReactPaginate = styled(ReactPaginate)`
+  margin-top: auto;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  list-style-type: none;
+  padding: 0 5rem;
+  li a, li.previous a, li.next a {
+    padding: 0.5rem 1rem;
+    border: gray 1px solid;
+    cursor: pointer;
   }
-  ).map(article => {
-    return (
-      <NewsArticleContainer key={article.title}>
-        <NewsArticle {...article} />
-      </NewsArticleContainer>
-    )
+  li.break a {
+    border-color: transparent;
+  }
+  li.active a {
+    background-color: #0366d6;
+    border-color: transparent;
+    color: white;
+    min-width: 32px;
+  }
+  li.disabled a {
+    color: grey;
+  }
+  li.disable,
+  li.disabled a {
+    cursor: default;
+  }
+`
+
+interface CardProps {
+  id: string;
+  title: string;
+  category: string;
+  date: string;
+  summary: string;
+  imgFile: string | null;
+  imgAlt: string | null;
+}
+
+function Cards (props :{cards: Array<CardProps>}) {
+  return (
+    <div>
+      {props.cards && props.cards.map(card => (
+          <StyledNewsCard key={card.id} {...card} />
+      ))}
+    </div>
+  )
+}
+
+function useQuery () {
+  const { search } = useLocation()
+  return React.useMemo(() => new URLSearchParams(search), [search])
+}
+
+const itemsPerPage = 5
+function NewsFeed () {
+  const query = useQuery()
+
+  const [pageNumber, setPageNumber] = useState(0)
+  const [input, setInput] = useState('')
+  // eslint-disable-next-line no-undef
+  const [currentItems, setCurrentItems] = useState(Array<CardProps>)
+  const [pageCount, setPageCount] = useState(0)
+  const [itemOffset, setItemOffset] = useState(itemsPerPage * pageNumber)
+
+  useEffect(() => {
+    const endOffset = itemOffset + itemsPerPage
+    setCurrentItems(articlesJSON.slice(itemOffset, endOffset))
+    setPageCount(Math.ceil(articlesJSON.length / itemsPerPage))
+  }, [itemOffset, itemsPerPage])
+
+  useEffect(() => {
+    const pageQuery = query.get('page')
+    let pageNum = 0
+    if (pageQuery && typeof parseInt(pageQuery) === 'number') {
+      pageNum = parseInt(pageQuery) - 1
+    }
+    setPageNumber(pageNum)
+    setItemOffset(itemsPerPage * pageNumber)
   })
+
+  const navigate = useNavigate()
+  const handlePageClick = (event: any) => {
+    navigate(`?page=${event.selected + 1}`)
+    const newOffset = (event.selected * itemsPerPage) % articlesJSON.length
+    setItemOffset(newOffset)
+  }
 
   return (
     <Container>
       <FlexboxContainer>
         <Hidden/>
         <Title>News</Title>
-        <SearchBarContainer>
-          <SearchBar handleChange={setInput} value={input} placeholder="Filter articles.."/>
-        </SearchBarContainer>
+        <StyledSearchBar handleChange={setInput} value={input} placeholder="Filter articles.."/>
       </FlexboxContainer>
-      {articles}
+      <Cards cards={currentItems}/>
+      <StyledReactPaginate
+        breakLabel="..."
+        nextLabel=">"
+        onPageChange={handlePageClick}
+        pageRangeDisplayed={5}
+        pageCount={pageCount}
+        previousLabel="<"
+        activeClassName="active"
+        forcePage={pageNumber}
+      />
     </Container>
   )
 }

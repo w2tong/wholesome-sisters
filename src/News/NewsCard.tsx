@@ -29,7 +29,7 @@ const Article = styled.div`
 `
 
 const StyledHeader = styled(Header)`
-vertical-align: middle;
+  vertical-align: middle;
 `
 
 const StyledCategoryTag = styled(CategoryTag)`
