@@ -5,7 +5,6 @@ const StyledFooter = styled.div`
   padding: 25px 0;
   display: flex;
   justify-content: center;
-  align-items: center;
   & > * {
     padding: 0 25px;
   }
