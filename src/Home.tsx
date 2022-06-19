@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import NewsCards from './News/LatestNews'
-import GalleryCarousel from './GalleryCarousel'
+import GalleryCarousel from './Carousel/Carousel'
 import GuildInfo from './GuildProgress'
 import media from './media'
 
