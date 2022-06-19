@@ -1,17 +1,18 @@
 import styled from 'styled-components'
-import NewsCards from './News/LatestNews'
+import LatestNews from './News/LatestNews'
 import GalleryCarousel from './Carousel/Carousel'
-import GuildInfo from './GuildProgress'
+import GuildProgress from './GuildProgress'
 import media from './media'
 
-const NewsFeedContainer = styled.div`
+const StyledLatestNews = styled(LatestNews)`
   flex: 70%;
+  padding: 0 10px;
   @media (max-width: ${media.XLarge}px) {
     flex: 100%
   }
 `
 
-const GuildInfoContainer = styled.div`
+const StyledGuildProgress = styled(GuildProgress)`
   flex: 30%;
   @media (max-width: ${media.XLarge}px) {
     flex: 100%
@@ -36,12 +37,8 @@ function Home () {
     <FlexboxContainer>
       <GalleryCarousel/>
       <NewsInfoContainer>
-        <NewsFeedContainer>
-          <NewsCards/>
-        </NewsFeedContainer>
-        <GuildInfoContainer>
-          <GuildInfo/>
-        </GuildInfoContainer>
+        <StyledLatestNews/>
+        <StyledGuildProgress/>
       </NewsInfoContainer>
     </FlexboxContainer>
   )
