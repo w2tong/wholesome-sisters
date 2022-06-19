@@ -72,8 +72,8 @@ function App () {
           <Routes>
             <Route path='/' element={<Home/>}/>
             <Route path='/news' element={<NewsFeed/>}/>
-            <Route path='/roster' element={<RosterList/>}/>
             <Route path='/news/:id' element={<News/>}/>
+            <Route path='/roster' element={<RosterList/>}/>
           </Routes>
         </BodyContainer>
       </Router>
