@@ -21,7 +21,7 @@ const Div = styled.div`
     }
   `
 
-const HR = styled.hr<{fontSize: number, lineHeight: number}>`
+const HR = styled.hr<HorizontalRuleProps>`
     margin-top: ${props => (props.fontSize + props.lineHeight) / 2}px;
     width: 100%;
     border: 0;
@@ -29,7 +29,7 @@ const HR = styled.hr<{fontSize: number, lineHeight: number}>`
     background: #666;
   `
 
-const Label = styled.div<{fontSize: number}>`
+const Label = styled.div<HorizontalRuleProps>`
     font-size: ${props => props.fontSize}px;
     align-self: center;
     flex-grow: 2;
