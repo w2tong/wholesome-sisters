@@ -18,9 +18,7 @@ const Container = styled.div`
 
 function Header () {
   return (
-    <Container>
-      Wholesome Sisters
-    </Container>
+    <Container>Wholesome Sisters</Container>
   )
 }
 
