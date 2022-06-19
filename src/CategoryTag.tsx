@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 interface CategoryProps {
   category: string;
+  className?: string
 }
 
 const categoryColors: {[key: string]: string} = {
