@@ -102,8 +102,6 @@ function useQuery () {
 
 const itemsPerPage = 5
 function NewsFeed () {
-  const query = useQuery()
-
   const [pageNumber, setPageNumber] = useState(0)
   const [input, setInput] = useState('')
   // eslint-disable-next-line no-undef
@@ -111,12 +109,7 @@ function NewsFeed () {
   const [pageCount, setPageCount] = useState(0)
   const [itemOffset, setItemOffset] = useState(itemsPerPage * pageNumber)
 
-  useEffect(() => {
-    const endOffset = itemOffset + itemsPerPage
-    setCurrentItems(articlesJSON.slice(itemOffset, endOffset))
-    setPageCount(Math.ceil(articlesJSON.length / itemsPerPage))
-  }, [itemOffset, itemsPerPage])
-
+  const query = useQuery()
   useEffect(() => {
     const pageQuery = query.get('page')
     let pageNum = 0
@@ -126,6 +119,12 @@ function NewsFeed () {
     setPageNumber(pageNum)
     setItemOffset(itemsPerPage * pageNumber)
   })
+
+  useEffect(() => {
+    const endOffset = itemOffset + itemsPerPage
+    setCurrentItems(articlesJSON.slice(itemOffset, endOffset))
+    setPageCount(Math.ceil(articlesJSON.length / itemsPerPage))
+  }, [itemOffset, itemsPerPage])
 
   const navigate = useNavigate()
   const handlePageClick = (event: any) => {
