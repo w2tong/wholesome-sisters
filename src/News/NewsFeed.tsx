@@ -41,7 +41,7 @@ const Hidden = styled.div`
 `
 
 const StyledNewsCard = styled(NewsCard)`
-  margin: 25px 0;
+  margin: 10px 0;
 `
 
 const StyledReactPaginate = styled(ReactPaginate)`
@@ -101,7 +101,7 @@ function useQuery () {
 }
 
 const itemsPerPage = 5
-function NewsFeed () {
+function NewsFeed ({ className } : { className?: string }) {
   const [pageNumber, setPageNumber] = useState(0)
   const [input, setInput] = useState('')
   // eslint-disable-next-line no-undef
@@ -134,7 +134,7 @@ function NewsFeed () {
   }
 
   return (
-    <Container>
+    <Container className={className}>
       <FlexboxContainer>
         <Hidden/>
         <Title>News</Title>
