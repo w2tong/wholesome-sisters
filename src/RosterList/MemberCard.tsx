@@ -19,13 +19,13 @@ interface MemberProps {
     name: string;
     class: string;
     portrait: string | null;
-  } | null
+  } | null,
+  className?: string
 }
 
 const Container = styled.div`
   border-radius: 10px;
   padding: 10px 10px;
-  margin: 10px;
   background-color: ${ContentBackgroundColor};
   width: 320px;
   max-width: 320px;
@@ -105,7 +105,7 @@ const LinksContainer = styled.div`
 
 function Member (props: MemberProps) {
   return (
-      <Container>
+      <Container className={props.className}>
         <Name>{props.name}<Role>{props.role}</Role></Name>
         <HorizontalRule text="World of Warcraft" fontSize={14} lineHeight={2}/>
         <GameContainer>
