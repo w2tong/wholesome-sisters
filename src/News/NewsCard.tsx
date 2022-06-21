@@ -11,6 +11,7 @@ interface NewsCardProps {
     summary: string;
     imgFile: string | null;
     imgAlt: string | null;
+    className? : string;
 }
 
 const borderRadius = 5
@@ -18,7 +19,6 @@ const borderRadius = 5
 const Article = styled.div`
   display: flex;
   border-radius: ${borderRadius}px;
-  margin-bottom: 15px;
   background-color: ${ContentBackgroundColor};
   min-height: 200px;
   @media (max-width: ${media.Medium}px) {
@@ -61,7 +61,7 @@ const StyledText = styled(Text)`
 
 function NewsCard (props: NewsCardProps) {
   return (
-    <Article>
+    <Article className={props.className}>
       {props.imgFile && props.imgAlt && <Image src={require(`../img/${props.imgFile}`)} alt={props.imgAlt} />}
       <Content>
         <StyledHeader><TextLink to={`/news/${props.id}`}>{props.title}</TextLink></StyledHeader>

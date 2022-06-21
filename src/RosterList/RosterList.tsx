@@ -9,8 +9,12 @@ const StyledRoster = styled.div`
   flex-wrap: wrap;
 `
 
+const StyledMemberCard = styled(MemberCard)`
+  margin: 10px;
+`
+
 function RosterList () {
-  const roster = rosterJSON.map(member => <MemberCard {...member} key={member.name}/>)
+  const roster = rosterJSON.map(member => <StyledMemberCard {...member} key={member.name}/>)
 
   return (
     <div>
