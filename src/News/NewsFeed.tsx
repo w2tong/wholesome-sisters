@@ -1,6 +1,6 @@
 
-import React, { useState, useEffect } from 'react'
-import { useLocation, useNavigate } from 'react-router-dom'
+import { useState, useEffect } from 'react'
+import { useSearchParams } from 'react-router-dom'
 import styled from 'styled-components'
 import ReactPaginate from 'react-paginate'
 import NewsCard from './NewsCard'
@@ -13,12 +13,13 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   padding: 0 10px;
-  min-height: 1225px;
+  width: 100%;
 `
 
 const FlexboxContainer = styled.div`
   display: flex;
   justify-content: space-between;
+  align-items: center;
   @media (max-width: ${media.Medium}px) {
     justify-content: flex-start;
     flex-direction: column;
@@ -26,26 +27,42 @@ const FlexboxContainer = styled.div`
   }
 `
 
-const StyledSearchBar = styled(SearchBar)`
+const Hidden = styled.div`
+  width: 300px;
+  display: hidden;
+`
+
+const StyledTitle = styled(Title)`
+`
+
+const StyledForm = styled.form`
   display: flex;
-  align-items: center;
+  width: 300px;
   @media (max-width: ${media.Medium}px) {
-    display: block;
     width: 100%;
   }
 `
 
-const Hidden = styled.div`
-  width: 250px;
-  display: hidden;
+const StyledSearchBar = styled(SearchBar)`
+  flex: 100%;
+`
+
+const StyledButton = styled.button`
+  min-width: 80px;
+  height: 29px;
+  font-size: 16px;
 `
 
 const StyledNewsCard = styled(NewsCard)`
   margin: 10px 0;
 `
 
+const NoResults = styled.div`
+  text-align: center;
+`
+
 const StyledReactPaginate = styled(ReactPaginate)`
-  margin-top: auto;
+  margin-top: 2rem;
   margin-bottom: 2rem;
   display: flex;
   justify-content: center;
@@ -95,52 +112,72 @@ function Cards (props :{cards: Array<CardProps>}) {
   )
 }
 
-function useQuery () {
-  const { search } = useLocation()
-  return React.useMemo(() => new URLSearchParams(search), [search])
-}
-
 const itemsPerPage = 5
 function NewsFeed ({ className } : { className?: string }) {
   const [pageNumber, setPageNumber] = useState(0)
   const [input, setInput] = useState('')
-  // eslint-disable-next-line no-undef
-  const [currentItems, setCurrentItems] = useState(Array<CardProps>)
+  const [search, setSearch] = useState('')
+  const [articles, setArticles] = useState(articlesJSON)
+  const [currentItems, setCurrentItems] = useState<CardProps[]>([])
   const [pageCount, setPageCount] = useState(0)
   const [itemOffset, setItemOffset] = useState(itemsPerPage * pageNumber)
 
-  const query = useQuery()
+  const [searchParams, setSearchParams] = useSearchParams()
+
+  // Sets state based on query params
   useEffect(() => {
-    const pageQuery = query.get('page')
+    const searchParam = searchParams.get('search')
+    searchParam ? setSearch(searchParam) : setSearch('')
+    const pageParam = searchParams.get('page')
     let pageNum = 0
-    if (pageQuery && typeof parseInt(pageQuery) === 'number') {
-      pageNum = parseInt(pageQuery) - 1
+    if (pageParam && typeof parseInt(pageParam) === 'number') {
+      pageNum = parseInt(pageParam) - 1
     }
     setPageNumber(pageNum)
     setItemOffset(itemsPerPage * pageNumber)
   })
 
+  // Run when search state changes
+  useEffect(() => {
+    setArticles(articlesJSON.filter((article) => {
+      const searchInput = search.trim().toLowerCase()
+      const title = article.title.toLowerCase()
+      return title.includes(searchInput) || article.tags.some(tag => tag.includes(searchInput))
+    }))
+    setInput(search)
+  }, [search])
+
+  // Run when articles or page changes
   useEffect(() => {
     const endOffset = itemOffset + itemsPerPage
-    setCurrentItems(articlesJSON.slice(itemOffset, endOffset))
-    setPageCount(Math.ceil(articlesJSON.length / itemsPerPage))
-  }, [itemOffset, itemsPerPage])
+    setCurrentItems(articles.slice(itemOffset, endOffset))
+    setPageCount(Math.ceil(articles.length / itemsPerPage))
+  }, [articles, itemOffset, itemsPerPage])
 
-  const navigate = useNavigate()
   const handlePageClick = (event: any) => {
-    navigate(`?page=${event.selected + 1}`)
+    const searchParams: {[key:string]: string} = (search === '' ? { page: event.selected + 1 } : { search, page: event.selected + 1 })
+    setSearchParams(searchParams)
     const newOffset = (event.selected * itemsPerPage) % articlesJSON.length
     setItemOffset(newOffset)
+  }
+
+  const handleSearch = () => {
+    (input !== '') ? setSearchParams({ search: input }) : setSearchParams({})
+    setSearch(input)
   }
 
   return (
     <Container className={className}>
       <FlexboxContainer>
         <Hidden/>
-        <Title>News</Title>
-        <StyledSearchBar handleChange={setInput} value={input} placeholder="Filter articles.."/>
+        <StyledTitle>News</StyledTitle>
+        <StyledForm>
+          <StyledSearchBar handleChange={setInput} value={input} placeholder="Search articles.."/>
+          <StyledButton onClick={handleSearch}>Search</StyledButton>
+        </StyledForm>
       </FlexboxContainer>
-      <Cards cards={currentItems}/>
+      {currentItems.length ? <Cards cards={currentItems}/> : <NoResults>No results found</NoResults>}
+      {articles.length > itemsPerPage &&
       <StyledReactPaginate
         breakLabel="..."
         nextLabel=">"
@@ -151,6 +188,7 @@ function NewsFeed ({ className } : { className?: string }) {
         activeClassName="active"
         forcePage={pageNumber}
       />
+    }
     </Container>
   )
 }
