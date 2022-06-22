@@ -1,6 +1,8 @@
 import styled from 'styled-components'
-import media from './media'
-import { Title, Header, Text, ContentBackgroundColor } from './styles'
+import media from '../media'
+import { Title, Header, Text, ContentBackgroundColor } from '../styles'
+import raidProgressJSON from '../json/raid-progress.json'
+import RaidProgress from './RaidProgress'
 
 const Container = styled.div`
   // border: white solid 1px;
@@ -29,12 +31,9 @@ const GameContainer = styled.div`
   @media (max-width: ${media.XLarge}px) {
     max-width: 400px;
     width: 45%;
-    justify-content: center;
   }
   @media (max-width: ${media.Small}px) {
     width: 90%;
-    flex-direction: column;
-    justify-content: flex-end;
   }
 `
 
@@ -48,6 +47,9 @@ const Server = styled(Text)`
 `
 
 function GuildInfo ({ className } : {className?: string}) {
+  const wowRaids = raidProgressJSON.wow.map(raid => <RaidProgress key={raid.name} name={raid.name} bosses={raid.bosses}/>)
+  const lostArkRaids = raidProgressJSON.lostArk.map(raid => <RaidProgress key={raid.name} name={raid.name} bosses={raid.bosses}/>)
+
   return (
     <div className={className}>
       <Title>Guild Progress</Title>
@@ -55,20 +57,12 @@ function GuildInfo ({ className } : {className?: string}) {
         <GameContainer>
           <StyledHeader>World of Warcraft</StyledHeader>
           <Server>US Bleeding Hollow</Server>
-          <Text>&ensp;0/10 Eternity&apos;s End</Text>
-          <Text>&ensp;6/10 Sanctum of Domination</Text>
-          <Text>10/10 Sanctum of Domination</Text>
-          <Text>10/10 Castle Nathria Heroic</Text>
-          <Text>10/10 Castle Nathria Normal</Text>
+          {wowRaids}
         </GameContainer>
         <GameContainer>
           <StyledHeader>Lost Ark</StyledHeader>
           <Server>NA East Una</Server>
-          <Text>☐ Vykas Hard</Text>
-          <Text>☐ Vykas Normal</Text>
-          <Text>☑ Valtan Hard</Text>
-          <Text>☑ Valtan Normal</Text>
-          <Text>☑ Argos</Text>
+          {lostArkRaids}
         </GameContainer>
       </Container>
     </div>
