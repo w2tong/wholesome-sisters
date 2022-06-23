@@ -77,8 +77,8 @@ const classColor: {[key: string]: string} = {
   Warrior: '#C69B6D'
 }
 
-const Class = styled.div<{wow:{class: string} | null}>`
-  color: ${props => props.wow ? classColor[props.wow.class] : 'white'};
+const Class = styled.div<{wowClass: string}>`
+  color: ${props => props.wowClass ? classColor[props.wowClass] : 'white'};
 `
 
 const NameClassContainer = styled.div`
@@ -112,7 +112,7 @@ function Member (props: MemberProps) {
           <Portrait src={props.wow && props.wow.portraitURL ? props.wow.portraitURL : portraitPlaceHolder}/>
           <NameClassContainer>
             <div>{props.wow ? props.wow.name : 'N/A'}</div>
-            {props.wow ? <Class {...props }>{props.wow.class}</Class> : 'N/A'}
+            {props.wow ? <Class wowClass={props.wow.class}>{props.wow.class}</Class> : 'N/A'}
           </NameClassContainer>
           {props.wow
             ? <LinksContainer>

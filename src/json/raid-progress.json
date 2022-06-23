@@ -1,0 +1,263 @@
+{
+  "wow": [
+    {
+      "name": "Sanctum of Domination Heroic",
+      "bosses": [
+        {
+          "name": "Tarragrue",
+          "cleared": true
+        },
+        {
+          "name": "Eye of the Jailer",
+          "cleared": true
+        },
+        {
+          "name": "The Nine",
+          "cleared": true
+        },
+        {
+          "name": "Soulrender Dormazain",
+          "cleared": true
+        },
+        {
+          "name": "Remnant of Ner'zhul",
+          "cleared": true
+        },
+        {
+          "name": "Painsmith Raznal",
+          "cleared": true
+        },
+        {
+          "name": "Guardian of the First Ones",
+          "cleared": false
+        },
+        {
+          "name": "Fatescribe Roh-Kalo",
+          "cleared": false
+        },
+        {
+          "name": "Kel'Thuzad",
+          "cleared": false
+        },
+        {
+          "name": "Sylvanas Windrunner",
+          "cleared": false
+        }
+      ]
+    },
+    {
+      "name": "Sanctum of Domination Normal",
+      "bosses": [
+        {
+          "name": "Tarragrue",
+          "cleared": true
+        },
+        {
+          "name": "Eye of the Jailer",
+          "cleared": true
+        },
+        {
+          "name": "The Nine",
+          "cleared": true
+        },
+        {
+          "name": "Soulrender Dormazain",
+          "cleared": true
+        },
+        {
+          "name": "Remnant of Ner'zhul",
+          "cleared": true
+        },
+        {
+          "name": "Painsmith Raznal",
+          "cleared": true
+        },
+        {
+          "name": "Guardian of the First Ones",
+          "cleared": true
+        },
+        {
+          "name": "Fatescribe Roh-Kalo",
+          "cleared": true
+        },
+        {
+          "name": "Kel'Thuzad",
+          "cleared": true
+        },
+        {
+          "name": "Sylvanas Windrunner",
+          "cleared": true
+        }
+      ]
+    },
+    {
+      "name": "Castle Nathria Heroic",
+      "bosses": [
+        {
+          "name": "Shriekwing",
+          "cleared": true
+        },
+        {
+          "name": "Huntsman Altimor",
+          "cleared": true
+        },
+        {
+          "name": "Hungering Destroyer",
+          "cleared": true
+        },
+        {
+          "name": "Artificer Xy'Mox",
+          "cleared": true
+        },
+        {
+          "name": "Sun King's Salvation",
+          "cleared": true
+        },
+        {
+          "name": "Lady Inerva Darkvein",
+          "cleared": true
+        },
+        {
+          "name": "The Council of Blood",
+          "cleared": true
+        },
+        {
+          "name": "Sludgefist",
+          "cleared": true
+        },
+        {
+          "name": "Stone Legion Generals",
+          "cleared": true
+        },
+        {
+          "name": "Sire Denathrius",
+          "cleared": true
+        }
+      ]
+    },
+    {
+      "name": "Castle Nathria Normal",
+      "bosses": [
+        {
+          "name": "Shriekwing",
+          "cleared": true
+        },
+        {
+          "name": "Huntsman Altimor",
+          "cleared": true
+        },
+        {
+          "name": "Hungering Destroyer",
+          "cleared": true
+        },
+        {
+          "name": "Artificer Xy'Mox",
+          "cleared": true
+        },
+        {
+          "name": "Sun King's Salvation",
+          "cleared": true
+        },
+        {
+          "name": "Lady Inerva Darkvein",
+          "cleared": true
+        },
+        {
+          "name": "The Council of Blood",
+          "cleared": true
+        },
+        {
+          "name": "Sludgefist",
+          "cleared": true
+        },
+        {
+          "name": "Stone Legion Generals",
+          "cleared": true
+        },
+        {
+          "name": "Sire Denathrius",
+          "cleared": true
+        }
+      ]
+    }
+  ],
+  "lostArk": [
+    {
+      "name": "Vykas Hard",
+      "bosses": [
+        {
+          "name": "Gate 1",
+          "cleared": false
+        },
+        {
+          "name": "Gate 2",
+          "cleared": false
+        },
+        {
+          "name": "Gate 3",
+          "cleared": false
+        }
+      ]
+    },
+    {
+      "name": "Vykas Normal",
+      "bosses": [
+        {
+          "name": "Gate 1",
+          "cleared": false
+        },
+        {
+          "name": "Gate 2",
+          "cleared": false
+        },
+        {
+          "name": "Gate 3",
+          "cleared": false
+        }
+      ]
+    },
+    {
+      "name": "Valtan Hard",
+      "bosses": [
+        {
+          "name": "Gate 1",
+          "cleared": true
+        },
+        {
+          "name": "Gate 2",
+          "cleared": true
+        }
+      ]
+    },
+    {
+      "name": "Valtan Normal",
+      "bosses": [
+        {
+          "name": "Gate 1",
+          "cleared": true
+        },
+        {
+          "name": "Gate 2",
+          "cleared": true
+        }
+      ]
+    },
+    {
+      "name": "Argos",
+      "bosses": [
+        {
+          "name": "Phase 1",
+          "cleared": true
+        },
+        {
+          "name": "Phase 2",
+          "cleared": true
+        },
+        {
+          "name": "Phase 3",
+          "cleared": true
+        }
+      ]
+    }
+  ]
+}
