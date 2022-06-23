@@ -1,7 +1,8 @@
+import './RaidProgress.css'
 import { useState, useCallback } from 'react'
 import styled from 'styled-components'
 import { Collapse } from 'react-collapse'
-// import { ContentBackgroundColor } from '../styles'
+import { Content2BackgroundColor, Content3BackgroundColor, BackgroundHighlightColor } from '../styles'
 
 interface BossProgressProps {
   name: string;
@@ -9,24 +10,41 @@ interface BossProgressProps {
   className?: string;
 }
 
+const Green = 'rgb(0,255,0)'
+
 const Container = styled.div`
-  background-color: black;
+  
 `
 
-const Header = styled.div`
+const Header = styled.div<{isOpened: boolean}>`
   display: flex;
-  border: solid  1px white;
-  background-color: black;
+  align-items: center;
+  cursor: pointer;
+  background-color: ${props => props.isOpened ? BackgroundHighlightColor : Content2BackgroundColor};
+  &:hover {
+    background-color: ${BackgroundHighlightColor};
+  }
+
 `
 const RaidProgress = styled.div<{color: string}>`
   flex: 12%;
   text-align: right;
+  font-weight: bold;
+  padding: 8px 0;
   color: ${props => props.color}
 `
 
 const RaidName = styled.div`
   flex: 88%;
   padding-left: 10px;
+`
+
+const CollapseContainer = styled.div`
+  background-color: ${Content3BackgroundColor};
+`
+
+const Boss = styled.div`
+  padding: 3px 30px;
 `
 
 const Checkbox = styled.span<{color: string}>`
@@ -38,10 +56,10 @@ function BossProgress (props: BossProgressProps) {
   const total = props.bosses.length
 
   const bosses = props.bosses.map(boss =>
-    <div key={props.name + boss.name}>
-      <Checkbox color={boss.cleared ? 'lightgreen' : 'red'}>{boss.cleared ? '☑' : '☐'}</Checkbox>
+    <Boss key={props.name + boss.name}>
+      <Checkbox color={boss.cleared ? Green : 'red'}>{boss.cleared ? '☑ ' : '☐ '}</Checkbox>
       {boss.name}
-    </div>
+    </Boss>
   )
 
   const [isButtonCollapseOpen, setIsButtonCollapseOpen] = useState(false)
@@ -52,14 +70,16 @@ function BossProgress (props: BossProgressProps) {
   )
 
   return (
-    <Container>
-      <Header onClick={onClick}>
-        <RaidProgress color={curr < total ? 'yellow' : 'lightgreen'}>{curr}/{total}</RaidProgress>
+    <Container className={props.className}>
+      <Header onClick={onClick} isOpened={isButtonCollapseOpen}>
+        <RaidProgress color={curr < total ? 'yellow' : Green}>{curr}/{total}</RaidProgress>
         <RaidName>{props.name}</RaidName>
       </Header>
-      <Collapse isOpened={isButtonCollapseOpen}>
-        {bosses}
-      </Collapse>
+      <CollapseContainer>
+        <Collapse isOpened={isButtonCollapseOpen}>
+          {bosses}
+        </Collapse>
+      </CollapseContainer>
     </Container>
   )
 }

@@ -46,9 +46,13 @@ const Server = styled(Text)`
   text-align: center;
 `
 
+const StyledRaidProgress = styled(RaidProgress)`
+  padding-top: 5px;
+`
+
 function GuildInfo ({ className } : {className?: string}) {
-  const wowRaids = raidProgressJSON.wow.map(raid => <RaidProgress key={raid.name} name={raid.name} bosses={raid.bosses}/>)
-  const lostArkRaids = raidProgressJSON.lostArk.map(raid => <RaidProgress key={raid.name} name={raid.name} bosses={raid.bosses}/>)
+  const wowRaids = raidProgressJSON.wow.map(raid => <StyledRaidProgress key={raid.name} name={raid.name} bosses={raid.bosses}/>)
+  const lostArkRaids = raidProgressJSON.lostArk.map(raid => <StyledRaidProgress key={raid.name} name={raid.name} bosses={raid.bosses}/>)
 
   return (
     <div className={className}>
