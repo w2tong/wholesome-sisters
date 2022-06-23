@@ -18,14 +18,18 @@ const Container = styled.div`
   background-color: ${ContentBackgroundColor};
 `
 
-const HeaderCategoryContainer = styled.div`
-  display: flex;
-  align-items: center;
-  padding: ${padding} ${padding} 0;
+const HeaderContainer = styled.div`
+  padding-top: 10px;
+  padding-left: ${padding};
 `
 
-const StyledDate = styled(Date)`
-  padding-left: ${padding}
+const StyledHeader = styled(Header)`
+  vertical-align: middle;
+`
+
+const StyledCategoryTag = styled(CategoryTag)`
+  vertical-align: middle;
+  margin-left: 10px;
 `
 
 const Image = styled.img`
@@ -42,11 +46,11 @@ const StyledText = styled(Text)`
 function NewsArticle (props: ArticleProps) {
   return (
     <Container className={props.className}>
-      <HeaderCategoryContainer>
-        <Header>{props.title}</Header>
-        <CategoryTag category={props.category}/>
-      </HeaderCategoryContainer>
-      <StyledDate>{props.date}</StyledDate>
+      <HeaderContainer>
+        <StyledHeader>{props.title}</StyledHeader>
+        <StyledCategoryTag category={props.category}/>
+        <Date>{props.date}</Date>
+      </HeaderContainer>
       {props.imgFile && props.imgAlt && <Image src={require(`../img/${props.imgFile}`)} alt={props.imgAlt} />}
       <StyledText>{props.text}</StyledText>
     </Container>

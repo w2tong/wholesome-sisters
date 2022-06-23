@@ -24,6 +24,8 @@ const Text = styled.div`
 `
 const BackgroundColor = 'rgb(16, 16, 16)'
 const ContentBackgroundColor = 'rgba(255, 255, 255, 0.05)'
+const Content2BackgroundColor = 'rgba(255, 255, 255, 0.075)'
+const Content3BackgroundColor = 'rgba(255, 255, 255, 0.1)'
 const BackgroundHighlightColor = 'rgba(255, 255, 255, 0.15)'
 const TextHighlightColor = 'red'
 
@@ -36,7 +38,16 @@ const TextLink = styled(Link)`
   &:hover {
     color: ${TextHighlightColor};
   }
-  
 `
 
-export { Title, Header, Date, Text, BackgroundColor, ContentBackgroundColor, BackgroundHighlightColor, TextHighlightColor, TextLink }
+const Icon = styled.img`
+  width: 32px;
+  height: 32px;
+  padding: 5px;
+  border-radius: 10px;
+  &:hover {
+    background-color: ${BackgroundHighlightColor};
+  }
+`
+
+export { Title, Header, Date, Text, BackgroundColor, ContentBackgroundColor, Content2BackgroundColor, Content3BackgroundColor, BackgroundHighlightColor, TextHighlightColor, TextLink, Icon }
