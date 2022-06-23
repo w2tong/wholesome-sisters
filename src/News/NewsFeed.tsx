@@ -98,8 +98,8 @@ interface CardProps {
   category: string;
   date: string;
   summary: string;
-  imgFile: string | null;
-  imgAlt: string | null;
+  imgFile: string;
+  imgAlt: string;
 }
 
 function Cards (props :{cards: Array<CardProps>}) {

@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 import CategoryTag from '../CategoryTag'
 import { Header, Date, Text, ContentBackgroundColor, TextLink } from '../styles'
 import media from '../media'
@@ -9,8 +10,8 @@ interface NewsCardProps {
     category: string;
     date: string;
     summary: string;
-    imgFile: string | null;
-    imgAlt: string | null;
+    imgFile: string;
+    imgAlt: string;
     className? : string;
 }
 
@@ -44,14 +45,16 @@ const Content = styled.div`
 
 const Image = styled.img`
   width: 250px;
-  min-height: 100px;
+  height: 200px;
   object-fit: cover;
   border-radius: ${borderRadius}px 0px 0px ${borderRadius}px;
   @media (max-width: ${media.Medium}px) {
     border-radius: ${borderRadius}px ${borderRadius}px 0px 0px;
     width: 100%;
-    min-height: 150px;
-    max-height: 150px;
+    height: 150px;
+  }
+  &:hover {
+    filter: brightness(1.6);
   }
 `
 
@@ -62,7 +65,7 @@ const StyledText = styled(Text)`
 function NewsCard (props: NewsCardProps) {
   return (
     <Article className={props.className}>
-      {props.imgFile && props.imgAlt && <Image src={require(`../img/${props.imgFile}`)} alt={props.imgAlt} />}
+      {props.imgFile && props.imgAlt && <Link to={`/news/${props.id}`}><Image src={require(`../img/${props.imgFile}`)} alt={props.imgAlt}/></Link>}
       <Content>
         <StyledHeader><TextLink to={`/news/${props.id}`}>{props.title}</TextLink></StyledHeader>
         <StyledCategoryTag category={props.category}/>
