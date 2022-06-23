@@ -1,5 +1,5 @@
 import { HashRouter as Router, Routes, Route, NavLink } from 'react-router-dom'
-import './App.css'
+import GlobalStyle from './globalStyle'
 import styled from 'styled-components'
 import ScrollToTop from './ScrollToTop'
 import Header from './Header'
@@ -51,6 +51,7 @@ const BodyContainer = styled.div`
 function App () {
   return (
     <Container>
+      <GlobalStyle/>
       <Header/>
       <Router basename="/">
         <ScrollToTop/>
