@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/wholesome-sisters/static/css/main.0996b1a0.css",
-    "main.js": "/wholesome-sisters/static/js/main.234dd68a.js",
+    "main.js": "/wholesome-sisters/static/js/main.a2292d64.js",
     "static/media/shadowlands-queue.jpg": "/wholesome-sisters/static/media/shadowlands-queue.6b55599b55092a2e2d5d.jpg",
     "static/media/council-of-blood-kill.jpg": "/wholesome-sisters/static/media/council-of-blood-kill.d8e4a698b46fb86000af.jpg",
     "static/media/166.png": "/wholesome-sisters/static/media/166.e59b58e0812eb26dd144.png",
@@ -13,10 +13,10 @@
     "static/media/zarashi.png": "/wholesome-sisters/static/media/zarashi.0503992c943f9ba323e5.png",
     "index.html": "/wholesome-sisters/index.html",
     "main.0996b1a0.css.map": "/wholesome-sisters/static/css/main.0996b1a0.css.map",
-    "main.234dd68a.js.map": "/wholesome-sisters/static/js/main.234dd68a.js.map"
+    "main.a2292d64.js.map": "/wholesome-sisters/static/js/main.a2292d64.js.map"
   },
   "entrypoints": [
     "static/css/main.0996b1a0.css",
-    "static/js/main.234dd68a.js"
+    "static/js/main.a2292d64.js"
   ]
 }
