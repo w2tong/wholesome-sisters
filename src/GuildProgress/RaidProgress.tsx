@@ -1,3 +1,4 @@
+import './RaidProgress.css'
 import { useState, useCallback } from 'react'
 import styled from 'styled-components'
 import { Collapse } from 'react-collapse'
@@ -40,15 +41,6 @@ const RaidName = styled.div`
 
 const CollapseContainer = styled.div`
   background-color: ${Content3BackgroundColor};
-  &.ReactCollapse--collapse {
-    transition: height 500ms;
-  }
-`
-
-const StyledCollapse = styled(Collapse)`
-&.ReactCollapse--collapse {
-  transition: height 500ms;
-}
 `
 
 const Boss = styled.div`
@@ -84,9 +76,9 @@ function BossProgress (props: BossProgressProps) {
         <RaidName>{props.name}</RaidName>
       </Header>
       <CollapseContainer>
-        <StyledCollapse isOpened={isButtonCollapseOpen}>
+        <Collapse isOpened={isButtonCollapseOpen}>
           {bosses}
-        </StyledCollapse>
+        </Collapse>
       </CollapseContainer>
     </Container>
   )
