@@ -42,7 +42,7 @@ const StyledNavLink = styled(NavLink)`
 `
 
 const BodyContainer = styled.div`
-  max-width: ${media.XXLarge}px;
+  max-width: ${media.XLarge}px;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
