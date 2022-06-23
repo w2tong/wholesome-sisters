@@ -38,7 +38,16 @@ const TextLink = styled(Link)`
   &:hover {
     color: ${TextHighlightColor};
   }
-  
 `
 
-export { Title, Header, Date, Text, BackgroundColor, ContentBackgroundColor, Content2BackgroundColor, Content3BackgroundColor, BackgroundHighlightColor, TextHighlightColor, TextLink }
+const Icon = styled.img`
+  width: 32px;
+  height: 32px;
+  padding: 5px;
+  border-radius: 10px;
+  &:hover {
+    background-color: ${BackgroundHighlightColor};
+  }
+`
+
+export { Title, Header, Date, Text, BackgroundColor, ContentBackgroundColor, Content2BackgroundColor, Content3BackgroundColor, BackgroundHighlightColor, TextHighlightColor, TextLink, Icon }

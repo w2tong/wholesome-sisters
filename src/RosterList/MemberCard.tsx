@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import HorizontalRule from '../HorizontalRule'
 import media from '../media'
-import { ContentBackgroundColor, TextHighlightColor } from '../styles'
+import { ContentBackgroundColor, TextHighlightColor, Icon } from '../styles'
 import portraitPlaceHolder from '../img/portrait-placeholder.png'
 
 const warcraftLogsLink = 'https://www.warcraftlogs.com/character/us/bleeding-hollow/'
@@ -86,12 +86,6 @@ const NameClassContainer = styled.div`
   flex-direction: column;
   margin-left: 10px;
   font-size: 16px;
-`
-
-const Icon = styled.img`
-  width: 32px;
-  height: 32px;
-  padding: 0 5px;
 `
 
 const LinksContainer = styled.div`
