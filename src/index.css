@@ -9,8 +9,6 @@ body {
   color: white;
   margin: 0;
   font-family: "Open Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 #root {
