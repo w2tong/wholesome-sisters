@@ -2,7 +2,7 @@ import { createGlobalStyle } from 'styled-components'
 
 const GlobalStyle = createGlobalStyle`
   body {
-    height: 100%;
+    height: 100vh;
     background-color: rgb(16, 16, 16);
     color: white;
     margin: 0;
