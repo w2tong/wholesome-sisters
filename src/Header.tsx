@@ -11,7 +11,7 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   @media (max-width: ${media.XSmall}px) {
-    font-size: 36px;
+    font-size: 32px;
   }
 `
 
