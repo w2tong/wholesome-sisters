@@ -8,12 +8,12 @@ interface ArticleProps {
     category: string;
     date: string;
     text: string;
-    imgFile: string | null;
-    imgAlt: string | null;
+    imgFile: string;
+    imgAlt: string;
     className?: string;
 }
 
-const padding = '25px'
+const padding = '20px'
 
 const Container = styled.div`
   background-color: ${ContentBackgroundColor};
@@ -47,6 +47,7 @@ const StyledText = styled(Text)`
 const StyledImageModal = styled(ImageModal)`
   display: flex;
   justify-content: center;
+  padding-bottom: 20px;
 `
 
 function NewsArticle (props: ArticleProps) {
@@ -59,7 +60,7 @@ function NewsArticle (props: ArticleProps) {
         <StyledCategoryTag category={props.category}/>
         <Date>{props.date}</Date>
       </HeaderContainer>
-      {props.imgFile && props.imgAlt && <Image src={image} alt={props.imgAlt} />}
+      <Image src={image} alt={props.imgAlt}/>
       <StyledText>{props.text}</StyledText>
       <StyledImageModal src={image}/>
     </Container>
