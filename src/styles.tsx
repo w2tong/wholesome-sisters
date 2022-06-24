@@ -23,10 +23,9 @@ const Text = styled.div`
   color: #CCCCCC;
 `
 const BackgroundColor = 'rgb(16, 16, 16)'
-const ContentBackgroundColor = 'rgba(255, 255, 255, 0.05)'
-const Content2BackgroundColor = 'rgba(255, 255, 255, 0.075)'
-const Content3BackgroundColor = 'rgba(255, 255, 255, 0.1)'
-const BackgroundHighlightColor = 'rgba(255, 255, 255, 0.15)'
+const ContentBackgroundColor = 'rgb(32, 32, 32)'
+const Content2BackgroundColor = 'rgb(48, 48, 48)'
+const BackgroundHighlightColor = 'rgb(64, 64, 64)'
 const TextHighlightColor = 'red'
 
 const TextLink = styled(Link)`
@@ -50,4 +49,4 @@ const Icon = styled.img`
   }
 `
 
-export { Title, Header, Date, Text, BackgroundColor, ContentBackgroundColor, Content2BackgroundColor, Content3BackgroundColor, BackgroundHighlightColor, TextHighlightColor, TextLink, Icon }
+export { Title, Header, Date, Text, BackgroundColor, ContentBackgroundColor, Content2BackgroundColor, BackgroundHighlightColor, TextHighlightColor, TextLink, Icon }
