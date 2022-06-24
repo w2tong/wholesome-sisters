@@ -60,6 +60,7 @@ const BodyContainer = styled.div`
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 50px;
 `
 
 function App () {
