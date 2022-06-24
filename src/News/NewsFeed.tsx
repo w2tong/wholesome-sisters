@@ -1,5 +1,5 @@
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useLayoutEffect } from 'react'
 import { useSearchParams } from 'react-router-dom'
 import styled from 'styled-components'
 import ReactPaginate from 'react-paginate'
@@ -102,7 +102,7 @@ interface CardProps {
   imgAlt: string;
 }
 
-function Cards (props :{cards: Array<CardProps>}) {
+function Cards (props: {cards: Array<CardProps>}) {
   return (
     <div>
       {props.cards && props.cards.map(card => (
@@ -117,15 +117,15 @@ function NewsFeed ({ className } : { className?: string }) {
   const [pageNumber, setPageNumber] = useState(0)
   const [input, setInput] = useState('')
   const [search, setSearch] = useState('')
-  const [articles, setArticles] = useState(articlesJSON)
-  const [currentItems, setCurrentItems] = useState<CardProps[]>([])
+  const [articles, setArticles] = useState<CardProps[]>(articlesJSON)
+  const [currentItems, setCurrentItems] = useState<CardProps[]>(articlesJSON.slice(0, itemsPerPage))
   const [pageCount, setPageCount] = useState(0)
   const [itemOffset, setItemOffset] = useState(itemsPerPage * pageNumber)
 
   const [searchParams, setSearchParams] = useSearchParams()
 
   // Sets state based on query params
-  useEffect(() => {
+  useLayoutEffect(() => {
     const searchParam = searchParams.get('search')
     searchParam ? setSearch(searchParam) : setSearch('')
     const pageParam = searchParams.get('page')
@@ -138,7 +138,7 @@ function NewsFeed ({ className } : { className?: string }) {
   })
 
   // Run when search state changes
-  useEffect(() => {
+  useLayoutEffect(() => {
     setArticles(articlesJSON.filter((article) => {
       const searchInput = search.trim().toLowerCase()
       const title = article.title.toLowerCase()
@@ -163,7 +163,6 @@ function NewsFeed ({ className } : { className?: string }) {
 
   const handleSearch = () => {
     (input !== '') ? setSearchParams({ search: input }) : setSearchParams({})
-    setSearch(input)
   }
 
   return (
@@ -171,7 +170,7 @@ function NewsFeed ({ className } : { className?: string }) {
       <FlexboxContainer>
         <Hidden/>
         <StyledTitle>News</StyledTitle>
-        <StyledForm>
+        <StyledForm onSubmit={(e) => e.preventDefault()}>
           <StyledSearchBar handleChange={setInput} value={input} placeholder="Search articles.."/>
           <StyledButton onClick={handleSearch}>Search</StyledButton>
         </StyledForm>
