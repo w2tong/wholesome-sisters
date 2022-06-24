@@ -2,7 +2,7 @@ import './RaidProgress.css'
 import { useState, useCallback } from 'react'
 import styled from 'styled-components'
 import { Collapse } from 'react-collapse'
-import { Content2BackgroundColor, Content3BackgroundColor, BackgroundHighlightColor } from '../styles'
+import { Content2BackgroundColor, BackgroundHighlightColor } from '../styles'
 
 interface BossProgressProps {
   name: string;
@@ -27,7 +27,7 @@ const Header = styled.div<{isOpened: boolean}>`
 
 `
 const RaidProgress = styled.div<{color: string}>`
-  flex: 12%;
+  flex: 15%;
   text-align: right;
   font-weight: bold;
   padding: 8px 0;
@@ -35,12 +35,12 @@ const RaidProgress = styled.div<{color: string}>`
 `
 
 const RaidName = styled.div`
-  flex: 88%;
+  flex: 85%;
   padding-left: 10px;
 `
 
 const CollapseContainer = styled.div`
-  background-color: ${Content3BackgroundColor};
+  background-color: ${Content2BackgroundColor};
 `
 
 const Boss = styled.div`
