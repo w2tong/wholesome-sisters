@@ -102,7 +102,7 @@ interface CardProps {
   imgAlt: string;
 }
 
-function Cards (props :{cards: Array<CardProps>}) {
+function Cards (props: {cards: Array<CardProps>}) {
   return (
     <div>
       {props.cards && props.cards.map(card => (
