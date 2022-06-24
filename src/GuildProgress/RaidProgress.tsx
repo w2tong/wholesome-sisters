@@ -13,7 +13,6 @@ interface BossProgressProps {
 const Green = 'rgb(0,255,0)'
 
 const Container = styled.div`
-  
 `
 
 const Header = styled.div<{isOpened: boolean}>`
@@ -30,7 +29,7 @@ const RaidProgress = styled.div<{color: string}>`
   flex: 15%;
   text-align: right;
   font-weight: bold;
-  padding: 8px 0;
+  padding: 8px 5px;
   color: ${props => props.color}
 `
 
