@@ -9,7 +9,7 @@ import News from './News/NewsArticleRoute'
 import RosterList from './RosterList/RosterList'
 import Footer from './Footer'
 import media from './media'
-import { ContentBackgroundColor, BackgroundHighlightColor, TextHighlightColor } from './styles'
+import { ContentBackgroundColor, Content2BackgroundColor, BackgroundHighlightColor, TextHighlightColor } from './styles'
 
 const Container = styled.div`
   height: 100%;
@@ -18,14 +18,25 @@ const Container = styled.div`
   justify-content: flex-start;
 `
 
-const Links = styled.div`
-  width: 100%;
+const HeightAuto = styled.div`
+  height: auto;
+`
+
+const NavBar = styled.div`
   display: flex;
   justify-content: center;
+  align-self: flex-start;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 2;
   background-color: ${ContentBackgroundColor};
+  border-bottom: solid 2px ${Content2BackgroundColor};
 `
 
 const StyledNavLink = styled(NavLink)`
+  display: flex;
+  justify-content: center;
   width: 80px;
   text-align: center;
   padding: 10px 20px;
@@ -39,6 +50,9 @@ const StyledNavLink = styled(NavLink)`
     color: ${TextHighlightColor};
     font-weight: bold;
   }
+  @media (max-width: ${media.XSmall}px) {
+    padding: 10px 10px;
+  }
 `
 
 const BodyContainer = styled.div`
@@ -51,15 +65,16 @@ const BodyContainer = styled.div`
 function App () {
   return (
     <Container>
+      <HeightAuto>
       <GlobalStyle/>
       <Header/>
       <Router basename="/">
         <ScrollToTop/>
-        <Links>
-          <StyledNavLink to="/">Home</StyledNavLink>
-          <StyledNavLink to="/news">News</StyledNavLink>
-          <StyledNavLink to="/roster">Roster</StyledNavLink>
-        </Links>
+        <NavBar>
+          <div><StyledNavLink to="/">Home</StyledNavLink></div>
+          <div><StyledNavLink to="/news">News</StyledNavLink></div>
+          <div><StyledNavLink to="/roster">Roster</StyledNavLink></div>
+        </NavBar>
         <BodyContainer>
           <Routes>
             <Route path='/' element={<Home/>}/>
@@ -69,6 +84,7 @@ function App () {
           </Routes>
         </BodyContainer>
       </Router>
+      </HeightAuto>
       <Footer/>
     </Container>
   )
