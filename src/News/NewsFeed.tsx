@@ -117,7 +117,7 @@ function NewsFeed ({ className } : { className?: string }) {
   const [pageNumber, setPageNumber] = useState(0)
   const [input, setInput] = useState('')
   const [search, setSearch] = useState('')
-  const [articles, setArticles] = useState(articlesJSON)
+  const [articles, setArticles] = useState<CardProps[]>([])
   const [currentItems, setCurrentItems] = useState<CardProps[]>([])
   const [pageCount, setPageCount] = useState(0)
   const [itemOffset, setItemOffset] = useState(itemsPerPage * pageNumber)
@@ -163,7 +163,6 @@ function NewsFeed ({ className } : { className?: string }) {
 
   const handleSearch = () => {
     (input !== '') ? setSearchParams({ search: input }) : setSearchParams({})
-    setSearch(input)
   }
 
   return (
@@ -171,7 +170,7 @@ function NewsFeed ({ className } : { className?: string }) {
       <FlexboxContainer>
         <Hidden/>
         <StyledTitle>News</StyledTitle>
-        <StyledForm>
+        <StyledForm onSubmit={(e) => e.preventDefault()}>
           <StyledSearchBar handleChange={setInput} value={input} placeholder="Search articles.."/>
           <StyledButton onClick={handleSearch}>Search</StyledButton>
         </StyledForm>
