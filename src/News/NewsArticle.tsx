@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import CategoryTag from '../CategoryTag'
+import ImageModal from './ImageModal'
 import { Header, Date, Text, ContentBackgroundColor } from '../styles'
 
 interface ArticleProps {
@@ -7,12 +8,12 @@ interface ArticleProps {
     category: string;
     date: string;
     text: string;
-    imgFile: string | null;
-    imgAlt: string | null;
+    imgFile: string;
+    imgAlt: string;
     className?: string;
 }
 
-const padding = '25px'
+const padding = '20px'
 
 const Container = styled.div`
   background-color: ${ContentBackgroundColor};
@@ -43,7 +44,15 @@ const StyledText = styled(Text)`
   padding: ${padding};
 `
 
+const StyledImageModal = styled(ImageModal)`
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+`
+
 function NewsArticle (props: ArticleProps) {
+  const image = require(`../img/${props.imgFile}`)
+
   return (
     <Container className={props.className}>
       <HeaderContainer>
@@ -51,8 +60,9 @@ function NewsArticle (props: ArticleProps) {
         <StyledCategoryTag category={props.category}/>
         <Date>{props.date}</Date>
       </HeaderContainer>
-      {props.imgFile && props.imgAlt && <Image src={require(`../img/${props.imgFile}`)} alt={props.imgAlt} />}
+      <Image src={image} alt={props.imgAlt}/>
       <StyledText>{props.text}</StyledText>
+      <StyledImageModal src={image}/>
     </Container>
   )
 }
