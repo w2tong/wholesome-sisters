@@ -28,7 +28,7 @@ const FlexboxContainer = styled.div`
 
 const Hidden = styled.div`
   width: 300px;
-  display: hidden;
+  visibility: hidden;
   @media (max-width: ${media.Medium}px) {
     display: none;
   }
