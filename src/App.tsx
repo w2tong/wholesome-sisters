@@ -1,4 +1,4 @@
-import { HashRouter as Router, Routes, Route, NavLink } from 'react-router-dom'
+import { HashRouter as Router, Routes, Route } from 'react-router-dom'
 import GlobalStyle from './globalStyle'
 import styled from 'styled-components'
 import ScrollToTop from './ScrollToTop'
@@ -9,7 +9,6 @@ import News from './News/NewsArticleRoute'
 import RosterList from './RosterList/RosterList'
 import Footer from './Footer'
 import media from './media'
-import { ContentBackgroundColor, Content2BackgroundColor, BackgroundHighlightColor, TextHighlightColor } from './styles'
 
 const Container = styled.div`
   height: 100%;
@@ -20,39 +19,6 @@ const Container = styled.div`
 
 const HeightAuto = styled.div`
   height: auto;
-`
-
-const NavBar = styled.div`
-  display: flex;
-  justify-content: center;
-  align-self: flex-start;
-  width: 100%;
-  position: sticky;
-  top: 0;
-  z-index: 2;
-  background-color: ${ContentBackgroundColor};
-  border-bottom: solid 2px ${Content2BackgroundColor};
-`
-
-const StyledNavLink = styled(NavLink)`
-  display: flex;
-  justify-content: center;
-  width: 80px;
-  text-align: center;
-  padding: 10px 20px;
-  color: white;
-  text-decoration: none;
-  &:hover {
-    color: ${TextHighlightColor};
-    background-color: ${BackgroundHighlightColor};
-  }
-  &.active {
-    color: ${TextHighlightColor};
-    font-weight: bold;
-  }
-  @media (max-width: ${media.XSmall}px) {
-    padding: 10px 10px;
-  }
 `
 
 const BodyContainer = styled.div`
@@ -68,14 +34,9 @@ function App () {
     <Container>
       <HeightAuto>
       <GlobalStyle/>
-      <Header/>
       <Router basename="/">
         <ScrollToTop/>
-        <NavBar>
-          <div><StyledNavLink to="/">Home</StyledNavLink></div>
-          <div><StyledNavLink to="/news">News</StyledNavLink></div>
-          <div><StyledNavLink to="/roster">Roster</StyledNavLink></div>
-        </NavBar>
+        <Header/>
         <BodyContainer>
           <Routes>
             <Route path='/' element={<Home/>}/>
