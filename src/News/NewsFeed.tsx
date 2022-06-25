@@ -13,7 +13,6 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   padding: 0 10px;
-  width: 100%;
 `
 
 const FlexboxContainer = styled.div`
@@ -30,6 +29,9 @@ const FlexboxContainer = styled.div`
 const Hidden = styled.div`
   width: 300px;
   display: hidden;
+  @media (max-width: ${media.Medium}px) {
+    display: none;
+  }
 `
 
 const StyledTitle = styled(Title)`
