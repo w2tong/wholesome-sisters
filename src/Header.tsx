@@ -15,8 +15,6 @@ const NavBar = styled.div`
   z-index: 2;
   background-color: ${ContentBackgroundColor};
   border-bottom: solid 2px ${Content2BackgroundColor};
-  @media (max-width: ${media.XSmall}px) {
-  }
 `
 
 const LogoNavLink = styled(NavLink)`
@@ -31,6 +29,9 @@ const Logo = styled.div`
   text-align: center;
   width: 100px;
   padding: 0 5px;
+  &:hover {
+    color: ${TextHighlightColor};
+  }
 `
 
 const HiddenLogo = styled(Logo)`
@@ -53,7 +54,7 @@ const StyledNavLink = styled(NavLink)`
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 60px;
+  min-width: 55px;
   max-width: 80px;
   height: 100%;
   padding: 0 20px;
