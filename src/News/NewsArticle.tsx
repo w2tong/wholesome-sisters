@@ -10,6 +10,7 @@ interface ArticleProps {
     text: string;
     imgFile: string;
     imgAlt: string;
+    imgThumb: boolean;
     className?: string;
 }
 
@@ -62,7 +63,7 @@ function NewsArticle (props: ArticleProps) {
       </HeaderContainer>
       <Image src={image} alt={props.imgAlt}/>
       <StyledText>{props.text}</StyledText>
-      <StyledImageModal src={image}/>
+      {props.imgThumb && <StyledImageModal src={image}/>}
     </Container>
   )
 }
