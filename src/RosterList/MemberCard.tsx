@@ -122,7 +122,7 @@ function Member (props: MemberProps) {
         </GameContainer>
         <HorizontalRule text="Lost Ark" fontSize={14} lineHeight={2}/>
         <GameContainer>
-        <Portrait src={props.lostArk && props.lostArk.portrait ? require(`../img/LostArkPortrait/${props.lostArk.portrait}`) : portraitPlaceHolder}/>
+        <Portrait src={props.lostArk && props.lostArk.portrait ? require(`../img/lostArkPortraits/${props.lostArk.portrait}`) : portraitPlaceHolder}/>
           <NameClassContainer>
             <div>{props.lostArk ? props.lostArk.name : 'N/A'}</div>
             <div>{props.lostArk ? props.lostArk.class : 'N/A'}</div>
