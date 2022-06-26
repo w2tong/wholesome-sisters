@@ -6,7 +6,7 @@ import ReactPaginate from 'react-paginate'
 import NewsCard from './NewsCard'
 import SearchBar from '../SearchBar'
 import articlesJSON from '../json/articles.json'
-import { Title } from '../styles'
+import { Title, ContentBackgroundColor, BackgroundHighlightColor, TextHighlightColor } from '../styles'
 import media from '../media'
 
 const Container = styled.div`
@@ -71,18 +71,23 @@ const StyledReactPaginate = styled(ReactPaginate)`
   flex-direction: row;
   list-style-type: none;
   padding: 0 5rem;
+  font-weight: bold;
   li a, li.previous a, li.next a {
+    background-color: ${ContentBackgroundColor};
     padding: 0.5rem 1rem;
-    border: gray 1px solid;
+    margin: 0 3px;
+    border-radius: 10px;
     cursor: pointer;
+    &:hover {
+      background-color: ${BackgroundHighlightColor};
+    }
   }
   li.break a {
     border-color: transparent;
   }
   li.active a {
-    background-color: #0366d6;
-    border-color: transparent;
-    color: white;
+    background-color: ${BackgroundHighlightColor};
+    color: ${TextHighlightColor};
     min-width: 32px;
   }
   li.disabled a {
