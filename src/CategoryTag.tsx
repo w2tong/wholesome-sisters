@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
+import { TextHighlightColor } from './styles'
 
 interface CategoryProps {
   category: string;
@@ -30,6 +31,9 @@ const Category = styled.span<{category: string}>`
   font-weight: bold;
   border-radius: 5px;
   padding: 5px;
+  &:hover {
+    color: ${TextHighlightColor};
+  }
 `
 
 function CategoryTag (props: CategoryProps) {
