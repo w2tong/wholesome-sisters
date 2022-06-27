@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/wholesome-sisters/static/css/main.0996b1a0.css",
-    "main.js": "/wholesome-sisters/static/js/main.9b1a85e1.js",
+    "main.js": "/wholesome-sisters/static/js/main.c7c9a2ba.js",
     "static/media/shadowlands-queue.jpg": "/wholesome-sisters/static/media/shadowlands-queue.6b55599b55092a2e2d5d.jpg",
     "static/media/council-of-blood-kill.jpg": "/wholesome-sisters/static/media/council-of-blood-kill.d8e4a698b46fb86000af.jpg",
     "static/media/166.png": "/wholesome-sisters/static/media/166.e59b58e0812eb26dd144.png",
@@ -16,16 +16,20 @@
     "static/media/lost-ark.jpg": "/wholesome-sisters/static/media/lost-ark.7bfcf0e03a5739f0807a.jpg",
     "static/media/valtan2.jpg": "/wholesome-sisters/static/media/valtan2.e54233d8a75d8b105d60.jpg",
     "static/media/sylvanas-windrunner.jpg": "/wholesome-sisters/static/media/sylvanas-windrunner.af5cbada1832a197e83b.jpg",
+    "static/media/senjyogahara.png": "/wholesome-sisters/static/media/senjyogahara.394a8e9ccbab085c2ebb.png",
     "static/media/argos.jpg": "/wholesome-sisters/static/media/argos.9ff9e8df2be1b5e4c677.jpg",
+    "static/media/alicia.png": "/wholesome-sisters/static/media/alicia.a6e65cca9ca0ab0cadea.png",
     "static/media/zarashi.png": "/wholesome-sisters/static/media/zarashi.0503992c943f9ba323e5.png",
+    "static/media/gerry.png": "/wholesome-sisters/static/media/gerry.713ce6add24ca6ca85cf.png",
     "static/media/jorbi.png": "/wholesome-sisters/static/media/jorbi.1dfdf29eb37648af7394.png",
     "static/media/shadowlands.jpg": "/wholesome-sisters/static/media/shadowlands.5a4d93cff993bab7ef7a.jpg",
+    "static/media/jed.jpg": "/wholesome-sisters/static/media/jed.3e9557d7febe8021cb31.jpg",
     "index.html": "/wholesome-sisters/index.html",
     "main.0996b1a0.css.map": "/wholesome-sisters/static/css/main.0996b1a0.css.map",
-    "main.9b1a85e1.js.map": "/wholesome-sisters/static/js/main.9b1a85e1.js.map"
+    "main.c7c9a2ba.js.map": "/wholesome-sisters/static/js/main.c7c9a2ba.js.map"
   },
   "entrypoints": [
     "static/css/main.0996b1a0.css",
-    "static/js/main.9b1a85e1.js"
+    "static/js/main.c7c9a2ba.js"
   ]
 }
