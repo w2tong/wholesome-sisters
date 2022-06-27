@@ -130,5 +130,45 @@
       "class": "Deathblade",
       "portrait": null
     }
+  },
+  {
+    "name": "Gerry",
+    "role": "Member",
+    "wow": null,
+    "lostArk": {
+      "name": "Amazonpm",
+      "class": "Berserker",
+      "portrait": "gerry.png"
+    }
+  },
+  {
+    "name": "Alicia",
+    "role": "Member",
+    "wow": null,
+    "lostArk": {
+      "name": "Haiji",
+      "class": "Bard",
+      "portrait": "alicia.png"
+    }
+  },
+  {
+    "name": "Gub",
+    "role": "Member",
+    "wow": null,
+    "lostArk": {
+      "name": "Senjyogahara",
+      "class": "Deathblade",
+      "portrait": "senjyogahara.png"
+    }
+  },
+  {
+    "name": "Jed",
+    "role": "Member",
+    "wow": null,
+    "lostArk": {
+      "name": "Leesanghyeok",
+      "class": "Shadowhunter",
+      "portrait": "jed.jpg"
+    }
   }
 ]
