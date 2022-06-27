@@ -138,7 +138,7 @@
     "lostArk": {
       "name": "Amazonpm",
       "class": "Berserker",
-      "portrait": "gerry.png"
+      "portrait": "amazonpm.png"
     }
   },
   {
@@ -148,7 +148,7 @@
     "lostArk": {
       "name": "Haiji",
       "class": "Bard",
-      "portrait": "alicia.png"
+      "portrait": "haiji.png"
     }
   },
   {
@@ -168,7 +168,7 @@
     "lostArk": {
       "name": "Leesanghyeok",
       "class": "Shadowhunter",
-      "portrait": "jed.jpg"
+      "portrait": "leesanghyeok.jpg"
     }
   }
 ]
