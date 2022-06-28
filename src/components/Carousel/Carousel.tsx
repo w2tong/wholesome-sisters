@@ -10,7 +10,7 @@ const StyledCarousel = styled(Carousel)`
 `
 
 function GalleryCarousel () {
-  const carouselItems = carouselItemsJSON.map(item => <CarouselItem src={require(`../../img/${item.img}`)} caption={item.caption} key={item.toString()}/>)
+  const carouselItems = carouselItemsJSON.map(item => <CarouselItem src={require(`../../img/${item.img}`)} alt={item.caption} caption={item.caption} key={item.toString()}/>)
 
   return (
     <StyledCarousel autoPlay={true} interval={5000} transitionTime={500} showThumbs={false} infiniteLoop={true} emulateTouch={true} showStatus={false}>
