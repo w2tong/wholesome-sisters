@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import media from '../media'
+import media from '../../media'
 
 const Container = styled.div`
   position: relative;
@@ -21,13 +21,14 @@ const Caption = styled.p`
 
 interface CarouselItemProps {
   src: string;
+  alt: string;
   caption: string;
 }
 
 function CarouselItem (props: CarouselItemProps) {
   return (
     <Container>
-        <Image src={props.src}/>
+        <Image src={props.src} alt={props.alt}/>
         <Caption>{props.caption}</Caption>
     </Container>
   )
