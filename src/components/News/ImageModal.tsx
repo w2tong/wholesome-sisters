@@ -3,6 +3,7 @@ import styled from 'styled-components'
 
 interface ImageModalProps {
   src: string;
+  alt: string;
   className?: string;
 }
 
@@ -60,10 +61,10 @@ function ImageModal (props: ImageModalProps) {
 
   return (
     <div className={props.className}>
-      <Thumbnail src={props.src} onClick={() => setIsOpen(true)}/>
+      <Thumbnail src={props.src} alt={props.alt} onClick={() => setIsOpen(true)}/>
       <Modal isOpen={isOpen} onClick={() => setIsOpen(false)}>
         <CloseButton onClick={() => setIsOpen(false)}>&times;</CloseButton>
-        <ModalImage src={props.src} onClick={e => e.stopPropagation()}/>
+        <ModalImage src={props.src} alt={props.alt} onClick={e => e.stopPropagation()}/>
       </Modal>
     </div>
   )

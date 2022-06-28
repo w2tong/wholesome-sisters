@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import NewsCard from './NewsCard'
-import articlesJSON from '../json/articles.json'
-import { Title } from '../styles'
+import articlesJSON from './articles'
+import { Title, TextLink } from '../../styles'
 
 const StyledNewsCard = styled(NewsCard)`
   margin-bottom: 10px;
@@ -14,6 +14,7 @@ function NewsFeed ({ className } : {className?: string}) {
     <div className={className}>
       <Title>Latest News</Title>
       {articles}
+      <TextLink to="/news">More News</TextLink>
     </div>
   )
 }
