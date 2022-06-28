@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 const Title = styled.div`
   display: flex;
   justify-content: center;
-  font-size: 40px;
+  font-size: 32px;
   padding: 10px;
 `
 

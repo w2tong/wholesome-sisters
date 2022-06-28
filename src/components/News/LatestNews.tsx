@@ -7,9 +7,9 @@ const StyledNewsCard = styled(NewsCard)`
   margin-bottom: 10px;
 `
 
-function NewsFeed ({ className } : {className?: string}) {
-  const articles = articlesJSON.slice(0, 3).map(article => <StyledNewsCard {...article} key={article.title}/>)
+const articles = articlesJSON.slice(0, 3).map(article => <StyledNewsCard {...article} key={article.title}/>)
 
+function NewsFeed ({ className } : {className?: string}) {
   return (
     <div className={className}>
       <Title>Latest News</Title>
