@@ -12,6 +12,7 @@ interface NewsCardProps {
     summary: string;
     imgFile: string;
     imgAlt: string;
+    objectPosition: string;
     className? : string;
 }
 
@@ -43,10 +44,11 @@ const Content = styled.div`
   min-height: 150px;
 `
 
-const Image = styled.img`
+const Image = styled.img<{ objectPosition: string }>`
   width: 250px;
   height: 200px;
   object-fit: cover;
+  object-position: ${props => props.objectPosition};
   border-radius: ${borderRadius}px 0px 0px ${borderRadius}px;
   @media (max-width: ${media.Medium}px) {
     border-radius: ${borderRadius}px ${borderRadius}px 0px 0px;
@@ -65,7 +67,7 @@ const StyledText = styled(Text)`
 function NewsCard (props: NewsCardProps) {
   return (
     <Article className={props.className}>
-      {props.imgFile && props.imgAlt && <Link to={`/news/${props.id}`}><Image src={require(`../../img/${props.imgFile}`)} alt={props.imgAlt}/></Link>}
+      {props.imgFile && props.imgAlt && <Link to={`/news/${props.id}`}><Image src={require(`../../img/${props.imgFile}`)} alt={props.imgAlt} objectPosition={props.objectPosition}/></Link>}
       <Content>
         <StyledHeader><TextLink to={`/news/${props.id}`}>{props.title}</TextLink></StyledHeader>
         <StyledCategoryTag category={props.category}/>
