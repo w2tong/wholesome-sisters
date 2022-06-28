@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import NewsCard from './NewsCard'
-import articlesJSON from '../json/articles.json'
-import { Title, TextLink } from '../styles'
+import articlesJSON from '../../json/articles.json'
+import { Title, TextLink } from '../../styles'
 
 const StyledNewsCard = styled(NewsCard)`
   margin-bottom: 10px;

@@ -8,7 +8,7 @@ import NewsFeed from './News/NewsFeed'
 import News from './News/NewsArticleRoute'
 import RosterList from './RosterList/RosterList'
 import Footer from './Footer'
-import media from './media'
+import media from '../media'
 
 const Container = styled.div`
   height: 100%;

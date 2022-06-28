@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import LatestNews from './News/LatestNews'
 import GalleryCarousel from './Carousel/Carousel'
 import GuildProgress from './GuildProgress/GuildProgress'
-import media from './media'
+import media from '../media'
 
 const StyledLatestNews = styled(LatestNews)`
   flex: 70%;

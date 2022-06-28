@@ -1,6 +1,6 @@
 import styled from 'styled-components'
-import { ContentBackgroundColor, Icon } from './styles'
-import media from './media'
+import { ContentBackgroundColor, Icon } from '../styles'
+import media from '../media'
 
 const StyledFooter = styled.div`
   display: flex;

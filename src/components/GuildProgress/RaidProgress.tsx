@@ -2,7 +2,7 @@ import './RaidProgress.css'
 import { useState, useCallback } from 'react'
 import styled from 'styled-components'
 import { Collapse } from 'react-collapse'
-import { Content2BackgroundColor, BackgroundHighlightColor } from '../styles'
+import { Content2BackgroundColor, BackgroundHighlightColor } from '../../styles'
 
 interface BossProgressProps {
   name: string;

@@ -1,7 +1,7 @@
 import MemberCard from './MemberCard'
-import rosterJSON from '../json/roster.json'
+import rosterJSON from '../../json/roster.json'
 import styled from 'styled-components'
-import { Title } from '../styles'
+import { Title } from '../../styles'
 
 const StyledRoster = styled.div`
   display: flex;
