@@ -10,6 +10,7 @@
     "imgFile": "valtan2.jpg",
     "imgAlt": "Lost Ark Valtan",
     "imgThumb": false,
+    "objectPosition": "",
     "tags": [
       "lost ark",
       "la",
@@ -27,6 +28,7 @@
     "imgFile": "valtan.jpg",
     "imgAlt": "Lost Ark Valtan",
     "imgThumb": false,
+    "objectPosition": "top",
     "tags": [
       "lost ark",
       "la",
@@ -44,6 +46,7 @@
     "imgFile": "argos.jpg",
     "imgAlt": "Lost Ark Argos",
     "imgThumb": false,
+    "objectPosition": "top",
     "tags": [
       "lost ark",
       "la",
@@ -61,6 +64,7 @@
     "imgFile": "lost-ark.jpg",
     "imgAlt": "Lost Ark",
     "imgThumb": false,
+    "objectPosition": "",
     "tags": [
       "lost ark",
       "la"
@@ -77,6 +81,7 @@
     "imgFile": "ksm-season-2.jpg",
     "imgAlt": "Shadowlands Season 2 Keystone Master mount",
     "imgThumb": false,
+    "objectPosition": "",
     "tags": [
       "wow",
       "word of warcraft",
@@ -96,6 +101,7 @@
     "imgFile": "sylvanas-windrunner.jpg",
     "imgAlt": "alt text here",
     "imgThumb": false,
+    "objectPosition": "",
     "tags": [
       "world of warcraft",
       "wow",
@@ -116,6 +122,7 @@
     "imgFile": "wow-chains-of-domination.png",
     "imgAlt": "World of Warcraft Chains of Domination",
     "imgThumb": false,
+    "objectPosition": "",
     "tags": [
       "world of warcraft",
       "wow",
@@ -141,6 +148,7 @@
     "imgFile": "heroic-sire-denathrius-killed.png",
     "imgAlt": "Wholesome Sisters after defeating Sire Denathrius",
     "imgThumb": true,
+    "objectPosition": "",
     "tags": [
       "world of warcraft",
       "wow",
@@ -166,6 +174,7 @@
     "imgFile": "ksm-season-1.jpg",
     "imgAlt": "First Wholesome Sisters group on their Shadowlands Season 1 Keystone Master mounts",
     "imgThumb": true,
+    "objectPosition": "",
     "tags": [
       "wow",
       "word of warcraft",
@@ -185,6 +194,7 @@
     "imgFile": "ulduar.jpg",
     "imgAlt": "Wholesome Sisters after clearing Ulduar Timewalking",
     "imgThumb": true,
+    "objectPosition": "",
     "tags": [
       "world of warcraft",
       "wow",
@@ -209,6 +219,7 @@
     "imgFile": "castle-nathria.jpg",
     "imgAlt": "Castle Nathria",
     "imgThumb": false,
+    "objectPosition": "",
     "tags": [
       "world of warcraft",
       "wow",
@@ -228,6 +239,7 @@
     "imgFile": "shadowlands.jpg",
     "imgAlt": "World of Warcraft: Shadowlands",
     "imgThumb": false,
+    "objectPosition": "top",
     "tags": [
       "world of warcraft",
       "wow",
