@@ -1,35 +1,36 @@
 {
   "files": {
     "main.css": "/wholesome-sisters/static/css/main.0996b1a0.css",
-    "main.js": "/wholesome-sisters/static/js/main.c7c9a2ba.js",
+    "main.js": "/wholesome-sisters/static/js/main.929ed8b0.js",
     "static/media/shadowlands-queue.jpg": "/wholesome-sisters/static/media/shadowlands-queue.6b55599b55092a2e2d5d.jpg",
     "static/media/council-of-blood-kill.jpg": "/wholesome-sisters/static/media/council-of-blood-kill.d8e4a698b46fb86000af.jpg",
     "static/media/166.png": "/wholesome-sisters/static/media/166.e59b58e0812eb26dd144.png",
     "static/media/heroic-sire-denathrius-killed.png": "/wholesome-sisters/static/media/heroic-sire-denathrius-killed.e7dfc51cd593dd2595aa.png",
-    "static/media/sire_denathrius.png": "/wholesome-sisters/static/media/sire_denathrius.6bb605409246d5a70dfc.png",
     "static/media/166_1600x900.png": "/wholesome-sisters/static/media/166_1600x900.44f75745336fe78d807b.png",
     "static/media/ksm-season-1.jpg": "/wholesome-sisters/static/media/ksm-season-1.aaf9104ed8120170408c.jpg",
     "static/media/castle-nathria.jpg": "/wholesome-sisters/static/media/castle-nathria.125ba56a3526866b5bcc.jpg",
     "static/media/valtan.jpg": "/wholesome-sisters/static/media/valtan.f27f42a334e53b3b7a0d.jpg",
     "static/media/ksm-season-2.jpg": "/wholesome-sisters/static/media/ksm-season-2.73183131d924dce52c54.jpg",
+    "static/media/argos-kill.png": "/wholesome-sisters/static/media/argos-kill.ec6ba76f0e81e40d3b1c.png",
     "static/media/ulduar.jpg": "/wholesome-sisters/static/media/ulduar.f3e9f5362ec23f8a5bf0.jpg",
     "static/media/lost-ark.jpg": "/wholesome-sisters/static/media/lost-ark.7bfcf0e03a5739f0807a.jpg",
     "static/media/valtan2.jpg": "/wholesome-sisters/static/media/valtan2.e54233d8a75d8b105d60.jpg",
     "static/media/sylvanas-windrunner.jpg": "/wholesome-sisters/static/media/sylvanas-windrunner.af5cbada1832a197e83b.jpg",
     "static/media/senjyogahara.png": "/wholesome-sisters/static/media/senjyogahara.394a8e9ccbab085c2ebb.png",
     "static/media/argos.jpg": "/wholesome-sisters/static/media/argos.9ff9e8df2be1b5e4c677.jpg",
-    "static/media/alicia.png": "/wholesome-sisters/static/media/alicia.a6e65cca9ca0ab0cadea.png",
+    "static/media/haiji.png": "/wholesome-sisters/static/media/haiji.a6e65cca9ca0ab0cadea.png",
     "static/media/zarashi.png": "/wholesome-sisters/static/media/zarashi.0503992c943f9ba323e5.png",
-    "static/media/gerry.png": "/wholesome-sisters/static/media/gerry.713ce6add24ca6ca85cf.png",
+    "static/media/amazonpm.png": "/wholesome-sisters/static/media/amazonpm.713ce6add24ca6ca85cf.png",
     "static/media/jorbi.png": "/wholesome-sisters/static/media/jorbi.1dfdf29eb37648af7394.png",
     "static/media/shadowlands.jpg": "/wholesome-sisters/static/media/shadowlands.5a4d93cff993bab7ef7a.jpg",
-    "static/media/jed.jpg": "/wholesome-sisters/static/media/jed.3e9557d7febe8021cb31.jpg",
+    "static/media/leesanghyeok.jpg": "/wholesome-sisters/static/media/leesanghyeok.3e9557d7febe8021cb31.jpg",
+    "static/media/wow-chains-of-domination.png": "/wholesome-sisters/static/media/wow-chains-of-domination.ee75487c014216a005a7.png",
     "index.html": "/wholesome-sisters/index.html",
     "main.0996b1a0.css.map": "/wholesome-sisters/static/css/main.0996b1a0.css.map",
-    "main.c7c9a2ba.js.map": "/wholesome-sisters/static/js/main.c7c9a2ba.js.map"
+    "main.929ed8b0.js.map": "/wholesome-sisters/static/js/main.929ed8b0.js.map"
   },
   "entrypoints": [
     "static/css/main.0996b1a0.css",
-    "static/js/main.c7c9a2ba.js"
+    "static/js/main.929ed8b0.js"
   ]
 }
