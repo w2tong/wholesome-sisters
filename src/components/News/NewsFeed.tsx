@@ -107,6 +107,7 @@ interface CardProps {
   summary: string;
   imgFile: string;
   imgAlt: string;
+  objectPosition: string;
 }
 
 function Cards (props: {cards: Array<CardProps>}) {
