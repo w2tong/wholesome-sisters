@@ -13,9 +13,9 @@ const StyledMemberCard = styled(MemberCard)`
   margin: 10px;
 `
 
-function RosterList () {
-  const roster = rosterJSON.map(member => <StyledMemberCard {...member} key={member.name}/>)
+const roster = rosterJSON.map(member => <StyledMemberCard {...member} key={member.name}/>)
 
+function RosterList () {
   return (
     <div>
       <Title>Roster</Title>
@@ -23,7 +23,6 @@ function RosterList () {
         {roster}
       </StyledRoster>
     </div>
-
   )
 }
 
