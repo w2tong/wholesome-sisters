@@ -2,7 +2,6 @@ import styled from 'styled-components'
 import CategoryTag from '../CategoryTag'
 import ImageModal from './ImageModal'
 import { Header, Date, Text, ContentBackgroundColor, Href } from '../styles'
-import media from '../media'
 
 interface ArticleProps {
     title: string;
@@ -13,14 +12,16 @@ interface ArticleProps {
     imgFile: string;
     imgAlt: string;
     imgThumb: boolean;
+    objectPosition: string;
     className?: string;
 }
 
 const padding = '20px'
 
 const Container = styled.div`
+  display: flex;
+  flex-direction: column;
   background-color: ${ContentBackgroundColor};
-  max-width: ${media.Large}px;
 `
 
 const HeaderContainer = styled.div`
@@ -37,10 +38,11 @@ const StyledCategoryTag = styled(CategoryTag)`
   margin-left: 10px;
 `
 
-const Image = styled.img`
+const Image = styled.img<{objectPosition: string}>`
   width: 100%;
   height: 250px;
   object-fit: cover;
+  object-position: ${props => props.objectPosition};
   padding: 10px 0px;
 `
 
@@ -60,7 +62,7 @@ const StyledImageModal = styled(ImageModal)`
 
 function NewsArticle (props: ArticleProps) {
   const image = require(`../img/${props.imgFile}`)
-  const links = props.links.map(link => <Href href={link.href} key={link.href}>{link.text}</Href>)
+  const links = props.links.map(link => <Href href={link.href} key={link.href} target="_blank" rel="noreferrer">{link.text}</Href>)
 
   return (
     <Container className={props.className}>
@@ -69,7 +71,7 @@ function NewsArticle (props: ArticleProps) {
         <StyledCategoryTag category={props.category}/>
         <Date>{props.date}</Date>
       </HeaderContainer>
-      <Image src={image} alt={props.imgAlt}/>
+      <Image src={image} alt={props.imgAlt} objectPosition={props.objectPosition}/>
       <ContentContainer>
         <StyledText>{props.text}</StyledText>
         <br/>
