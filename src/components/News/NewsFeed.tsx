@@ -5,7 +5,7 @@ import styled from 'styled-components'
 import ReactPaginate from 'react-paginate'
 import NewsCard from './NewsCard'
 import SearchBar from '../SearchBar'
-import articlesJSON from '../../json/articles.json'
+import articlesJSON from './articles'
 import { Title, ContentBackgroundColor, BackgroundHighlightColor, TextHighlightColor } from '../../styles'
 import media from '../../media'
 

@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import NewsCard from './NewsCard'
-import articlesJSON from '../../json/articles.json'
+import articlesJSON from './articles'
 import { Title, TextLink } from '../../styles'
 
 const StyledNewsCard = styled(NewsCard)`
