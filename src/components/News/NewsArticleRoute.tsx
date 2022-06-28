@@ -1,6 +1,6 @@
 import { useParams } from 'react-router-dom'
 import NewsArticle from './NewsArticle'
-import articlesJSON from '../../json/articles.json'
+import articlesJSON from './articles'
 import styled from 'styled-components'
 import media from '../../media'
 

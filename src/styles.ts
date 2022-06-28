@@ -49,15 +49,4 @@ const Icon = styled.img`
   }
 `
 
-const Href = styled.a`
-  color: #FFFFFF;
-  text-decoration: none;
-  &:visited {
-    color: inherit;
-  }
-  &:hover {
-    color: ${TextHighlightColor};
-  }
-`
-
-export { Title, Header, Date, Text, BackgroundColor, ContentBackgroundColor, Content2BackgroundColor, BackgroundHighlightColor, TextHighlightColor, TextLink, Icon, Href }
+export { Title, Header, Date, Text, BackgroundColor, ContentBackgroundColor, Content2BackgroundColor, BackgroundHighlightColor, TextHighlightColor, TextLink, Icon }
