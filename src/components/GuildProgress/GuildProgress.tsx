@@ -1,7 +1,7 @@
 import styled from 'styled-components'
-import media from '../media'
-import { Title, Header, Text, ContentBackgroundColor } from '../styles'
-import raidProgressJSON from '../json/raid-progress.json'
+import media from '../../media'
+import { Title, Header, Text, ContentBackgroundColor } from '../../styles'
+import raidProgressJSON from '../../json/raid-progress.json'
 import RaidProgress from './RaidProgress'
 
 const Container = styled.div`

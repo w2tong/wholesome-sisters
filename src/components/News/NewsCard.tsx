@@ -1,8 +1,8 @@
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 import CategoryTag from '../CategoryTag'
-import { Header, Date, Text, ContentBackgroundColor, TextLink } from '../styles'
-import media from '../media'
+import { Header, Date, Text, ContentBackgroundColor, TextLink } from '../../styles'
+import media from '../../media'
 
 interface NewsCardProps {
     id: string;
@@ -65,7 +65,7 @@ const StyledText = styled(Text)`
 function NewsCard (props: NewsCardProps) {
   return (
     <Article className={props.className}>
-      {props.imgFile && props.imgAlt && <Link to={`/news/${props.id}`}><Image src={require(`../img/${props.imgFile}`)} alt={props.imgAlt}/></Link>}
+      {props.imgFile && props.imgAlt && <Link to={`/news/${props.id}`}><Image src={require(`../../img/${props.imgFile}`)} alt={props.imgAlt}/></Link>}
       <Content>
         <StyledHeader><TextLink to={`/news/${props.id}`}>{props.title}</TextLink></StyledHeader>
         <StyledCategoryTag category={props.category}/>

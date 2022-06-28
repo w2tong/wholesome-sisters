@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import CategoryTag from '../CategoryTag'
 import ImageModal from './ImageModal'
-import { Header, Date, Text, ContentBackgroundColor, Href } from '../styles'
+import { Header, Date, Text, ContentBackgroundColor, Href } from '../../styles'
 
 interface ArticleProps {
     title: string;
@@ -61,7 +61,7 @@ const StyledImageModal = styled(ImageModal)`
 `
 
 function NewsArticle (props: ArticleProps) {
-  const image = require(`../img/${props.imgFile}`)
+  const image = require(`../../img/${props.imgFile}`)
   const links = props.links.map(link => <Href href={link.href} key={link.href} target="_blank" rel="noreferrer">{link.text}</Href>)
 
   return (

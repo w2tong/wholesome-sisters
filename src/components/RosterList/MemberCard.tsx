@@ -1,8 +1,8 @@
 import styled from 'styled-components'
 import HorizontalRule from '../HorizontalRule'
-import media from '../media'
-import { ContentBackgroundColor, TextHighlightColor, Icon } from '../styles'
-import portraitPlaceHolder from '../img/portrait-placeholder.png'
+import media from '../../media'
+import { ContentBackgroundColor, TextHighlightColor, Icon } from '../../styles'
+import portraitPlaceHolder from '../../img/portrait-placeholder.png'
 
 const warcraftLogsLink = 'https://www.warcraftlogs.com/character/us/bleeding-hollow/'
 const raiderIOLink = 'https://raider.io/characters/us/bleeding-hollow/'
@@ -122,7 +122,7 @@ function Member (props: MemberProps) {
         </GameContainer>
         <HorizontalRule text="Lost Ark" fontSize={14} lineHeight={2}/>
         <GameContainer>
-        <Portrait src={props.lostArk && props.lostArk.portrait ? require(`../img/lostArkPortraits/${props.lostArk.portrait}`) : portraitPlaceHolder}/>
+        <Portrait src={props.lostArk && props.lostArk.portrait ? require(`../../img/lostArkPortraits/${props.lostArk.portrait}`) : portraitPlaceHolder}/>
           <NameClassContainer>
             <div>{props.lostArk ? props.lostArk.name : 'N/A'}</div>
             <div>{props.lostArk ? props.lostArk.class : 'N/A'}</div>

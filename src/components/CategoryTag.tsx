@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
-import { TextHighlightColor } from './styles'
+import { TextHighlightColor } from '../styles'
 
 interface CategoryProps {
   category: string;
