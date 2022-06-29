@@ -20,13 +20,13 @@ const Thumbnail = styled.img`
 
 const Modal = styled.div<{isOpen: boolean}>`
   display: ${props => props.isOpen ? 'flex' : 'none'};
-  position: fixed; /* Stay in place */
-  z-index: 2; /* Sit on top */
+  position: fixed;
+  z-index: 2;
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
+  width: 100%;
+  height: 100%;
+  overflow: auto;
   background-color: rgba(0,0,0,0.8);
 `
 
