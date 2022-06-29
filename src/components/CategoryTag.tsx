@@ -30,7 +30,7 @@ const Category = styled.span<{category: string}>`
   background-color: ${props => categoryColors[props.category]};
   font-weight: bold;
   border-radius: 5px;
-  padding: 5px;
+  padding: 2px 5px;
   &:hover {
     color: ${TextHighlightColor};
   }
