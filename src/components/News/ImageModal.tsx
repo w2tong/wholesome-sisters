@@ -42,8 +42,8 @@ const CloseButton = styled.p`
 
 const ModalImage = styled.img`
   margin: auto;
-  max-width: 90%;
-  max-height: 100%;
+  max-width: 80%;
+  max-height: 80%;
 `
 
 function ImageModal (props: ImageModalProps) {
