@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import ImageModal from './ImageModal'
 import Link from '../Link'
+import { Text } from '../../styles'
 
 const StyledImageModal = styled(ImageModal)`
   display: flex;
@@ -20,9 +21,9 @@ const articles = [
     category: 'la',
     date: 'May 25, 2022',
     content: (
-    <div>
-      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of 'de Finibus Bonorum et Malorum' (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, 'Lorem ipsum dolor sit amet..', comes from a line in section 1.10.32. The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from 'de Finibus Bonorum et Malorum' by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham."
-    </div>
+    <Text>
+      Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of 'de Finibus Bonorum et Malorum' (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, 'Lorem ipsum dolor sit amet..', comes from a line in section 1.10.32. The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from 'de Finibus Bonorum et Malorum' by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+    </Text>
     ),
     summary: 'Wholesome Sisters clear Valtan hard mode.',
     imgFile: 'valtan2.jpg',
@@ -40,9 +41,9 @@ const articles = [
     category: 'la',
     date: 'May 18, 2022',
     content: (
-    <div>
-      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of 'de Finibus Bonorum et Malorum' (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, 'Lorem ipsum dolor sit amet..', comes from a line in section 1.10.32. The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from 'de Finibus Bonorum et Malorum' by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham."
-    </div>
+    <Text>
+      Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of 'de Finibus Bonorum et Malorum' (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, 'Lorem ipsum dolor sit amet..', comes from a line in section 1.10.32. The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from 'de Finibus Bonorum et Malorum' by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+    </Text>
     ),
     summary: 'Wholesome Sisters clear Valtan normal mode.',
     imgFile: 'valtan.jpg',
@@ -60,9 +61,9 @@ const articles = [
     category: 'la',
     date: 'March 17, 2022',
     content: (
-    <div>
-      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of 'de Finibus Bonorum et Malorum' (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, 'Lorem ipsum dolor sit amet..', comes from a line in section 1.10.32. The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from 'de Finibus Bonorum et Malorum' by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham."
-    </div>
+    <Text>
+      Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of 'de Finibus Bonorum et Malorum' (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, 'Lorem ipsum dolor sit amet..', comes from a line in section 1.10.32. The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from 'de Finibus Bonorum et Malorum' by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+    </Text>
     ),
     summary: 'Wholesome Sisters clear all three phases of Abyss Raid Argos.',
     imgFile: 'argos.jpg',
@@ -80,9 +81,9 @@ const articles = [
     category: 'la',
     date: 'February 10, 2022',
     content: (
-    <div>
-      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of 'de Finibus Bonorum et Malorum' (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, 'Lorem ipsum dolor sit amet..', comes from a line in section 1.10.32. The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from 'de Finibus Bonorum et Malorum' by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham."
-    </div>
+    <Text>
+      Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of 'de Finibus Bonorum et Malorum' (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, 'Lorem ipsum dolor sit amet..', comes from a line in section 1.10.32. The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from 'de Finibus Bonorum et Malorum' by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+    </Text>
     ),
     summary: 'Wholesome Sisters create a guild on Lost Ark NA East Una.',
     imgFile: 'lost-ark.jpg',
@@ -99,9 +100,9 @@ const articles = [
     category: 'wow',
     date: 'August 11, 2021',
     content: (
-    <div>
-      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of 'de Finibus Bonorum et Malorum' (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, 'Lorem ipsum dolor sit amet..', comes from a line in section 1.10.32. The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from 'de Finibus Bonorum et Malorum' by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham."
-    </div>
+    <Text>
+      Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of 'de Finibus Bonorum et Malorum' (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, 'Lorem ipsum dolor sit amet..', comes from a line in section 1.10.32. The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from 'de Finibus Bonorum et Malorum' by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+    </Text>
     ),
     summary: "Wholesome Sisters' first group to obtain Keystone Master in Shadowlands Season 2.",
     imgFile: 'ksm-season-2.jpg',
@@ -121,11 +122,11 @@ const articles = [
     category: 'wow',
     date: 'July 23, 2021',
     content: (
-    <div>
-      <div>"Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of 'de Finibus Bonorum et Malorum' (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, 'Lorem ipsum dolor sit amet..', comes from a line in section 1.10.32. The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from 'de Finibus Bonorum et Malorum' by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham."</div>
+    <Text>
+      <Text>"Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of 'de Finibus Bonorum et Malorum' (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, 'Lorem ipsum dolor sit amet..', comes from a line in section 1.10.32. The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from 'de Finibus Bonorum et Malorum' by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham."</Text>
       <br/>
       <Link href="https://www.warcraftlogs.com/reports/92NdnvgYPHVtChAL#fight=7">View the log on Warcraft Logs</Link>
-    </div>
+    </Text>
     ),
     summary: 'Wholesome Sisters clear Sanctum of Domination normal difficulty on the third week of its release.',
     imgFile: 'sylvanas-windrunner.jpg',
@@ -146,9 +147,9 @@ const articles = [
     category: 'wow',
     date: 'July 18, 2021',
     content: (
-    <div>
-      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of 'de Finibus Bonorum et Malorum' (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, 'Lorem ipsum dolor sit amet..', comes from a line in section 1.10.32. The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from 'de Finibus Bonorum et Malorum' by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham."
-    </div>
+    <Text>
+      Wholesome Sisters have decided to return for Shadowlands Season 2. The plan for this season will be to clear the new raid Sanctum of Domination on Heroic difficulty and Keystone Master.
+    </Text>
     ),
     summary: 'Wholesome Sisters have decided to return for Shadowlands Season 2.',
     imgFile: 'wow-chains-of-domination.png',
@@ -169,15 +170,15 @@ const articles = [
     category: 'wow',
     date: 'February 18, 2021',
     content: (
-    <div>
-      <div>"Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of 'de Finibus Bonorum et Malorum' (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, 'Lorem ipsum dolor sit amet..', comes from a line in section 1.10.32. The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from 'de Finibus Bonorum et Malorum' by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham."</div>
+    <Text>
+      <Text>Wholesome Sisters finally manage to defeat Sire Denathrius and clear Castle Nathria Heroic on the 11th raid week! View the log of the kill below.</Text>
       <br/>
       <Link href="https://www.warcraftlogs.com/reports/FXqcbjR7f8HaLW6n#fight=67">View the log on Warcraft Logs</Link>
       <br/>
       <StyledImageModal src={getImage('heroic-sire-denathrius-killed.png')} alt='First Wholesome Sisters group on their Shadowlands Season 1 Keystone Master mounts'/>
-    </div>
+    </Text>
     ),
-    summary: 'Wholesome Sisters clear Castle Nathria normal difficulty on the third week of its release.',
+    summary: 'Wholesome Sisters clear Castle Nathria normal difficulty on the 11th week of its release.',
     imgFile: 'heroic-sire-denathrius-killed.png',
     imgAlt: 'Wholesome Sisters after defeating Sire Denathrius',
     objectPosition: '',
@@ -196,10 +197,10 @@ const articles = [
     category: 'wow',
     date: 'February 16, 2021',
     content: (
-      <div>
-        <div>"Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of 'de Finibus Bonorum et Malorum' (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, 'Lorem ipsum dolor sit amet..', comes from a line in section 1.10.32. The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from 'de Finibus Bonorum et Malorum' by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham."</div>
+      <Text>
+        <Text>Congratulations to the first group to earn Keystone Master in Season 1 of Shadowlands! View their Spires of Ascension +15 run that secured it below.</Text>
         <br/>
-        <div>Party:</div>
+        <Text>Party:</Text>
         <ul>
           <li>Detharon - Blood Death Knight</li>
           <li>Rothanice - Holy Paladin</li>
@@ -211,7 +212,7 @@ const articles = [
         <Link href="https://raider.io/mythic-plus-runs/season-sl-1/18736279-15-spires-of-ascension">View the run on Raider.IO</Link>
         <br/>
         <StyledImageModal src={getImage('ksm-season-1.jpg')} alt='First Wholesome Sisters group on their Shadowlands Season 1 Keystone Master mounts'/>
-      </div>
+      </Text>
     ),
     summary: "Wholesome Sisters' first group to obtain Keystone Master in Shadowlands Season 1.",
     imgFile: 'ksm-season-1.jpg',
@@ -231,13 +232,26 @@ const articles = [
     category: 'wow',
     date: 'December 30, 2020',
     content: (
-    <div>
-      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of 'de Finibus Bonorum et Malorum' (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, 'Lorem ipsum dolor sit amet..', comes from a line in section 1.10.32. The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from 'de Finibus Bonorum et Malorum' by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham."
-      <StyledImageModal src={getImage('ulduar.jpg')} alt='Wholesome Sisters after clearing Ulduar Timewalking'/>
-    </div>
+    <Text>
+      After four hours of struggling, Wholesome Sisters have managed to defeat Yogg-Saron and clear Ulduar Timewalking. Participating members include:
+      <ul>
+        <li>Maikoe - Marksman Hunter</li>
+        <li>Jorbi - Enhancement Shaman</li>
+        <li>Aethne - Outlaw Rogue</li>
+        <li>Cazzaji - Fury Warrior</li>
+        <li>Glucke - Fire Mage</li>
+        <li>Kankarot - Restoration Druid</li>
+        <li>Banestus - Discipline Priest</li>
+        <li> Yarnbrew - Brewmaster Monk</li>
+        <li>Finattok - Affliction Warlock</li>
+        <li>Parzlor - Balance Druid</li>
+        <li>Veriyn - Unholy Death Knight</li>
+      </ul>
+      <StyledImageModal src={getImage('ulduar-timewalking.jpg')} alt='Wholesome Sisters after clearing Ulduar Timewalking'/>
+    </Text>
     ),
     summary: 'Wholesome Sisters clear Ulduar Timewalking.',
-    imgFile: 'ulduar.jpg',
+    imgFile: 'ulduar-timewalking.jpg',
     imgAlt: 'Wholesome Sisters after clearing Ulduar Timewalking',
     objectPosition: '',
     tags: [
@@ -255,7 +269,7 @@ const articles = [
     date: 'December 26, 2020',
     content: (
     <div>
-      <div>"On the third week of Castle Nathria's relase, the Wholesome Sisters manage to take down Sire Denathrius and clear Castle Nathria normal difficulty."</div>
+      <Text>"On the third week of Castle Nathria's relase, the Wholesome Sisters manage to take down Sire Denathrius and clear Castle Nathria normal difficulty."</Text>
       <br/>
       <Link href="https://www.warcraftlogs.com/reports/9p8NRGJk1c4zTtMZ#fight=9">View the log on Warcraft Logs</Link>
     </div>
@@ -279,7 +293,9 @@ const articles = [
     date: 'December 26, 2020',
     content: (
     <div>
+      <text>
       "Due to queue times lasting hours on the realm Area 52, the original Wholesome Sister's guild Deep Deep Deep has decided to transfer to the realm Bleeding Hollow."
+      </text>
     </div>
     ),
     summary: 'Wholesome Sisters migrate from Area 52 to Bleeding Hollow due to queue times.',
