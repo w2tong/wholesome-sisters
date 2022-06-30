@@ -2,11 +2,11 @@ import './RaidProgress.css'
 import { useState, useCallback } from 'react'
 import styled from 'styled-components'
 import { Collapse } from 'react-collapse'
-import { Content2BackgroundColor, BackgroundHighlightColor } from '../../styles'
+import { Content2BackgroundColor, BackgroundHighlightColor, TextHighlightColor } from '../../styles'
 
 interface BossProgressProps {
   name: string;
-  bosses: {name: string, cleared: boolean}[];
+  bosses: { name: string, cleared: boolean }[];
   className?: string;
 }
 
@@ -15,7 +15,7 @@ const Green = 'rgb(0,255,0)'
 const Container = styled.div`
 `
 
-const Header = styled.div<{isOpened: boolean}>`
+const Header = styled.div<{ isOpened: boolean }>`
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -25,7 +25,7 @@ const Header = styled.div<{isOpened: boolean}>`
   }
 
 `
-const RaidProgress = styled.div<{color: string}>`
+const RaidProgress = styled.div<{ color: string }>`
   flex: 15%;
   text-align: right;
   font-weight: bold;
@@ -36,6 +36,10 @@ const RaidProgress = styled.div<{color: string}>`
 const RaidName = styled.div`
   flex: 85%;
   padding-left: 10px;
+
+  ${Header}:hover & {
+    color: ${TextHighlightColor};
+  }
 `
 
 const CollapseContent = styled.div`
@@ -48,7 +52,7 @@ const Boss = styled.div`
   padding: 3px 30px;
 `
 
-const Checkbox = styled.span<{color: string}>`
+const Checkbox = styled.span<{ color: string }>`
   flex: 10%;
   color: ${props => props.color};
 `
@@ -81,11 +85,11 @@ function BossProgress (props: BossProgressProps) {
         <RaidProgress color={curr < total ? 'yellow' : Green}>{curr}/{total}</RaidProgress>
         <RaidName>{props.name}</RaidName>
       </Header>
-        <Collapse isOpened={isButtonCollapseOpen}>
-          <CollapseContent>
-            {bosses}
-          </CollapseContent>
-        </Collapse>
+      <Collapse isOpened={isButtonCollapseOpen}>
+        <CollapseContent>
+          {bosses}
+        </CollapseContent>
+      </Collapse>
     </Container>
   )
 }
