@@ -22,7 +22,11 @@ const articles = [
     date: 'May 25, 2022',
     content: (
     <Text>
-      Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of 'de Finibus Bonorum et Malorum' (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, 'Lorem ipsum dolor sit amet..', comes from a line in section 1.10.32. The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from 'de Finibus Bonorum et Malorum' by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+      <Text>Congratulations to the first Wholesome Sisters members clear Legion Raid Valtan Hard gates 1 and 2. Participating members include:</Text>
+      <ul>
+        <li>Jorbi - Soulfist</li>
+        <li>Leesanghyeok - Shadowhunter</li>
+      </ul>
     </Text>
     ),
     summary: 'Wholesome Sisters clear Valtan hard mode.',
@@ -42,7 +46,13 @@ const articles = [
     date: 'May 18, 2022',
     content: (
     <Text>
-      Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of 'de Finibus Bonorum et Malorum' (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, 'Lorem ipsum dolor sit amet..', comes from a line in section 1.10.32. The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from 'de Finibus Bonorum et Malorum' by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+      <Text>Congratulations to the first Wholesome Sisters members clear Legion Raid Valtan Normal gates 1 and 2. Participating members include:</Text>
+      <ul>
+        <li>Cazaji - Berserker</li>
+        <li>Wongwongwong - Sorceress</li>
+        <li>Razashi - Artillerist</li>
+        <li>Glucke - Bard</li>
+      </ul>
     </Text>
     ),
     summary: 'Wholesome Sisters clear Valtan normal mode.',
@@ -62,7 +72,14 @@ const articles = [
     date: 'March 17, 2022',
     content: (
     <Text>
-      Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of 'de Finibus Bonorum et Malorum' (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, 'Lorem ipsum dolor sit amet..', comes from a line in section 1.10.32. The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from 'de Finibus Bonorum et Malorum' by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+      <Text>Congratulations to the first Wholesome Sisters members clear Abyss Raid Argos phases 1 to 3. Participating members include: </Text>
+      <ul>
+        <li>Jorbi - Soulfist</li>
+        <li>Leesanghyeok - Shadowhunter</li>
+        <li>Senjyogahara - Deathblade</li>
+        <li>Haiji - Bard</li>
+        <li>Amazonpm - Berserker</li>
+      </ul>
     </Text>
     ),
     summary: 'Wholesome Sisters clear all three phases of Abyss Raid Argos.',
@@ -82,7 +99,7 @@ const articles = [
     date: 'February 10, 2022',
     content: (
     <Text>
-      The Wholesome Sisters World of Warcraft guild has decided to expand to Lost Ark. Many members of the World of Warcraft guild have decided to try out Lost Ark and many new members will be joining us including:
+      <Text>The Wholesome Sisters World of Warcraft guild has decided to expand to Lost Ark. Many members of the World of Warcraft guild have decided to try out Lost Ark and many new members will be joining us including:</Text>
       <ul>
         <li>Amazonpm - Berserker</li>
         <li>Haiji - Bard</li>
@@ -252,17 +269,17 @@ const articles = [
     <Text>
       After four hours of struggling, Wholesome Sisters have managed to defeat Yogg-Saron and clear Ulduar Timewalking. Participating members include:
       <ul>
-        <li>Maikoe - Marksmanship Hunter</li>
-        <li>Jorbi - Enhancement Shaman</li>
-        <li>Aethne - Outlaw Rogue</li>
-        <li>Cazzaji - Fury Warrior</li>
-        <li>Glucke - Fire Mage</li>
-        <li>Kankarot - Restoration Druid</li>
-        <li>Banestus - Discipline Priest</li>
-        <li>Yarnbrew - Brewmaster Monk</li>
-        <li>Finattok - Affliction Warlock</li>
-        <li>Parzlor - Balance Druid</li>
-        <li>Veriyn - Unholy Death Knight</li>
+        <li><Link href="https://raider.io/characters/us/bleeding-hollow/Maikoe">Maikoe</Link> - Marksmanship Hunter</li>
+        <li><Link href="https://raider.io/characters/us/bleeding-hollow/Jorbi">Jorbi</Link> - Enhancement Shaman</li>
+        <li><Link href="https://raider.io/characters/us/bleeding-hollow/Aethne">Aethne</Link> - Outlaw Rogue</li>
+        <li><Link href="https://raider.io/characters/us/bleeding-hollow/Cazzaji">Cazzaji</Link> - Fury Warrior</li>
+        <li><Link href="https://raider.io/characters/us/bleeding-hollow/Glucke">Glucke</Link> - Fire Mage</li>
+        <li><Link href="https://raider.io/characters/us/bleeding-hollow/Kankarot">Kankarot</Link> - Restoration Druid</li>
+        <li><Link href="https://raider.io/characters/us/bleeding-hollow/Banestus">Banestus</Link> - Discipline Priest</li>
+        <li><Link href="https://raider.io/characters/us/bleeding-hollow/Yarnbrew">Yarnbrew</Link> - Brewmaster Monk</li>
+        <li><Link href="https://raider.io/characters/us/bleeding-hollow/Finattok">Finattok</Link> - Affliction Warlock</li>
+        <li><Link href="https://raider.io/characters/us/bleeding-hollow/Parzlor">Parzlor</Link> - Balance Druid</li>
+        <li><Link href="https://raider.io/characters/us/bleeding-hollow/Veriyn">Veriyn</Link> - Unholy Death Knight</li>
       </ul>
       <StyledImageModal src={getImage('ulduar-timewalking.jpg')} alt='Wholesome Sisters after clearing Ulduar Timewalking'/>
     </Text>
@@ -309,11 +326,11 @@ const articles = [
     category: 'wow',
     date: 'December 26, 2020',
     content: (
-    <div>
-      <text>
+    <Text>
+      <Text>
       "Due to queue times lasting hours on the realm Area 52, the original Wholesome Sister's guild Deep Deep Deep has decided to transfer to the realm Bleeding Hollow."
-      </text>
-    </div>
+      </Text>
+    </Text>
     ),
     summary: 'Wholesome Sisters migrate from Area 52 to Bleeding Hollow due to queue times.',
     imgFile: 'shadowlands.jpg',
