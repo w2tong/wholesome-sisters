@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/wholesome-sisters/static/css/main.0996b1a0.css",
-    "main.js": "/wholesome-sisters/static/js/main.2c4ae90a.js",
+    "main.js": "/wholesome-sisters/static/js/main.dc15f895.js",
     "static/media/ksm-season-1.jpg": "/wholesome-sisters/static/media/ksm-season-1.fa436d78d0cc5c2294c2.jpg",
     "static/media/council-of-blood-kill.jpg": "/wholesome-sisters/static/media/council-of-blood-kill.d8e4a698b46fb86000af.jpg",
     "static/media/heroic-sire-denathrius-killed.png": "/wholesome-sisters/static/media/heroic-sire-denathrius-killed.e7dfc51cd593dd2595aa.png",
@@ -25,10 +25,10 @@
     "static/media/wow-chains-of-domination.png": "/wholesome-sisters/static/media/wow-chains-of-domination.ee75487c014216a005a7.png",
     "index.html": "/wholesome-sisters/index.html",
     "main.0996b1a0.css.map": "/wholesome-sisters/static/css/main.0996b1a0.css.map",
-    "main.2c4ae90a.js.map": "/wholesome-sisters/static/js/main.2c4ae90a.js.map"
+    "main.dc15f895.js.map": "/wholesome-sisters/static/js/main.dc15f895.js.map"
   },
   "entrypoints": [
     "static/css/main.0996b1a0.css",
-    "static/js/main.2c4ae90a.js"
+    "static/js/main.dc15f895.js"
   ]
 }
