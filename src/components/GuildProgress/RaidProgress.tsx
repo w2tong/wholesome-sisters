@@ -38,16 +38,23 @@ const RaidName = styled.div`
   padding-left: 10px;
 `
 
-const CollapseContainer = styled.div`
+const CollapseContent = styled.div`
   background-color: ${Content2BackgroundColor};
+  padding: 10px 0;
 `
 
 const Boss = styled.div`
+  display: flex;
   padding: 3px 30px;
 `
 
 const Checkbox = styled.span<{color: string}>`
+  flex: 10%;
   color: ${props => props.color};
+`
+
+const BossName = styled.span`
+  flex: 90%;
 `
 
 function BossProgress (props: BossProgressProps) {
@@ -57,7 +64,7 @@ function BossProgress (props: BossProgressProps) {
   const bosses = props.bosses.map(boss =>
     <Boss key={props.name + boss.name}>
       <Checkbox color={boss.cleared ? Green : 'red'}>{boss.cleared ? '☑ ' : '☐ '}</Checkbox>
-      {boss.name}
+      <BossName>{boss.name}</BossName>
     </Boss>
   )
 
@@ -74,11 +81,11 @@ function BossProgress (props: BossProgressProps) {
         <RaidProgress color={curr < total ? 'yellow' : Green}>{curr}/{total}</RaidProgress>
         <RaidName>{props.name}</RaidName>
       </Header>
-      <CollapseContainer>
         <Collapse isOpened={isButtonCollapseOpen}>
-          {bosses}
+          <CollapseContent>
+            {bosses}
+          </CollapseContent>
         </Collapse>
-      </CollapseContainer>
     </Container>
   )
 }

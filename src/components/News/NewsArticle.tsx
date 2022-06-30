@@ -14,7 +14,7 @@ interface ArticleProps {
     className?: string;
 }
 
-const padding = '20px'
+const sidePadding = 'min(50px, 5%)'
 
 const Container = styled.div`
   display: flex;
@@ -24,7 +24,7 @@ const Container = styled.div`
 
 const HeaderContainer = styled.div`
   padding-top: 10px;
-  padding-left: ${padding};
+  padding: 25px ${sidePadding};
 `
 
 const StyledHeader = styled(Header)`
@@ -45,7 +45,7 @@ const Image = styled.img<{objectPosition: string}>`
 `
 
 const ContentContainer = styled.div`
-  padding: ${padding};
+  padding: ${sidePadding};
 `
 
 function NewsArticle (props: ArticleProps) {

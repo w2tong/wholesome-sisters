@@ -60,7 +60,7 @@ function GuildInfo ({ className } : {className?: string}) {
       <Container>
         <GameContainer>
           <StyledHeader>World of Warcraft</StyledHeader>
-          <Server>US Bleeding Hollow</Server>
+          <Server>US Bleeding Hollow - Horde</Server>
           {wowRaids}
         </GameContainer>
         <GameContainer>
