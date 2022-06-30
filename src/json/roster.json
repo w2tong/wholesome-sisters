@@ -112,11 +112,11 @@
     "role": "Member",
     "wow": {
       "name": "Aethne",
-      "class": "Priest",
-      "portraitURL": "https://render-us.worldofwarcraft.com/character/bleeding-hollow/193/237459649-avatar.jpg"
+      "class": "Rogue",
+      "portraitURL": "https://render-us.worldofwarcraft.com/character/bleeding-hollow/23/237434391-avatar.jpg"
     },
     "lostArk": {
-      "name": "i dont remember",
+      "name": "Jurmjurm",
       "class": "Glavier",
       "portrait": null
     }
@@ -132,7 +132,7 @@
     }
   },
   {
-    "name": "Gerry",
+    "name": "Amazonpm",
     "role": "Member",
     "wow": null,
     "lostArk": {
@@ -142,7 +142,7 @@
     }
   },
   {
-    "name": "Alicia",
+    "name": "Haiji",
     "role": "Member",
     "wow": null,
     "lostArk": {
@@ -152,7 +152,7 @@
     }
   },
   {
-    "name": "Gub",
+    "name": "Senjyogahara",
     "role": "Member",
     "wow": null,
     "lostArk": {
@@ -162,7 +162,7 @@
     }
   },
   {
-    "name": "Jed",
+    "name": "Leesanghyeok",
     "role": "Member",
     "wow": null,
     "lostArk": {

@@ -103,7 +103,7 @@ function Member (props: MemberProps) {
         <Name>{props.name}<Role>{props.role}</Role></Name>
         <HorizontalRule text="World of Warcraft" fontSize={14} lineHeight={2}/>
         <GameContainer>
-          <Portrait src={props.wow && props.wow.portraitURL ? props.wow.portraitURL : portraitPlaceHolder}/>
+          <Portrait src={props.wow && props.wow.portraitURL ? props.wow.portraitURL : portraitPlaceHolder} onError={(e) => { e.currentTarget.src = portraitPlaceHolder }}/>
           <NameClassContainer>
             <div>{props.wow ? props.wow.name : 'N/A'}</div>
             {props.wow ? <Class wowClass={props.wow.class}>{props.wow.class}</Class> : 'N/A'}
@@ -117,7 +117,7 @@ function Member (props: MemberProps) {
                 <Icon title="View Warcraft Logs Page" src="https://assets.rpglogs.com/img/warcraft/favicon.png" alt="View Warcraft Logs Page"/>
               </a>
             </LinksContainer>
-            : <div></div>
+            : null
           }
         </GameContainer>
         <HorizontalRule text="Lost Ark" fontSize={14} lineHeight={2}/>
