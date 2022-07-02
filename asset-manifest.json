@@ -1,9 +1,12 @@
 {
   "files": {
     "main.css": "/wholesome-sisters/static/css/main.0996b1a0.css",
-    "main.js": "/wholesome-sisters/static/js/main.dc15f895.js",
+    "main.js": "/wholesome-sisters/static/js/main.bd790bac.js",
+    "static/media/vykas-gate2.jpg": "/wholesome-sisters/static/media/vykas-gate2.ad0b93be220a53c57d0e.jpg",
+    "static/media/vykas-gate3.jpg": "/wholesome-sisters/static/media/vykas-gate3.d0e491a567c10d01dc84.jpg",
     "static/media/ksm-season-1.jpg": "/wholesome-sisters/static/media/ksm-season-1.fa436d78d0cc5c2294c2.jpg",
     "static/media/council-of-blood-kill.jpg": "/wholesome-sisters/static/media/council-of-blood-kill.d8e4a698b46fb86000af.jpg",
+    "static/media/vykas-gate1.jpg": "/wholesome-sisters/static/media/vykas-gate1.8319b55e0a6d1d3a9104.jpg",
     "static/media/heroic-sire-denathrius-killed.png": "/wholesome-sisters/static/media/heroic-sire-denathrius-killed.e7dfc51cd593dd2595aa.png",
     "static/media/ulduar-timewalking.jpg": "/wholesome-sisters/static/media/ulduar-timewalking.22c9b026ca418d022a9e.jpg",
     "static/media/166_1600x900.png": "/wholesome-sisters/static/media/166_1600x900.44f75745336fe78d807b.png",
@@ -25,10 +28,10 @@
     "static/media/wow-chains-of-domination.png": "/wholesome-sisters/static/media/wow-chains-of-domination.ee75487c014216a005a7.png",
     "index.html": "/wholesome-sisters/index.html",
     "main.0996b1a0.css.map": "/wholesome-sisters/static/css/main.0996b1a0.css.map",
-    "main.dc15f895.js.map": "/wholesome-sisters/static/js/main.dc15f895.js.map"
+    "main.bd790bac.js.map": "/wholesome-sisters/static/js/main.bd790bac.js.map"
   },
   "entrypoints": [
     "static/css/main.0996b1a0.css",
-    "static/js/main.dc15f895.js"
+    "static/js/main.bd790bac.js"
   ]
 }
