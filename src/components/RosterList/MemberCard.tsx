@@ -108,8 +108,8 @@ function Member (props: MemberProps) {
             <div>{props.wow ? props.wow.name : 'N/A'}</div>
             {props.wow ? <Class wowClass={props.wow.class}>{props.wow.class}</Class> : 'N/A'}
           </NameClassContainer>
-          {props.wow
-            ? <LinksContainer>
+          {props.wow &&
+            <LinksContainer>
               <a href={raiderIOLink + props.wow.name} target="_blank" rel="noreferrer">
                 <Icon title="View Raider.IO Page" src="https://assets.rpglogs.com/img/warcraft/raiderio_square_xl.png" alt="View Raider.IO Page"/>
               </a>
@@ -117,7 +117,6 @@ function Member (props: MemberProps) {
                 <Icon title="View Warcraft Logs Page" src="https://assets.rpglogs.com/img/warcraft/favicon.png" alt="View Warcraft Logs Page"/>
               </a>
             </LinksContainer>
-            : null
           }
         </GameContainer>
         <HorizontalRule text="Lost Ark" fontSize={14} lineHeight={2}/>
