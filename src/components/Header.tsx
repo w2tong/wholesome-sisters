@@ -23,7 +23,6 @@ const LogoNavLink = styled(NavLink)`
 `
 
 const Logo = styled.div`
-  font-family: 'Helvetica';
   font-size: 16px;
   font-weight: bold;
   text-align: center;
