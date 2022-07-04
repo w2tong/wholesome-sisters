@@ -179,11 +179,11 @@ function NewsFeed ({ className } : { className?: string }) {
         <Hidden/>
         <StyledTitle>News</StyledTitle>
         <StyledForm onSubmit={(e) => e.preventDefault()}>
-          <StyledSearchBar handleChange={setInput} value={input} placeholder="Search articles.."/>
+          <StyledSearchBar handleChange={setInput} value={input} placeholder="Search news..."/>
           <StyledButton onClick={handleSearch}>Search</StyledButton>
         </StyledForm>
       </FlexboxContainer>
-      {currentItems.length ? <Cards cards={currentItems}/> : <NoResults>No results found</NoResults>}
+      {currentItems.length ? <Cards cards={currentItems}/> : <NoResults>No results found.</NoResults>}
       {articles.length > itemsPerPage &&
       <StyledReactPaginate
         breakLabel="..."

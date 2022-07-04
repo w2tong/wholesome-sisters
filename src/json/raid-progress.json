@@ -187,15 +187,15 @@
       "bosses": [
         {
           "name": "Gate 1",
-          "cleared": false
+          "cleared": true
         },
         {
           "name": "Gate 2",
-          "cleared": false
+          "cleared": true
         },
         {
           "name": "Gate 3",
-          "cleared": false
+          "cleared": true
         }
       ]
     },
