@@ -50,6 +50,7 @@ const Name = styled.div`
   display: flex;
   justify-content: space-between;
   padding: 0 10px;
+  font-weight: bold;
   @media (max-width: ${media.XSmall}px) {
     flex-direction: column;
     align-items: center;
@@ -58,7 +59,6 @@ const Name = styled.div`
 
 const Role = styled.span`
   color: ${TextHighlightColor};
-  font-weight: bold;
 `
 
 const classColor: {[key: string]: string} = {
