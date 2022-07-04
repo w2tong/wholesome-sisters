@@ -183,7 +183,7 @@ function NewsFeed ({ className } : { className?: string }) {
           <StyledButton onClick={handleSearch}>Search</StyledButton>
         </StyledForm>
       </FlexboxContainer>
-      {currentItems.length ? <Cards cards={currentItems}/> : <NoResults>No results found</NoResults>}
+      {currentItems.length ? <Cards cards={currentItems}/> : <NoResults>No results found.</NoResults>}
       {articles.length > itemsPerPage &&
       <StyledReactPaginate
         breakLabel="..."
