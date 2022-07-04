@@ -16,6 +16,96 @@ function getImage (src: string) {
 /* eslint-disable react/no-unescaped-entities */
 const articles = [
   {
+    id: 'vykas-hard-gate-3-cleared',
+    title: 'Vykas Hard Gate 3 Cleared',
+    category: 'la',
+    date: 'July 2, 2022',
+    content: (
+    <Text>
+      <Text>Congratulations to the first Wholesome Sisters members clear Legion Raid Vykas Hard gate 3. Participating members include:</Text>
+      <ul>
+        <li>Jorbi - Soulfist</li>
+        <li>Maikov - Sharpshooter</li>
+        <li>Haiji - Bard</li>
+        <li>Leesanghyeok - Shadowhunter</li>
+        <li>Senjyogahara - Deathblade</li>
+        <li>Gaawr - Sorceress</li>
+        <li>Riotvifromarcane - Scrapper</li>
+      </ul>
+      <StyledImageModal src={getImage('vykas-gate3.jpg')} alt='Wholesome Sisters clear Vykas Hard mode gate 3'/>
+    </Text>
+    ),
+    summary: 'Wholesome Sisters clear Vykas Hard mode gate 3.',
+    imgFile: 'vykas-gate3.jpg',
+    imgAlt: 'Lost Ark Vykas Gate 3 Clear',
+    objectPosition: '',
+    tags: [
+      'lost ark',
+      'la',
+      'clear'
+    ]
+  },
+  {
+    id: 'vykas-hard-gate-2-cleared',
+    title: 'Vykas Hard Gate 2 Cleared',
+    category: 'la',
+    date: 'July 1, 2022',
+    content: (
+    <Text>
+      <Text>Congratulations to the first Wholesome Sisters members clear Legion Raid Vykas Hard gate 2. Participating members include:</Text>
+      <ul>
+        <li>Jorbi - Soulfist</li>
+        <li>Maikov - Sharpshooter</li>
+        <li>Haiji - Bard</li>
+        <li>Leesanghyeok - Shadowhunter</li>
+        <li>Senjyogahara - Deathblade</li>
+        <li>Gaawr - Sorceress</li>
+        <li>Riotvifromarcane - Scrapper</li>
+      </ul>
+      <StyledImageModal src={getImage('vykas-gate2.jpg')} alt='Wholesome Sisters clear Vykas Hard mode gate 2'/>
+    </Text>
+    ),
+    summary: 'Wholesome Sisters clear Vykas Hard mode gate 2.',
+    imgFile: 'vykas-gate2.jpg',
+    imgAlt: 'Lost Ark Vykas Gate 2 Clear',
+    objectPosition: '',
+    tags: [
+      'lost ark',
+      'la',
+      'clear'
+    ]
+  },
+  {
+    id: 'vykas-hard-gate-1-cleared',
+    title: 'Vykas Hard Gate 1 Cleared',
+    category: 'la',
+    date: 'June 30, 2022',
+    content: (
+    <Text>
+      <Text>Congratulations to the first Wholesome Sisters members clear Legion Raid Vykas Hard gate 1. Participating members include:</Text>
+      <ul>
+        <li>Jorbi - Soulfist</li>
+        <li>Maikov - Sharpshooter</li>
+        <li>Haiji - Bard</li>
+        <li>Leesanghyeok - Shadowhunter</li>
+        <li>Senjyogahara - Deathblade</li>
+        <li>Gaawr - Sorceress</li>
+        <li>Riotvifromarcane - Scrapper</li>
+      </ul>
+      <StyledImageModal src={getImage('vykas-gate1.jpg')} alt='Wholesome Sisters clear Vykas Hard mode gate 1'/>
+    </Text>
+    ),
+    summary: 'Wholesome Sisters clear Vykas Hard mode gate 1.',
+    imgFile: 'vykas-gate1.jpg',
+    imgAlt: 'Lost Ark Vykas Gate 1 Clear',
+    objectPosition: '',
+    tags: [
+      'lost ark',
+      'la',
+      'clear'
+    ]
+  },
+  {
     id: 'valtan-hard-cleared',
     title: 'Valtan Hard Cleared',
     category: 'la',

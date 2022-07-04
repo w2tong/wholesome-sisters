@@ -23,7 +23,6 @@ const LogoNavLink = styled(NavLink)`
 `
 
 const Logo = styled.div`
-  font-family: 'Helvetica';
   font-size: 16px;
   font-weight: bold;
   text-align: center;
@@ -62,11 +61,12 @@ const StyledNavLink = styled(NavLink)`
   text-decoration: none;
   &:hover {
     color: ${TextHighlightColor};
+    text-shadow: 0 0 5px ${TextHighlightColor};
     background-color: ${BackgroundHighlightColor};
+    transition: text-shadow 500ms;
   }
   &.active {
     color: ${TextHighlightColor};
-    font-weight: bold;
   }
   @media (max-width: ${media.XSmall}px) {
     padding: 0 5px;
