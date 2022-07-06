@@ -44,6 +44,10 @@ const Content = styled.div`
   min-height: 150px;
 `
 
+const StyledLink = styled(Link)`
+  font-size: 0;
+`
+
 const Image = styled.img<{ objectPosition: string }>`
   width: 250px;
   height: 200px;
@@ -67,7 +71,7 @@ const StyledText = styled(Text)`
 function NewsCard (props: NewsCardProps) {
   return (
     <Article className={props.className}>
-      {props.imgFile && props.imgAlt && <Link to={`/news/${props.id}`}><Image src={require(`../../img/${props.imgFile}`)} alt={props.imgAlt} objectPosition={props.objectPosition}/></Link>}
+      {props.imgFile && props.imgAlt && <StyledLink to={`/news/${props.id}`}><Image src={require(`../../img/${props.imgFile}`)} alt={props.imgAlt} objectPosition={props.objectPosition}/></StyledLink>}
       <Content>
         <StyledHeader><TextLink to={`/news/${props.id}`}>{props.title}</TextLink></StyledHeader>
         <StyledCategoryTag category={props.category}/>
