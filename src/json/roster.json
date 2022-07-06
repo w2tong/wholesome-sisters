@@ -56,6 +56,16 @@
     }
   },
   {
+    "name": "Yarn",
+    "role": "WoW Raid Leader",
+    "wow": {
+      "name": "Yarnbrew",
+      "class": "Monk",
+      "portraitURL": "https://render-us.worldofwarcraft.com/character/bleeding-hollow/125/237147005-avatar.jpg"
+    },
+    "lostArk": null
+  },
+  {
     "name": "Glucke",
     "role": "Member",
     "wow": {
@@ -68,16 +78,6 @@
       "class": "Bard",
       "portrait": null
     }
-  },
-  {
-    "name": "Yarn",
-    "role": "WoW Raid Leader",
-    "wow": {
-      "name": "Yarnbrew",
-      "class": "Monk",
-      "portraitURL": "https://render-us.worldofwarcraft.com/character/bleeding-hollow/125/237147005-avatar.jpg"
-    },
-    "lostArk": null
   },
   {
     "name": "Maiko",
