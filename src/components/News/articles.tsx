@@ -13,8 +13,65 @@ function getImage (src: string) {
   return require(`../../img/${src}`)
 }
 
-/* eslint-disable react/no-unescaped-entities */
 const articles = [
+  {
+    id: 'vykas-normal-cleared',
+    title: 'Vykas Normal Cleared',
+    category: 'la',
+    date: 'July 5, 2022',
+    content: (
+    <Text>
+      <Text>Congratulations to the first Wholesome Sisters members clear all three gates of Legion Raid Vykas Normal. Participating members include:</Text>
+      <ul>
+        <li>Cowo (Jorbi) - Gunlancer</li>
+        <li>Razashi (Zarashi) - Artillerist</li>
+        <li>Theoddwang (Wizzol) - Striker</li>
+        <li>Pazaji (Cazzaji) - Paladin</li>
+      </ul>
+      <StyledImageModal src={getImage('vykas-normal-gate1.png')} alt='Wholesome Sisters clear Vykas Normal mode gate 1'/>
+    </Text>
+    ),
+    summary: 'Wholesome Sisters clear all 3 gates of Vykas Normal.',
+    imgFile: 'vykas.jpg',
+    imgAlt: 'Lost Ark Legion Commander Vykas',
+    objectPosition: 'top',
+    tags: [
+      'lost ark',
+      'la',
+      'clear'
+    ]
+  },
+  {
+    id: 'wholesome-sisters-achieve-snowpang-island-siege-rank-1',
+    title: 'Wholesome Sisters Achieve Snowpang Island Siege Rank 1',
+    category: 'la',
+    date: 'July 2, 2022',
+    content: (
+    <Text>
+      <Text>Congratulations to the member of Wholesome Sisters to claim Snowpang Island during the Guild vs. Guild siege event. Participating members include:</Text>
+      <ul>
+        <li>Jorbi - Soulfist</li>
+        <li>Maikov - Sharpshooter</li>
+        <li>Haiji - Bard</li>
+        <li>Leesanghyeok - Shadowhunter</li>
+        <li>Senjyogahara - Deathblade</li>
+        <li>Gaawr - Sorceress</li>
+        <li>Riotvifromarcane - Scrapper</li>
+        <li>Zarashi - Destroyer</li>
+      </ul>
+      <StyledImageModal src={getImage('snowpang-island-rank-1.png')} alt='Snowpang Island Siege Leaderboard'/>
+    </Text>
+    ),
+    summary: 'Wholesome Sisters achieve rank 1 in the Snowpang Island Guild vs. Guild Siege.',
+    imgFile: 'snowpang-island.jpg',
+    imgAlt: 'Snowpang Island',
+    objectPosition: '',
+    tags: [
+      'lost ark',
+      'la',
+      'gvg'
+    ]
+  },
   {
     id: 'vykas-hard-gate-3-cleared',
     title: 'Vykas Hard Gate 3 Cleared',
@@ -32,11 +89,11 @@ const articles = [
         <li>Gaawr - Sorceress</li>
         <li>Riotvifromarcane - Scrapper</li>
       </ul>
-      <StyledImageModal src={getImage('vykas-gate3.jpg')} alt='Wholesome Sisters clear Vykas Hard mode gate 3'/>
+      <StyledImageModal src={getImage('vykas-hard-gate3.jpg')} alt='Wholesome Sisters clear Vykas Hard mode gate 3'/>
     </Text>
     ),
     summary: 'Wholesome Sisters clear Vykas Hard mode gate 3.',
-    imgFile: 'vykas-gate3.jpg',
+    imgFile: 'vykas-hard-gate3.jpg',
     imgAlt: 'Lost Ark Vykas Gate 3 Clear',
     objectPosition: '',
     tags: [
@@ -62,11 +119,11 @@ const articles = [
         <li>Gaawr - Sorceress</li>
         <li>Riotvifromarcane - Scrapper</li>
       </ul>
-      <StyledImageModal src={getImage('vykas-gate2.jpg')} alt='Wholesome Sisters clear Vykas Hard mode gate 2'/>
+      <StyledImageModal src={getImage('vykas-hard-gate2.jpg')} alt='Wholesome Sisters clear Vykas Hard mode gate 2'/>
     </Text>
     ),
     summary: 'Wholesome Sisters clear Vykas Hard mode gate 2.',
-    imgFile: 'vykas-gate2.jpg',
+    imgFile: 'vykas-hard-gate2.jpg',
     imgAlt: 'Lost Ark Vykas Gate 2 Clear',
     objectPosition: '',
     tags: [
@@ -92,11 +149,11 @@ const articles = [
         <li>Gaawr - Sorceress</li>
         <li>Riotvifromarcane - Scrapper</li>
       </ul>
-      <StyledImageModal src={getImage('vykas-gate1.jpg')} alt='Wholesome Sisters clear Vykas Hard mode gate 1'/>
+      <StyledImageModal src={getImage('vykas-hard-gate1.jpg')} alt='Wholesome Sisters clear Vykas Hard mode gate 1'/>
     </Text>
     ),
     summary: 'Wholesome Sisters clear Vykas Hard mode gate 1.',
-    imgFile: 'vykas-gate1.jpg',
+    imgFile: 'vykas-hard-gate1.jpg',
     imgAlt: 'Lost Ark Vykas Gate 1 Clear',
     objectPosition: '',
     tags: [
@@ -184,7 +241,7 @@ const articles = [
   },
   {
     id: 'lost-ark-guild-established-on-na-east-una',
-    title: 'Lost Ark Guild established on NA East Una',
+    title: 'Lost Ark Guild Established on NA East Una',
     category: 'la',
     date: 'February 10, 2022',
     content: (
@@ -247,7 +304,7 @@ const articles = [
     date: 'July 23, 2021',
     content: (
     <Text>
-      <Text>Wholesome Sisters clear Sanctum of Domination Normal difficulty on the third week of its release. A few members of the guild couldn't show up for the raid night so a few players were picked up to fill missing spots. View the log of Sylvanas Windrunner that secured the clear below.</Text>
+      <Text>Wholesome Sisters clear Sanctum of Domination Normal difficulty on the third week of its release. A few members of the guild couldn&apos;t show up for the raid night so a few players were picked up to fill missing spots. View the log of Sylvanas Windrunner that secured the clear below.</Text>
       <br/>
       <Link href="https://www.warcraftlogs.com/reports/92NdnvgYPHVtChAL#fight=7">View the log on Warcraft Logs</Link>
     </Text>
@@ -267,7 +324,7 @@ const articles = [
   },
   {
     id: 'wholesome-sisters-return-for-shadowlands-season-2',
-    title: 'Wholesome Sisters return for Shadowlands Season 2',
+    title: 'Wholesome Sisters Return for Shadowlands Season 2',
     category: 'wow',
     date: 'July 18, 2021',
     content: (
@@ -393,7 +450,7 @@ const articles = [
     date: 'December 26, 2020',
     content: (
     <div>
-      <Text>"On the third week of Castle Nathria's relase, the Wholesome Sisters manage to take down Sire Denathrius and clear Castle Nathria normal difficulty."</Text>
+      <Text>On the third week of Castle Nathria&apos;s relase, the Wholesome Sisters manage to take down Sire Denathrius and clear Castle Nathria normal difficulty.</Text>
       <br/>
       <Link href="https://www.warcraftlogs.com/reports/9p8NRGJk1c4zTtMZ#fight=9">View the log on Warcraft Logs</Link>
     </div>
@@ -412,13 +469,13 @@ const articles = [
   },
   {
     id: 'wholesome-sister-established-in-world-of-warcraft',
-    title: 'Wholesome Sister established in World of Warcraft',
+    title: 'Wholesome Sister Established in World of Warcraft',
     category: 'wow',
     date: 'December 26, 2020',
     content: (
     <Text>
       <Text>
-      "Due to queue times lasting hours on the realm Area 52, the original Wholesome Sister's guild Deep Deep Deep has decided to transfer to the realm Bleeding Hollow."
+      Due to queue times lasting hours on the realm Area 52, the original Wholesome Sister&apos;s guild Deep Deep Deep has decided to transfer to the realm Bleeding Hollow.
       </Text>
     </Text>
     ),
