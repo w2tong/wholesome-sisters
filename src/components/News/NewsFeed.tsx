@@ -78,7 +78,7 @@ const StyledReactPaginate = styled(ReactPaginate)`
     margin: 0 3px;
     border-radius: 10px;
     cursor: pointer;
-    &:hover {
+    &:hover:not(.disabled a) {
       background-color: ${BackgroundHighlightColor};
     }
   }

@@ -12,7 +12,7 @@ const articles = articlesJSON.slice(0, 3).map(article => <StyledNewsCard {...art
 function NewsFeed ({ className } : {className?: string}) {
   return (
     <div className={className}>
-      <Title>Latest News</Title>
+      <TextLink to="/news"><Title>Latest News</Title></TextLink>
       {articles}
       <TextLink to="/news">More News</TextLink>
     </div>
