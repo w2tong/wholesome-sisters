@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import ImageModal from './ImageModal'
+import ImageModal from '../ImageModal'
 import Link from '../Link'
 import { Text } from '../../styles'
 
