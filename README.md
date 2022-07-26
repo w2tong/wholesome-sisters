@@ -4,7 +4,11 @@ Wholesome Sisters guild website for World of Warcraft and Lost Ark
 https://w2tong.github.io/wholesome-sisters/
 
 Dev\
-`npm start`
+```shell
+npm start
+```
 
 Deploy\
-`npm run deploy -- -m "Deploy React app to GitHub Pages"`
+```shell
+npm run deploy -- -m "Deploy React app to GitHub Pages"
+```
