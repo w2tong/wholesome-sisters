@@ -11,9 +11,17 @@ interface MemberProps {
   name: string;
   role: string;
   wow: {
-    name: string;
-    class: string;
-    portraitURL: string | null;
+    name: string,
+    class: string,
+    race: string,
+    spec: string,
+    role: string,
+    portraitURL: string | null,
+    itemLevel: number,
+    mythicPlus: {
+      score: number,
+      color: string
+    }
   } | null
   lostArk: {
     name: string;
@@ -30,7 +38,7 @@ const Container = styled.div`
   width: 320px;
   max-width: 320px;
   height: auto;
-  font-size: 18px;
+  font-size: 16px;
   @media (max-width: ${media.XSmall}px) {
     width: 92.5%;
   }
@@ -81,11 +89,15 @@ const Class = styled.div<{wowClass: string}>`
   color: ${props => props.wowClass ? classColor[props.wowClass] : 'white'};
 `
 
+const MythicPlusScore = styled.span<{color: string}>`
+  color: ${props => props.color};
+`
+
 const NameClassContainer = styled.div`
   display: flex;
   flex-direction: column;
   margin-left: 10px;
-  font-size: 16px;
+  font-size: 14px;
 `
 
 const LinksContainer = styled.div`
@@ -106,7 +118,9 @@ function Member (props: MemberProps) {
           <Portrait src={props.wow && props.wow.portraitURL ? props.wow.portraitURL : portraitPlaceHolder} onError={(e) => { e.currentTarget.src = portraitPlaceHolder }}/>
           <NameClassContainer>
             <div>{props.wow ? props.wow.name : 'N/A'}</div>
-            {props.wow ? <Class wowClass={props.wow.class}>{props.wow.class}</Class> : 'N/A'}
+            {props.wow && <Class wowClass={props.wow.class}>{props.wow.spec} {props.wow.class}</Class>}
+            {props.wow && <div>Item Level: {props.wow.itemLevel}</div>}
+            {props.wow && <div>M+ Score: <MythicPlusScore color={props.wow.mythicPlus.color}>{props.wow.mythicPlus.score}</MythicPlusScore></div>}
           </NameClassContainer>
           {props.wow &&
             <LinksContainer>
