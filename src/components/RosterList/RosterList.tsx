@@ -3,6 +3,12 @@ import rosterJSON from '../../json/roster.json'
 import styled from 'styled-components'
 import { Title } from '../../styles'
 
+const Date = styled.div`
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+`
+
 const StyledRoster = styled.div`
   display: flex;
   justify-content: center;
@@ -19,6 +25,7 @@ function RosterList () {
   return (
     <div>
       <Title>Roster</Title>
+      <Date>Updated: {rosterJSON.date}</Date>
       <StyledRoster>
         {roster}
       </StyledRoster>
