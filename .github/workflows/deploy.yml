@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - main
+  schedule:
+    - cron: '0 0 * * *'
 
 jobs:
   build:
@@ -17,8 +19,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Install and build
-        run: npm install && npm run build
+      - name: Install, fetch and build
+        run: npm install && npm run fetch && npm run build
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
