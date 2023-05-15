@@ -1,0 +1,156 @@
+[
+  {
+    "name": "Jorbi",
+    "role": "LA Guild Leader",
+    "wow": {
+      "name": "Cowo"
+    },
+    "lostArk": {
+      "name": "Jorbi",
+      "class": "Soulfist",
+      "portrait": "jorbi.png"
+    }
+  },
+  {
+    "name": "Zarashi",
+    "role": "WoW Guild Leader",
+    "wow": {
+      "name": "Razashi"
+    },
+    "lostArk": {
+      "name": "Zarashi",
+      "class": "Destroyer",
+      "portrait": "zarashi.png"
+    }
+  },
+  {
+    "name": "Cazzaji",
+    "role": "Shadow Leader",
+    "wow": {
+      "name": "Cazzaji"
+    },
+    "lostArk": {
+      "name": "Cazaji",
+      "class": "Berserker",
+      "portrait": null
+    }
+  },
+  {
+    "name": "Wizzol",
+    "role": "Deputy",
+    "wow": {
+      "name": "Zekul"
+    },
+    "lostArk": {
+      "name": "Wongwongwong",
+      "class": "Sorceress",
+      "portrait": null
+    }
+  },
+  {
+    "name": "Yarn",
+    "role": "WoW Raid Leader",
+    "wow": {
+      "name": "Yarnbabwe"
+    },
+    "lostArk": null
+  },
+  {
+    "name": "Glucke",
+    "role": "Member",
+    "wow": {
+      "name": "Cptglucke"
+    },
+    "lostArk": {
+      "name": "Glucke",
+      "class": "Bard",
+      "portrait": null
+    }
+  },
+  {
+    "name": "Maiko",
+    "role": "Member",
+    "wow": {
+      "name": "Mykai"
+    },
+    "lostArk": {
+      "name": "Maikov",
+      "class": "Sharpshooter",
+      "portrait": null
+    }
+  },
+  {
+    "name": "Fourlegs",
+    "role": "Member",
+    "wow": {
+      "name": "Fourlegs"
+    },
+    "lostArk": {
+      "name": "Fourhands",
+      "class": "Gunslinger",
+      "portrait": null
+    }
+  },
+  {
+    "name": "Aethne",
+    "role": "Member",
+    "wow": {
+      "name": "Aethne"
+    },
+    "lostArk": {
+      "name": "Jurmjurm",
+      "class": "Glavier",
+      "portrait": null
+    }
+  },
+  {
+    "name": "BrownieQQ",
+    "role": "Member",
+    "wow": null,
+    "lostArk": {
+      "name": "Alixiza",
+      "class": "Deathblade",
+      "portrait": null
+    }
+  },
+  {
+    "name": "Amazonpm",
+    "role": "Member",
+    "wow": null,
+    "lostArk": {
+      "name": "Amazonpm",
+      "class": "Berserker",
+      "portrait": "amazonpm.png"
+    }
+  },
+  {
+    "name": "Haiji",
+    "role": "Member",
+    "wow": null,
+    "lostArk": {
+      "name": "Haiji",
+      "class": "Bard",
+      "portrait": "haiji.png"
+    }
+  },
+  {
+    "name": "Senjyogahara",
+    "role": "Member",
+    "wow": null,
+    "lostArk": {
+      "name": "Senjyogahara",
+      "class": "Deathblade",
+      "portrait": "senjyogahara.png"
+    }
+  },
+  {
+    "name": "Leesanghyeok",
+    "role": "Member",
+    "wow": null,
+    "lostArk": {
+      "name": "Leesanghyeok",
+      "class": "Shadowhunter",
+      "portrait": "leesanghyeok.jpg"
+    }
+  }
+]
