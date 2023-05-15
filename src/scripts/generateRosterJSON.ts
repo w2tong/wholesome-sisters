@@ -2,7 +2,7 @@ import fetch from 'node-fetch'
 import fs from 'fs'
 import * as dotenv from 'dotenv'
 dotenv.config()
-const roster = require('./input.json')
+import roster from '../json/roster-input.json'
 
 interface Roster {
   wow?: {
