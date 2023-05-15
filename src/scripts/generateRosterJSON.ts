@@ -4,12 +4,6 @@ import * as dotenv from 'dotenv'
 dotenv.config()
 import roster from '../json/roster-input.json'
 
-interface Roster {
-  wow?: {
-    name: string
-  }
-}
-
 interface RaiderIOCharacterResponse {
   name: string,
   race: string,
@@ -64,7 +58,7 @@ const fetchChar = async (name: string): Promise<WowCharacter> => {
 
 const updateRoster = async () => {
   await Promise.all(
-    roster.map(async (member: Roster) => {
+    roster.map(async (member) => {
       if (member.wow) {
         member.wow = await fetchChar(member.wow.name)
       }
