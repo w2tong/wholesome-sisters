@@ -146,7 +146,9 @@
   {
     "name": "Leesanghyeok",
     "role": "Member",
-    "wow": null,
+    "wow": {
+      "name": "Guyfirey"
+    },
     "lostArk": {
       "name": "Leesanghyeok",
       "class": "Shadowhunter",
