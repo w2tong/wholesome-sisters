@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/wholesome-sisters/static/css/main.0996b1a0.css",
-    "main.js": "/wholesome-sisters/static/js/main.d0a78ec8.js",
+    "main.js": "/wholesome-sisters/static/js/main.840ed581.js",
     "static/media/vykas-hard-gate2.jpg": "/wholesome-sisters/static/media/vykas-hard-gate2.ad0b93be220a53c57d0e.jpg",
     "static/media/vykas-hard-gate3.jpg": "/wholesome-sisters/static/media/vykas-hard-gate3.d0e491a567c10d01dc84.jpg",
     "static/media/ksm-season-1.jpg": "/wholesome-sisters/static/media/ksm-season-1.fa436d78d0cc5c2294c2.jpg",
@@ -32,10 +32,10 @@
     "static/media/wow-chains-of-domination.png": "/wholesome-sisters/static/media/wow-chains-of-domination.ee75487c014216a005a7.png",
     "index.html": "/wholesome-sisters/index.html",
     "main.0996b1a0.css.map": "/wholesome-sisters/static/css/main.0996b1a0.css.map",
-    "main.d0a78ec8.js.map": "/wholesome-sisters/static/js/main.d0a78ec8.js.map"
+    "main.840ed581.js.map": "/wholesome-sisters/static/js/main.840ed581.js.map"
   },
   "entrypoints": [
     "static/css/main.0996b1a0.css",
-    "static/js/main.d0a78ec8.js"
+    "static/js/main.840ed581.js"
   ]
 }
